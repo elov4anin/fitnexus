@@ -1,0 +1,36 @@
+@import "variables";
+.swiper-container {
+   // display: flex;
+   // flex-direction: column-reverse;
+    padding-top: 50px;
+}
+.custom-slides__wrapper {
+    height: 100%;
+}
+
+
+:host {
+    ::ng-deep ion-content {
+        --background: $gray;
+    }
+
+    ::ng-deep ion-slides.custom-slides {
+        height: 100%;
+
+        > .swiper-pagination-bullets {
+            top: 10px;
+            bottom: auto;
+        }
+        .swiper-pagination-bullet {
+            width: 16px;
+            height: 16px;
+            background: $ligth-black;
+            opacity: 1;
+            margin: 0 8px;
+        }
+        .swiper-pagination-bullet-active {
+            background: $blue;
+        }
+    }
+}
+

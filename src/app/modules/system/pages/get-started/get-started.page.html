@@ -1,5 +1,18 @@
 <app-main-layout
         [titlePage]="pageTitle"
 >
-  sdcfsdfasdf
+
+<ion-slides pager="true" [options]="slideOpts" class="custom-slides">
+    <ion-slide>
+        <app-upload-photo-slide></app-upload-photo-slide>
+    </ion-slide>
+    <ion-slide>
+        <h1>Slide 2</h1>
+    </ion-slide>
+    <ion-slide>
+        <h1>Slide 3</h1>
+    </ion-slide>
+</ion-slides>
+
+
 </app-main-layout>
