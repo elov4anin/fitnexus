@@ -1,0 +1,107 @@
+<ion-content>
+
+    <ion-grid>
+        <ion-row class="ion-justify-content-center" >
+            <ion-col size="9">
+              <div class="logo">
+                  <div class="logo__text">Welcome to</div>
+                  <img src="../../../assets/images/logo.png" alt="fitnexus" width="180" height="27">
+              </div>
+            </ion-col>
+
+        </ion-row>
+
+        <ion-row class="ion-justify-content-center">
+            <ion-col size="10.5">
+                <ion-list lines="none">
+                    <form class="login__form" autocomplete="off" [formGroup]="loginFrom" (ngSubmit)="login()">
+                        <ion-item [ngClass]="{'invalid': loginFrom.get('email').touched &&  loginFrom.get('email').invalid}">
+                            <ion-label
+                                    class="login__label"
+                                    position="floating"
+                                    [color]="loginFrom.get('email').touched && loginFrom.get('email').invalid ? 'danger' : 'light'"
+                            >
+                                Email
+                            </ion-label>
+                            <ion-input
+                                    formControlName="email"
+                                    type="email"
+                                    color="light"
+                                    autocomplete="off"
+                                    required
+                            ></ion-input>
+                        </ion-item>
+                        <ion-item  [ngClass]="{'invalid': loginFrom.get('password').touched &&  loginFrom.get('password').invalid}">
+                            <ion-label
+                                    class="login__label"
+                                    position="floating"
+                                    [color]="loginFrom.get('password').touched && loginFrom.get('password').invalid ? 'danger' : 'light'"
+                            >
+                                Password
+                            </ion-label>
+                            <ion-input
+                                    formControlName="password"
+                                    type="password"
+                                    color="light"
+                                    autocomplete="off"
+                                    required
+                                    [minlength]="3"
+                            ></ion-input>
+                        </ion-item>
+                        <ion-button
+                                type="submit"
+                                class="login__btn ion-justify-content-between"
+                                color="light"
+                                expand="block"
+                                [disabled]="loginFrom.invalid"
+                        >
+                            <div class="d-flex flex ion-justify-content-between ion-align-items-center">
+                                <div class="login__btn-text">Login</div>
+                                <ion-icon name="arrow-forward"></ion-icon>
+                            </div>
+
+                        </ion-button>
+                    </form>
+                </ion-list>
+
+            </ion-col>
+
+        </ion-row>
+
+    </ion-grid>
+    <!--<ion-card class="welcome-card">
+      <img src="/assets/shapes.svg" alt=""/>
+      <ion-card-header>
+        <ion-card-subtitle>Get Started</ion-card-subtitle>
+        <ion-card-title>Welcome to Ionic</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+          Now that your app has been created, you'll want to start building out features
+          and components. Check out some of the resources below for next steps.
+        </p>
+      </ion-card-content>
+    </ion-card>-->
+
+   <!-- <ion-list lines="none">
+      <ion-list-header>
+        <ion-label>Resources</ion-label>
+      </ion-list-header>
+      <ion-item href="https://ionicframework.com/docs/">
+        <ion-icon slot="start" color="medium" name="book"></ion-icon>
+        <ion-label>Ionic Documentation</ion-label>
+      </ion-item>
+      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
+        <ion-icon slot="start" color="medium" name="build"></ion-icon>
+        <ion-label>Scaffold Out Your App</ion-label>
+      </ion-item>
+      <ion-item href="https://ionicframework.com/docs/layout/structure">
+        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
+        <ion-label>Change Your App Layout</ion-label>
+      </ion-item>
+      <ion-item href="https://ionicframework.com/docs/theming/basics">
+        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
+        <ion-label>Theme Your App</ion-label>
+      </ion-item>
+    </ion-list>-->
+  </ion-content>

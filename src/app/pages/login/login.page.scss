@@ -1,0 +1,65 @@
+@import "../../../styles/variables";
+
+ion-content {
+    --background: linear-gradient(89deg, rgba(0, 126, 191, 0.89) 0%, rgba(0, 211, 255, 0.89) 100%),
+    url("/assets/images/login_bg.png") center no-repeat;
+}
+
+ion-list {
+    background: transparent;
+}
+
+ion-item {
+    --background: transparent;
+
+    border-bottom: 1px solid $white;
+
+    transition: border-bottom-color 0.2s;
+
+    &.invalid {
+        border-bottom: 1px solid red;
+
+    }
+}
+
+ion-label {
+    font-family: $font-family-helvetica;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.logo {
+    margin-top: 26vh;
+
+    &__text {
+        margin-bottom: 12px;
+
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        color: $white;
+        text-transform: uppercase;
+    }
+}
+
+.login__form {
+    background: transparent;
+}
+
+.login__btn {
+    margin-top: 25px;
+
+    &-text {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        color: $ligth-black;
+        text-transform: uppercase;
+    }
+
+    ion-icon {
+        font-size: 12px;
+    }
+}
