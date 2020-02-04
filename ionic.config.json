@@ -1,0 +1,7 @@
+{
+  "name": "fitnexus",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
