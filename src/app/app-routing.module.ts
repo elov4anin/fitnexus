@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'get-started',
+    redirectTo: 'system',
     pathMatch: 'full'
   },
   {
@@ -20,8 +20,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/login/login.module').then(m => m.LoginPageModule)
   },
   {
-    path: 'get-started',
-    loadChildren: () => import('./pages/get-started/get-started.module').then( m => m.GetStartedPageModule)
+    path: 'system',
+    loadChildren: () => import('./modules/system/system.module').then( m => m.SystemModule)
   }
 ];
 

@@ -20,6 +20,11 @@ export class AppComponent {
       title: 'List',
       url: '/list',
       icon: 'list'
+    },
+    {
+      title: 'Welcome to Fitnexus',
+      url: '/system/get-started',
+      icon: 'list'
     }
   ];
 
