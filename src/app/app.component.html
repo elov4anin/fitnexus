@@ -3,16 +3,22 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-header>
         <ion-toolbar>
-          <ion-title>Menu</ion-title>
+          <div class="profile">
+            <div class="profile__img">
+            </div>
+            <span class="profile__name">
+              Richard Chestday
+            </span>
+          </div>
         </ion-toolbar>
       </ion-header>
       <ion-content>
-        <ion-list>
+        <ion-list lines="full">
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
-            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
-              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]" detail="false">
               <ion-label>
                 {{p.title}}
+               <div class="new"></div>
               </ion-label>
             </ion-item>
           </ion-menu-toggle>
