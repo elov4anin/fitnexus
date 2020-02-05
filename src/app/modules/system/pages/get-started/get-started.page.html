@@ -2,15 +2,12 @@
         [titlePage]="pageTitle"
 >
 
-<ion-slides pager="true" [options]="slideOpts" class="custom-slides">
-    <ion-slide>
-        <app-upload-photo-slide></app-upload-photo-slide>
+<ion-slides #slider pager="true" [options]="slideOpts" class="custom-slides">
+    <ion-slide *ngFor="let slide of slides">
+        <app-slide [slide]="slide" (nextSlide$)="nextSlide()"></app-slide>
     </ion-slide>
     <ion-slide>
-        <h1>Slide 2</h1>
-    </ion-slide>
-    <ion-slide>
-        <h1>Slide 3</h1>
+        <app-premium-slide></app-premium-slide>
     </ion-slide>
 </ion-slides>
 

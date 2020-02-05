@@ -1,0 +1,21 @@
+<div class="slide ion-padding-start ion-padding-end">
+  <ng-container *ngIf="!slide.isPhotoSlide; else photoBlock">
+    <div class="slide__img slide__img--{{slide.icon}}">
+    </div>
+  </ng-container>
+  <ng-template #photoBlock>
+    <div class="slide__preview">
+    </div>
+  </ng-template>
+
+  <span class="slide__title">{{slide.title}}</span>
+
+  <span class="slide__text">{{slide.text}}</span>
+
+  <ion-button expand="full" (click)="nextSlide()" color="secondary" class="slide__btn">
+    <div class="d-flex flex ion-justify-content-center ion-align-items-center">
+      <div class="slide__btn-text">{{slide.isPhotoSlide ? 'Get started' : 'Next'}}</div>
+      <ion-icon name="arrow-forward"></ion-icon>
+    </div>
+  </ion-button>
+</div>

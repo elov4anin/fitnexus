@@ -9,6 +9,11 @@ const routes: Routes = [
         component: TabsComponent,
         children: [
             {
+                path: '',
+                redirectTo: 'get-started',
+                pathMatch: 'full'
+            },
+            {
                 path: 'news-feed',
                 loadChildren: () => import('./pages/news-feed/news-feed.module').then(m => m.NewsFeedPageModule)
             },
@@ -32,15 +37,16 @@ const routes: Routes = [
                 path: 'get-started',
                 loadChildren: () => import('./pages/get-started/get-started.module').then(m => m.GetStartedPageModule)
             },
+            {
+                path: 'welcome-premium',
+                loadChildren: () => import('./pages/welcome-premium/welcome-premium.module').then( m => m.WelcomePremiumPageModule)
+            },
 
         ],
 
     },
-    {
-        path: '',
-        redirectTo: '/app/system/get-started',
-        pathMatch: 'full'
-    }
+
+
 
 ];
 

@@ -5,7 +5,7 @@
     height: 100%;
 }
 
-.upload-photo {
+.slide {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -65,6 +65,27 @@
         }
     }
 
+    &__img {
+        position: relative;
+        width: 238px;
+        height: 258px;
+        background-color: $light-gray;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+
     &__title {
         margin-top: 17px;
         font-family: $font-family-oswald;
@@ -85,6 +106,8 @@
         color: $dark-gray
     }
     &__btn {
+        margin-top: auto;
+        margin-bottom: 100px;
         width: 100%;
     }
     &__btn-text {
@@ -96,3 +119,44 @@
         margin-right: 10px;
     }
 }
+.slide__img--feed:before {
+    width: 81px;
+    height: 81px;
+    background-image: url("/assets/images/svg-icons/ios-list-box-slide.svg");
+}
+.slide__img--members:before {
+    width: 119px;
+    height: 119px;
+    background-image: url("/assets/images/svg-icons/ios-person.svg");
+}
+
+.slide__img--tracking:before {
+    width: 75px;
+    height: 82px;
+    background-image: url("/assets/images/svg-icons/ios-stats-slide.svg");
+}
+
+.slide__img--nutrition:before {
+    width: 63px;
+    height: 84px;
+    background-image: url("/assets/images/svg-icons/ios-restaurant-slide.svg");
+}
+
+.slide__img--classes:before {
+    width: 90px;
+    height: 83px;
+    background-image: url("/assets/images/svg-icons/ios-calendar-slide.svg");
+}
+
+.slide__img--challenges:before {
+    width: 90px;
+    height: 83px;
+    background-image: url("/assets/images/svg-icons/ios-trophy-slide.svg");
+}
+
+.slide__img--prem:before {
+    width: 128px;
+    height: 119px;
+    background-image: url("/assets/images/svg-icons/ios-star.svg");
+}
+

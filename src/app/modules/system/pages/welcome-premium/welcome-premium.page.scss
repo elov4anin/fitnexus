@@ -1,0 +1,10 @@
+:host {
+    ::ng-deep ion-content {
+        --background: $gray;
+    }
+}
+
+.slide {
+    margin-top: 54px;
+    height: calc(100% - 54px);
+}

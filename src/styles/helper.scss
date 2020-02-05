@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .flex {
     flex: 1 0 auto;
 }

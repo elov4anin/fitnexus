@@ -1,0 +1,30 @@
+<app-main-layout
+        [titlePage]="pageTitle"
+>
+
+  <div class="slide ion-padding-start ion-padding-end">
+      <div class="slide__img slide__img--prem">
+      </div>
+
+    <span class="slide__title">Welcome to your premium service</span>
+
+    <span class="slide__text">
+      You now have access our extensive library of over 1000 online video classes to do at home,
+      our premium workout library and our cutting-edge meal planner!
+      <p>
+         <b>
+            We would like to personally wish you the best of luck on your health and fitness journey!
+        </b>
+      </p>
+    </span>
+
+
+    <ion-button expand="full" (click)="start()" color="secondary" class="slide__btn">
+      <div class="d-flex flex ion-justify-content-center ion-align-items-center">
+        <div class="slide__btn-text">Begin</div>
+        <ion-icon name="arrow-forward"></ion-icon>
+      </div>
+    </ion-button>
+  </div>
+
+</app-main-layout>
