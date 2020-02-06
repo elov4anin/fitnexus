@@ -1,0 +1,75 @@
+@import "variables";
+:host {
+    ::ng-deep .news__card > ion-card.card__wrapper {
+        box-shadow: none;
+    }
+}
+
+ion-list {
+    ion-item {
+        margin-bottom: 33px;
+        ion-avatar {
+            width: 49px;
+            height: 49px;
+
+            --border-radius: none
+        }
+
+        ion-label {
+            height: 100%;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+    }
+}
+
+.comment-add {
+    // display: flex;
+
+    &__input {
+        flex: 1 0 auto;
+        height: 40px;
+        width: 85%;
+        box-sizing: border-box;
+        padding: 13px!important;
+        border: 1px solid #C5C5C5;
+        font-family: $font-family-helvetica;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        color: $ligth-black
+    }
+
+    ion-button {
+        box-sizing: border-box;
+        height: 40px;
+        margin: 0;
+    }
+}
+
+.comment {
+    &__author {
+        font-family: $font-family-oswald;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        color: $ligth-black
+    }
+    &__text {
+        font-family: $font-family-helvetica;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        color: #4E4E4E
+    }
+}
+.divisor {
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 33px;
+
+    background: #B8B8B8;
+}
+

@@ -1,4 +1,27 @@
 <app-main-layout
         [titlePage]="pageTitle"
 >
+    <app-card-news class="news__card"></app-card-news>
+    <div class="comment-add ion-padding-start ion-padding-end">
+        <ion-item lines="none">
+            <ion-input placeholder="Write a reply..." class="comment-add__input"></ion-input>
+            <ion-button expand="full"color="secondary">
+                <ion-icon slot="icon-only" name="add"></ion-icon>
+            </ion-button>
+        </ion-item>
+    </div>
+    <div class="divisor"></div>
+
+    <ion-list lines="none" class="ion-padding-start ion-padding-end">
+        <ion-item *ngFor="let item of repeat">
+            <ion-avatar slot="start">
+                <img src="assets/images/news.png" width="49px" height="49px">
+            </ion-avatar>
+            <ion-label>
+                <h2 class="comment__author">Finn</h2>
+                <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+
 </app-main-layout>

@@ -1,0 +1,54 @@
+@import "variables";
+
+ion-card.card__wrapper {
+    margin: 0;
+    background: $white;
+    box-shadow: 0 3px 6px 1px #00000029;
+    border-radius: 0;
+
+    ion-card-content {
+        padding-left: 46px;
+        padding-right: 46px;
+    }
+
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+        height: 153px;
+        width: auto;
+        background-image: url("/assets/images/news.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__title {
+        font-family: $font-family-oswald;
+        font-size: 16px;
+        line-height: 24px;
+        color: $ligth-black;
+        margin-bottom: 4px;
+    }
+
+    &__text {
+        font-family: $font-family-helvetica;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 15px;
+        color: $dark-gray;
+        margin-bottom: 8px;
+    }
+
+    &__more {
+        font-family: $font-family-helvetica;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 15px;
+        color: $blue2;
+    }
+}
