@@ -3,24 +3,24 @@ import {ICommon} from "../../../../shared/interfaces/common.interfaces";
 import ITopButton = ICommon.ITopButton;
 
 @Component({
-    selector: 'app-news-feed',
-    templateUrl: './news-feed.page.html',
-    styleUrls: ['./news-feed.page.scss'],
+    selector: 'app-members',
+    templateUrl: './members.page.html',
+    styleUrls: ['./members.page.scss'],
 })
-export class NewsFeedPage implements OnInit {
-    pageTitle: string = 'News feed';
+export class MembersPage implements OnInit {
+    pageTitle: string = 'Members';
     topButtons: ITopButton[] = [
         {
             text: 'Feed',
             icon: 'ios-list-box-white.svg',
             redirectTo: 'news-feed',
-            active: true
+            active: false
         },
         {
             text: 'Members',
             icon: 'ios-person-white.svg',
             redirectTo: 'members',
-            active: false
+            active: true
         }
     ];
 

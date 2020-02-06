@@ -3,6 +3,7 @@ import {CommonModule} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {IonicModule} from "@ionic/angular";
 import {MainLayoutComponent} from "../modules/system/layouts/main-layout/main-layout.component";
+import {SubmenuButtonsComponent} from "../modules/system/components/submenu-buttons/submenu-buttons.component";
 
 const ANGULAR_MODULES = [
     CommonModule,
@@ -13,6 +14,7 @@ const ANGULAR_MODULES = [
 
 const COMPONENTS = [
     MainLayoutComponent,
+    SubmenuButtonsComponent
 ];
 
 

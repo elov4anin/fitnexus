@@ -5,4 +5,10 @@ export namespace ICommon {
         icon: string;
         redirectTo: string;
     }
+    export interface ITopButton {
+        text: string;
+        icon: string;
+        redirectTo: string
+        active: boolean
+    }
 }

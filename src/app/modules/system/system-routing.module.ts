@@ -45,6 +45,10 @@ const routes: Routes = [
         ],
 
     },
+  {
+    path: 'members',
+    loadChildren: () => import('./pages/members/members.module').then( m => m.MembersPageModule)
+  },
 
 
 
