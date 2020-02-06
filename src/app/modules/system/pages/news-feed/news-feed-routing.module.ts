@@ -6,8 +6,17 @@ import { NewsFeedPage } from './news-feed.page';
 const routes: Routes = [
   {
     path: '',
-    component: NewsFeedPage
-  }
+    component: NewsFeedPage,
+  },
+  {
+    path: 'members',
+    loadChildren: () => import('./members/members.module').then(m => m.MembersPageModule)
+  },
+  {
+    path: 'news/:id',
+    loadChildren: () => import('./news/news.module').then(m => m.NewsPageModule)
+  },
+
 ];
 
 @NgModule({

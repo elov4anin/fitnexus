@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ICommon} from "../../../../shared/interfaces/common.interfaces";
+import {ICommon} from "../../../../../shared/interfaces/common.interfaces";
 import ITopButton = ICommon.ITopButton;
 
 @Component({
@@ -13,7 +13,6 @@ export class MembersPage implements OnInit {
         {
             text: 'Feed',
             icon: 'ios-list-box-white.svg',
-            redirectTo: 'news-feed',
             active: false
         },
         {

@@ -8,7 +8,7 @@ export namespace ICommon {
     export interface ITopButton {
         text: string;
         icon: string;
-        redirectTo: string
+        redirectTo?: string
         active: boolean
     }
 }

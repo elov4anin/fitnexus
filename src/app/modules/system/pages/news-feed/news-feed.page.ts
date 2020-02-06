@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ICommon} from "../../../../shared/interfaces/common.interfaces";
 import ITopButton = ICommon.ITopButton;
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-news-feed',
@@ -13,7 +14,6 @@ export class NewsFeedPage implements OnInit {
         {
             text: 'Feed',
             icon: 'ios-list-box-white.svg',
-            redirectTo: 'news-feed',
             active: true
         },
         {
@@ -23,10 +23,15 @@ export class NewsFeedPage implements OnInit {
             active: false
         }
     ];
+    repeat: number[] = [1,2,3,4,5,6,7,8];
 
-    constructor() {
+    constructor(private _router: Router ) {
     }
 
     ngOnInit() {
+    }
+
+    openNewsPage() {
+        this._router.navigate(['/system', 'news-feed', 'news', 1])
     }
 }

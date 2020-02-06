@@ -18,7 +18,10 @@ export class SubmenuButtonsComponent implements OnInit {
     }
 
     toggleButton(redirectTo: string) {
-        this._router.navigate(["/system", redirectTo]);
+        if (redirectTo) {
+            this._router.navigate(["/system", "news-feed", redirectTo]);
+        }
+        this._router.navigate(["/system", "news-feed"]);
         this.buttons.forEach(b => b.active = !b.active)
     }
 }
