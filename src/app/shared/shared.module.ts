@@ -2,8 +2,9 @@ import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {IonicModule} from "@ionic/angular";
-import {MainLayoutComponent} from "../modules/system/layouts/main-layout/main-layout.component";
-import {SubmenuButtonsComponent} from "../modules/system/components/submenu-buttons/submenu-buttons.component";
+import {MainLayoutComponent} from "./layouts/main-layout/main-layout.component";
+import {SubmenuButtonsComponent} from "./components/submenu-buttons/submenu-buttons.component";
+import {NewsFeedLayoutComponent} from "./layouts/news-feed-layout/news-feed-layout.component";
 
 const ANGULAR_MODULES = [
     CommonModule,
@@ -14,6 +15,7 @@ const ANGULAR_MODULES = [
 
 const COMPONENTS = [
     MainLayoutComponent,
+    NewsFeedLayoutComponent,
     SubmenuButtonsComponent
 ];
 

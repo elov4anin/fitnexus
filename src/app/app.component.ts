@@ -13,19 +13,19 @@ export class AppComponent {
   public appPages = [
     {
       title: 'Notifications',
-      url: '/system/notifications',
+      url: 'notifications',
     },
     {
       title: 'Messages',
-      url: '/system/messages',
+      url: 'messages',
     },
     {
       title: 'Account',
-      url: '/system/get-started',
+      url: 'get-started',
     },
     {
       title: 'Admin',
-      url: '/system/admin',
+      url: 'admin',
     }
   ];
 
