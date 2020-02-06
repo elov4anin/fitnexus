@@ -1,5 +1,24 @@
+@import "variables";
+
 :host {
     ::ng-deep ion-content {
         --background: $gray;
+    }
+}
+.members {
+    height: 100%;
+    padding-top: 36px;
+    background: $white;
+
+    &__icon {
+        margin: auto;
+        width: 41px;
+        height: 41px;
+        margin-bottom: 34px;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url("/assets/images/svg-icons/ios-person-blue.svg");
     }
 }
