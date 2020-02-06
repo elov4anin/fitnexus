@@ -16,8 +16,8 @@
 <ion-footer>
     <ion-toolbar>
         <ion-buttons >
-            <ion-button *ngFor="let tab of tabs" (click)="tabChanged(tab.tabName)" color="light">
-                <ion-icon [src]="'/assets/images/svg-icons/'+ tab.icon" slot="icon-only"></ion-icon>
+            <ion-button *ngFor="let tab of tabs" (click)="tabClicked(TabsEnum2RoutingMapping[tab])" color="light">
+                <ion-icon [src]="'/assets/images/svg-icons/'+ getActiveTabIcon(tab)" slot="icon-only"></ion-icon>
             </ion-button>
         </ion-buttons>
     </ion-toolbar>

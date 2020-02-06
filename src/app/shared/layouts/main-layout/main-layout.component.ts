@@ -1,7 +1,12 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 import {ICommon} from "../../interfaces/common.interfaces";
-import ITab = ICommon.ITab;
+import {
+    TabsEnum,
+    TabsEnum2IconActiveMapping,
+    TabsEnum2IconMapping,
+    TabsEnum2RoutingMapping
+} from "../../enums/tabs.enum";
 
 
 @Component({
@@ -11,44 +16,57 @@ import ITab = ICommon.ITab;
 })
 export class MainLayoutComponent implements OnInit {
     @Input() titlePage: string;
-    tabs: ITab[] = [
-        {
-            order: 0,
-            tabName: 'news-feed',
-            icon: 'ios-list-box-gray.svg',
-            redirectTo: ''
-        },
-        {
-            order: 1,
-            tabName: 'stats',
-            icon: 'ios-stats.svg',
-            redirectTo: 'login'
-        },
-        {
-            order: 2,
-            tabName: 'calendar',
-            icon: 'ios-calendar.svg',
-            redirectTo: ''
-        },
-        {
-            order: 3,
-            tabName: 'rating',
-            icon: 'ios-trophy.svg',
-            redirectTo: ''
-        },
-        {
-            order: 4,
-            tabName: 'food',
-            icon: 'ios-restaurant.svg',
-            redirectTo: ''
-        }
-    ];
+
+    public readonly tabs = Object.keys(TabsEnum).map(
+        (key) => TabsEnum[key]
+    );
+
+    public readonly TabsEnum2IconMapping = TabsEnum2IconMapping;
+    public readonly TabsEnum2RoutingMapping = TabsEnum2RoutingMapping;
+
     constructor(private _router: Router) {
     }
 
-    ngOnInit() {
+    ngOnInit(): void {
     }
-    tabChanged(tab) {
+
+    tabClicked(tab): void {
         this._router.navigate(['/', tab]);
+    }
+
+    getActiveTabIcon(currentRoute: string): string {
+        switch (currentRoute) {
+            case TabsEnum.NEWS:
+                if (this._router.url.includes(TabsEnum2RoutingMapping[currentRoute])) {
+                    return TabsEnum2IconActiveMapping[currentRoute]
+                } else {
+                    return TabsEnum2IconMapping[currentRoute]
+                }
+            case TabsEnum.STATS:
+                if (this._router.url.includes(TabsEnum2RoutingMapping[currentRoute])) {
+                    return TabsEnum2IconActiveMapping[currentRoute]
+                } else {
+                    return TabsEnum2IconMapping[currentRoute]
+                }
+            case TabsEnum.CALENDAR:
+                if (this._router.url.includes(TabsEnum2RoutingMapping[currentRoute])) {
+                    return TabsEnum2IconActiveMapping[currentRoute]
+                } else {
+                    return TabsEnum2IconMapping[currentRoute]
+                }
+            case TabsEnum.RATING:
+                if (this._router.url.includes(TabsEnum2RoutingMapping[currentRoute])) {
+                    return TabsEnum2IconActiveMapping[currentRoute]
+                } else {
+                    return TabsEnum2IconMapping[currentRoute]
+                }
+            case TabsEnum.FOOD:
+                if (this._router.url.includes(TabsEnum2RoutingMapping[currentRoute])) {
+                    return TabsEnum2IconActiveMapping[currentRoute]
+                } else {
+                    return TabsEnum2IconMapping[currentRoute]
+                }
+
+        }
     }
 }
