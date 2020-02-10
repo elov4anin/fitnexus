@@ -21,14 +21,6 @@
       </label>
 
       <label class="fake-checkbox">
-        <span class="fake-checkbox__text">New friends</span>
-        <input class="fake-checkbox__input" type="checkbox" name="friends">
-        <span class="fake-checkbox__label">
-          <ion-icon src="assets/images/svg-icons/ios-checkmark.svg"></ion-icon>
-        </span>
-      </label>
-
-      <label class="fake-checkbox">
         <span class="fake-checkbox__text">Chat</span>
         <input class="fake-checkbox__input" type="checkbox" name="friends">
         <span class="fake-checkbox__label">
@@ -59,6 +51,13 @@
           <ion-icon src="assets/images/svg-icons/ios-checkmark.svg"></ion-icon>
         </span>
       </label>
+
+      <ion-button expand="full" (click)="apply()" color="secondary" class="members__btn">
+        <div class="d-flex flex ion-justify-content-center ion-align-items-center">
+          <div class="members__btn-text">Apply</div>
+          <ion-icon name="arrow-forward"></ion-icon>
+        </div>
+      </ion-button>
     </div>
 
   </app-news-feed-layout>

@@ -15,4 +15,8 @@ export class MembersPage implements OnInit {
 
     ngOnInit() {
     }
+
+    apply() {
+
+    }
 }
