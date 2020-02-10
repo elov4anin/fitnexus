@@ -21,4 +21,76 @@
         background-size: contain;
         background-image: url("/assets/images/svg-icons/ios-person-blue.svg");
     }
+
+    &__title {
+        margin-bottom: 8px;
+        font-family: $font-family-oswald;
+        font-size: 16px;
+        color: $ligth-black;
+        line-height: 24px;
+
+    }
+    &__text {
+        margin-bottom: 29px;
+        font-family: $font-family-helvetica;
+        font-size: 12px;
+        line-height: 15px;
+        color: $ligth-black;
+    }
+}
+
+.fake-checkbox {
+
+    box-sizing: border-box;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 0;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin-bottom: 12px;
+    border: 0.25px solid $gray;
+    box-shadow: 0 3px 6px 1px $light-gray1;
+
+    &__text {
+        font-family: $font-family-oswald;
+        font-size: 16px;
+        line-height: 52px;
+        color: $black1;
+    }
+
+    &__input {
+        display: none;
+
+        &:checked + .fake-checkbox__label {
+            position: relative;
+            background-color: $blue;
+
+            ion-icon {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+
+                font-size: 19px;
+                opacity: 1;
+
+            }
+        }
+    }
+    &__label {
+        background-color: $dark-gray1;
+        width: 44px;
+        height: 40px;
+        box-sizing: border-box;
+        transition: all 0.2s;
+
+        ion-icon {
+            opacity: 0;
+        }
+    }
 }
