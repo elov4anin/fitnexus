@@ -1,0 +1,47 @@
+@import "variables";
+
+:host {
+    width: 100%;
+}
+.weekly {
+    display: flex;
+    justify-content: space-around;
+    height: 190px;
+    width: 100%;
+
+
+
+    .day {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        &__scale {
+            height: 40px;
+            width: 19px;
+            margin-bottom: 6px;
+            border-radius: 10px;
+            background: $light-gray2;
+        }
+
+        &__name {
+            display: table-cell;
+            font-family: $font-family-oswald;
+            font-size: 16px;
+            font-weight: 300;
+            color: $light-gray2;
+        }
+
+        &--current {
+            .day__scale {
+                background: $dark-gray1
+            }
+            .day__name {
+                color: $dark-gray1
+            }
+
+        }
+    }
+}
+
