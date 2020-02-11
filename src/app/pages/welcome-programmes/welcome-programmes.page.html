@@ -1,0 +1,26 @@
+<app-main-layout
+        [titlePage]="pageTitle"
+>
+  <app-tracking-layout>
+    <div class="add-device ion-align-items-center ion-justify-content-center ion-padding-start ion-padding-end">
+      <div class="add-device__title">
+        Welcome to your programmes!
+      </div>
+      <div class="add-device__text">
+        Create your first programme or select one from our library.
+      </div>
+
+      <ion-button expand="full" (click)="addNewProgram()" color="secondary" class="add-device__btn">
+        <div class="d-flex flex ion-justify-content-center ion-align-items-center">
+          <div class="add-device__btn-text">New programme</div>
+        </div>
+      </ion-button>
+      <ion-button expand="full" (click)="openProgramLibrary()" color="dark" class="add-device__btn">
+        <div class="d-flex flex ion-justify-content-center ion-align-items-center">
+          <div class="add-device__btn-text">Programme library</div>
+        </div>
+      </ion-button>
+    </div>
+  </app-tracking-layout>
+</app-main-layout>
+

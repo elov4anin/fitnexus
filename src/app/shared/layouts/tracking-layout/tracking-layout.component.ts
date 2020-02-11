@@ -13,13 +13,13 @@ export class TrackingLayoutComponent implements OnInit {
         {
             text: 'trackers',
             icon: 'md-watch-blue.svg',
-            redirectTo: 'trackers',
+            redirectTo: 'stat-by-device',
             active: true
         },
         {
             text: 'fitness',
             icon: 'ios-fitness.svg',
-            redirectTo: 'fitness',
+            redirectTo: 'welcome-programs',
             active: false
         },
         {

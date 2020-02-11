@@ -64,6 +64,10 @@ const routes: Routes = [
     path: 'stat-by-device',
     loadChildren: () => import('./pages/stat-by-device/stat-by-device.module').then( m => m.StatByDevicePageModule)
   },
+  {
+    path: 'welcome-programs',
+    loadChildren: () => import('./pages/welcome-programmes/welcome-programmes.module').then( m => m.WelcomeProgrammesPageModule)
+  },
 
 ];
 
