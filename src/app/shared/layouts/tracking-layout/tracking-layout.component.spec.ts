@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { SubmenuButtonsComponent } from './submenu-buttons.component';
+import { TrackingLayoutComponent } from './tracking-layout.component';
 
-describe('SubmenuButtonsComponent', () => {
-  let component: SubmenuButtonsComponent;
-  let fixture: ComponentFixture<SubmenuButtonsComponent>;
+describe('TrackingLayoutComponent', () => {
+  let component: TrackingLayoutComponent;
+  let fixture: ComponentFixture<TrackingLayoutComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SubmenuButtonsComponent ],
+      declarations: [ TrackingLayoutComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(SubmenuButtonsComponent);
+    fixture = TestBed.createComponent(TrackingLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

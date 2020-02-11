@@ -56,6 +56,10 @@ const routes: Routes = [
     path: 'welcome-premium',
     loadChildren: () => import('./pages/welcome-premium/welcome-premium.module').then(m => m.WelcomePremiumPageModule)
   },
+  {
+    path: 'connect-tracker',
+    loadChildren: () => import('./pages/connect-tracker/connect-tracker.module').then( m => m.ConnectTrackerPageModule)
+  },
 
 ];
 

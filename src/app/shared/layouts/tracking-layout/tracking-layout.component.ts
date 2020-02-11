@@ -4,15 +4,15 @@ import ITopButton = ICommon.ITopButton;
 import {Router} from "@angular/router";
 
 @Component({
-    selector: 'app-news-feed-layout',
-    templateUrl: './news-feed-layout.component.html',
-    styleUrls: ['./news-feed-layout.component.scss'],
+    selector: 'app-tracking-layout',
+    templateUrl: './tracking-layout.component.html',
+    styleUrls: ['./tracking-layout.component.scss'],
 })
-export class NewsFeedLayoutComponent implements OnInit {
+export class TrackingLayoutComponent implements OnInit {
     buttons: ITopButton[] = [
         {
             text: 'Feed',
-            icon: 'ios-list-box-white.svg',
+            icon: 'md-watch-blue.svg',
             redirectTo: 'news-feed',
             active: true
         },
