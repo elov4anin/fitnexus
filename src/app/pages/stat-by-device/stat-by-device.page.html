@@ -1,0 +1,62 @@
+<app-main-layout
+        [titlePage]="pageTitle"
+>
+  <app-tracking-layout>
+    <div class="stat-by-device ion-align-items-center ">
+      <div class="stat-by-device__header ">
+        <div class="stat-by-device__title">
+          Select your device
+        </div>
+
+        <ion-item  color="secondary" class="" >
+          <ion-select placeholder="Select One">
+            <ion-select-option value="f">Fitbit</ion-select-option>
+            <ion-select-option value="m">Xaomi Mi band 4</ion-select-option>
+            <ion-select-option value="m">Honor band 3</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+
+      </div>
+        <div class="stat-by-device__select-block d-flex ion-align-items-center ion-justify-content-between ion-padding-start ion-padding-end">
+          <ion-item lines="none">
+            <ion-select placeholder="Steps">
+              <ion-select-option value="f">Steps</ion-select-option>
+              <ion-select-option value="m">Steps 1</ion-select-option>
+              <ion-select-option value="m">Steps 2</ion-select-option>
+            </ion-select>
+
+          </ion-item>
+          <ion-item lines="none">
+            <ion-select placeholder="22 - 28 Dec 2019">
+              <ion-select-option value="f">22 - 28 Dec 2019</ion-select-option>
+              <ion-select-option value="m">22 - 28 Dec 2019</ion-select-option>
+              <ion-select-option value="m">22 - 28 Dec 2019</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+      <div class="d-flex ion-align-self-start ion-align-items-center ion-padding-start ion-padding-end steps">
+        <ion-icon src="assets/images/svg-icons/ios-walk.svg"></ion-icon>
+        <div class="steps__info">
+          <span class="steps__count">
+            3,221
+          </span>
+          <span class="steps__text">
+            Select your device
+          </span>
+        </div>
+
+
+      </div>
+
+
+        <ion-button expand="full" (click)="addDevice()" color="secondary" class="ion-padding-start ion-padding-end stat-by-device__btn">
+          <div class="d-flex flex ion-justify-content-center ion-align-items-center">
+            <ion-icon name="add"></ion-icon>
+            <div class="stat-by-device__btn-text">Add device or app</div>
+          </div>
+        </ion-button>
+      </div>
+
+  </app-tracking-layout>
+</app-main-layout>

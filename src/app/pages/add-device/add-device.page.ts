@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-stats',
@@ -8,13 +9,13 @@ import {Component, OnInit} from '@angular/core';
 export class AddDevicePage implements OnInit {
     pageTitle: string = 'Tracking - Wearables & Apps';
 
-    constructor() {
+    constructor(private _router: Router) {
     }
 
     ngOnInit() {
     }
 
-    addDevice() {
-
+    addDevice(): void {
+        this._router.navigate(['/stat-by-device']);
     }
 }
