@@ -2,10 +2,10 @@ import {Component, OnInit} from '@angular/core';
 
 @Component({
     selector: 'app-stats',
-    templateUrl: './stats.page.html',
-    styleUrls: ['./stats.page.scss'],
+    templateUrl: './add-device.page.html',
+    styleUrls: ['./add-device.page.scss'],
 })
-export class StatsPage implements OnInit {
+export class AddDevicePage implements OnInit {
     pageTitle: string = 'Tracking - Wearables & Apps';
 
     constructor() {
@@ -14,4 +14,7 @@ export class StatsPage implements OnInit {
     ngOnInit() {
     }
 
+    addDevice() {
+
+    }
 }

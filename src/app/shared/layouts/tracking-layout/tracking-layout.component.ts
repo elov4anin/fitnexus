@@ -11,17 +11,25 @@ import {Router} from "@angular/router";
 export class TrackingLayoutComponent implements OnInit {
     buttons: ITopButton[] = [
         {
-            text: 'Feed',
+            text: 'trackers',
             icon: 'md-watch-blue.svg',
-            redirectTo: 'news-feed',
+            redirectTo: 'trackers',
             active: true
         },
         {
-            text: 'Members',
-            icon: 'ios-person-white.svg',
-            redirectTo: 'members',
+            text: 'fitness',
+            icon: 'ios-fitness.svg',
+            redirectTo: 'fitness',
+            active: false
+        },
+        {
+            text: 'body-comp',
+            icon: 'ios-man.svg',
+            redirectTo: 'body-comp',
             active: false
         }
+
+
     ];
 
     constructor(private _router: Router) {

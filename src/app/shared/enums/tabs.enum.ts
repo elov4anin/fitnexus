@@ -24,7 +24,7 @@ export const TabsEnum2IconActiveMapping: Record<TabsEnum, string> = {
 
 export const TabsEnum2RoutingMapping: Record<TabsEnum, string> = {
     NEWS: 'news-feed',
-    STATS: 'stats',
+    STATS: 'add-device',
     CALENDAR: 'calendar',
     RATING: 'rating',
     FOOD: 'food'

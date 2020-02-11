@@ -1,0 +1,22 @@
+<app-main-layout
+        [titlePage]="pageTitle"
+>
+  <app-tracking-layout>
+      <div class="add-device ion-align-items-center ion-justify-content-center ion-padding-start ion-padding-end">
+          <div class="add-device__title">
+              Welcome to your fitness tracker!
+          </div>
+          <div class="add-device__text">
+              Connect a device or app
+          </div>
+
+          <ion-button expand="full" (click)="addDevice()" color="secondary" class="add-device__btn">
+              <div class="d-flex flex ion-justify-content-center ion-align-items-center">
+                  <ion-icon name="add"></ion-icon>
+                  <div class="add-device__btn-text">Add device or app</div>
+              </div>
+          </ion-button>
+      </div>
+  </app-tracking-layout>
+</app-main-layout>
+

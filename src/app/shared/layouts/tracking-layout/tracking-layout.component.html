@@ -1,6 +1,5 @@
 <div class="submenu__buttons ion-padding-start ion-padding-end">
   <ion-button *ngFor="let button of buttons"
-              [color]="button.active ? 'secondary': 'dark'"
               (click)="toggleButton(button.redirectTo)"
   >
     <ion-icon src="/assets/images/svg-icons/{{button.icon}}" slot="icon-only"></ion-icon>

@@ -33,8 +33,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/members/members.module').then(m => m.MembersPageModule)
   },
   {
-    path: 'stats',
-    loadChildren: () => import('./pages/stats/stats.module').then(m => m.StatsPageModule)
+    path: 'add-device',
+    loadChildren: () => import('./pages/add-device/add-device.module').then(m => m.AddDeviceModule)
   },
   {
     path: 'calendar',
