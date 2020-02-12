@@ -1,20 +1,16 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import {NgModule} from '@angular/core';
 
-import { IonicModule } from '@ionic/angular';
+import {MyProgramsPageRoutingModule} from './my-programs-routing.module';
 
-import { MyProgramsPageRoutingModule } from './my-programs-routing.module';
-
-import { MyProgramsPage } from './my-programs.page';
+import {MyProgramsPage} from './my-programs.page';
+import {SharedModule} from "../../shared/shared.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    MyProgramsPageRoutingModule
-  ],
-  declarations: [MyProgramsPage]
+    imports: [
+        SharedModule,
+        MyProgramsPageRoutingModule
+    ],
+    declarations: [MyProgramsPage]
 })
-export class MyProgramsPageModule {}
+export class MyProgramsPageModule {
+}

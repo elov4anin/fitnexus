@@ -9,7 +9,7 @@ import {IonSlides} from "@ionic/angular";
 })
 export class LibraryProgramsPage implements OnInit, AfterViewInit {
 
-    pageTitle: string = "";
+    pageTitle: string = "TRACKING - PROGRAMMES";
     @ViewChild('slider', {static: false}) slider: IonSlides;
     slideOpts = {
         initialSlide: 0,
