@@ -68,8 +68,9 @@ export class GetStartedPage implements OnInit {
 }
 
 export interface ISlideInfo {
-    title: string;
-    text: string;
+    title?: string;
+    text?: string;
+    imgSrc?: string;
     icon?: string;
     isPhotoSlide?: boolean
 }

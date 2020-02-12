@@ -68,6 +68,14 @@ const routes: Routes = [
     path: 'welcome-programs',
     loadChildren: () => import('./pages/welcome-programmes/welcome-programmes.module').then( m => m.WelcomeProgrammesPageModule)
   },
+  {
+    path: 'library-programs',
+    loadChildren: () => import('./pages/library-programs/library-programs.module').then( m => m.LibraryProgramsPageModule)
+  },
+  {
+    path: 'my-programs',
+    loadChildren: () => import('./pages/my-programs/my-programs.module').then( m => m.MyProgramsPageModule)
+  },
 
 ];
 

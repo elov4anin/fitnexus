@@ -7,6 +7,7 @@ import {NewsFeedLayoutComponent} from "./layouts/news-feed-layout/news-feed-layo
 import {CardNews} from "./components/card-news/card-news.component";
 import {TrackingLayoutComponent} from "./layouts/tracking-layout/tracking-layout.component";
 import {WeeklyStatComponent} from "./components/weekly-stat/weekly-stat.component";
+import {LibraryLayoutComponent} from "./layouts/library-layout/library-layout.component";
 
 const ANGULAR_MODULES = [
     CommonModule,
@@ -20,7 +21,8 @@ const COMPONENTS = [
     NewsFeedLayoutComponent,
     CardNews,
     TrackingLayoutComponent,
-    WeeklyStatComponent
+    WeeklyStatComponent,
+    LibraryLayoutComponent
 ];
 
 

@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-welcome-programmes',
@@ -8,7 +9,7 @@ import {Component, OnInit} from '@angular/core';
 export class WelcomeProgrammesPage implements OnInit {
   pageTitle: string = 'TRACKING - PROGRAMMES';
 
-    constructor() {
+    constructor(private _router: Router) {
     }
 
     ngOnInit() {
@@ -19,6 +20,7 @@ export class WelcomeProgrammesPage implements OnInit {
     }
 
     openProgramLibrary() {
+        this._router.navigate(["/library-programs"])
 
     }
 }
