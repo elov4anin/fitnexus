@@ -16,7 +16,7 @@ export class WelcomeProgrammesPage implements OnInit {
     }
 
     addNewProgram() {
-
+        this._router.navigate(["/training"])
     }
 
     openProgramLibrary() {
