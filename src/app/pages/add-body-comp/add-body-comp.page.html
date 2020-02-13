@@ -1,0 +1,24 @@
+<app-main-layout
+        [titlePage]="pageTitle"
+>
+  <app-tracking-layout>
+      <app-body-comp-layout>
+
+          <div class="add-body ion-align-items-center ion-justify-content-center">
+              <div class="add-body__title">
+                  Add your body composition
+              </div>
+              <div class="add-body__text">
+                  Record your body composition for the first time!
+              </div>
+
+              <ion-button expand="full" (click)="addBodyComp()" color="secondary" class="add-body__btn">
+                  <div class="d-flex flex ion-justify-content-center ion-align-items-center">
+                      <div class="add-body__btn-text">Add body composition</div>
+                  </div>
+              </ion-button>
+          </div>
+
+      </app-body-comp-layout>
+  </app-tracking-layout>
+</app-main-layout>

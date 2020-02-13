@@ -25,7 +25,7 @@ export class TrackingLayoutComponent implements OnInit {
         {
             text: 'body-comp',
             icon: 'ios-man.svg',
-            redirectTo: 'body-comp',
+            redirectTo: 'add-body-comp',
             active: false
         }
 

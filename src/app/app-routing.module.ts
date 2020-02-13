@@ -80,6 +80,18 @@ const routes: Routes = [
     path: 'training',
     loadChildren: () => import('./pages/training/training.module').then( m => m.TrainingPageModule)
   },
+  {
+    path: 'add-body-comp',
+    loadChildren: () => import('./pages/add-body-comp/add-body-comp.module').then( m => m.AddBodyCompPageModule)
+  },
+  {
+    path: 'new-measurements',
+    loadChildren: () => import('./pages/new-measurements/new-measurements.module').then( m => m.NewMeasurementsPageModule)
+  },
+  {
+    path: 'before-after',
+    loadChildren: () => import('./pages/before-after/before-after.module').then( m => m.BeforeAfterPageModule)
+  },
 
 ];
 
