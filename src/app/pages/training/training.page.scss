@@ -9,8 +9,8 @@
 .training {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 60px);
-    padding-top: 0px;
+    // height: calc(100% - 60px);
+    padding-top: 13px;
     background: $white;
 
     border-top-right-radius: 15px;
@@ -22,13 +22,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 22px 32px;
+        padding: 10px 32px;
 
         ion-item {
 
-            flex: 1 0 auto;
-            margin-right: 14px;
-            margin-left: 14px;
+            flex: 1 1 auto;
+
             height: 40px;
             box-shadow: 0 3px 6px 0 $light-gray1;
         }
@@ -37,14 +36,163 @@
             max-width: 100%;
             --padding-start: 0px;
             width: 100%;
+            height: 40px;
         }
 
+        ion-input {
+            max-width: 100%;
+            --padding-start: 0px;
+            width: 100%;
+            height: 40px;
+        }
+
+        ion-button {
+            height: 40px;
+            width: 40px;
+            margin-left: 14px;
+            box-shadow: 0 3px 6px 0 $light-gray1;
+        }
+
+        ion-icon {
+            font-size: 18px;
+        }
     }
 
     &__label {
+        display: block;
+        width: 55px;
+        min-width: 55px;
+        margin-right: 14px;
         font-family: $font-family-oswald;
         font-size: 16px;
         line-height: 24px;
         color: $black1;
+    }
+
+    .training__row--wrap {
+        flex-wrap: wrap;
+
+        .training__label {
+            flex: 1 0 auto;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        ion-item:first-of-type {
+            margin-right: 15px;
+        }
+
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 40px;
+
+        justify-content: space-between;
+
+        ion-button {
+            width: 47%;
+            height: auto;
+            margin-left: 0;
+
+            &:nth-of-type(3) {
+                margin-top: 18px;
+                width: 100%;
+            }
+        }
+    }
+
+    &__btn {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+        margin: 11px;
+
+    }
+
+    &__btn-text {
+        font-family: $font-family-oswald;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .table {
+        display: table;
+        width: 100%;
+        box-shadow: 0 3px 6px 0 $light-gray1;
+
+        &__tr {
+            display: table-row;
+
+            &:first-of-type {
+                >div {
+                    background: $dark-gray1;
+                    color: $white;
+                    border: 1px solid $dark-gray1!important;
+                }
+            }
+
+            &:nth-of-type(2) {
+                background: $blue;
+                box-shadow: 0 3px 6px 0 $light-gray1;
+                > div {
+                   // border-bottom: 1px solid $blue!important;
+                    &:first-of-type {
+                        border-left: 1px solid $blue ;
+                    }
+                    &:last-of-type {
+                        border-right: 1px solid $blue ;
+                    }
+                }
+            }
+
+            &--selected {
+                opacity: 0.7;
+                div:last-of-type {
+                    position: relative;
+                    .actions {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        display: block;
+                        margin: auto;
+                        right: -28px;
+                        width: 28px;
+                        height: 28px;
+
+                        ion-icon {
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        &__td {
+           display: table-cell;
+            font-family: $font-family-oswald;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 15px;
+            color: $dark-gray1;
+            height: 39px;
+            vertical-align: middle;
+            text-align: center;
+
+            border-bottom: 1px solid $light-gray ;
+            border-left: 1px solid $light-gray ;
+
+            &:last-of-type {
+                border-right: 1px solid $light-gray ;
+            }
+            .actions {
+                display: none;
+            }
+        }
     }
 }

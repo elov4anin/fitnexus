@@ -17,4 +17,20 @@ export class TrainingPage implements OnInit {
     addExercise() {
 
     }
+
+    addImage() {
+
+    }
+
+    deleteExercise() {
+
+    }
+
+    saveProgram() {
+
+    }
+
+    saveExercise() {
+
+    }
 }

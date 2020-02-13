@@ -3,29 +3,118 @@
 >
     <app-tracking-layout>
         <div class="training">
-          <div class="training__row">
+            <div class="training__row">
             <span class="training__label">
               Exercises
             </span>
 
-            <ion-item lines="none">
-              <ion-select placeholder="Steps">
-                <ion-select-option value="f">Steps</ion-select-option>
-                <ion-select-option value="m">Steps 1</ion-select-option>
-                <ion-select-option value="m">Steps 2</ion-select-option>
-              </ion-select>
+                <ion-item lines="none">
+                    <ion-select placeholder="Steps">
+                        <ion-select-option value="f">Steps</ion-select-option>
+                        <ion-select-option value="m">Steps 1</ion-select-option>
+                        <ion-select-option value="m">Steps 2</ion-select-option>
+                    </ion-select>
 
-            </ion-item>
+                </ion-item>
 
-            <ion-button (click)="addExercise()" expand="full" color="secondary" size="small"
-            >
-              <ion-icon src="/assets/images/svg-icons/ios-funnel.svg" slot="icon-only"></ion-icon>
-            </ion-button>
-          </div>
-          <div class="training__row"></div>
-          <div class="training__row"></div>
-          <div class="training__row"></div>
-          <div class="training__row"></div>
+                <ion-button (click)="addExercise()" expand="full" color="secondary" size="small"
+                >
+                    <ion-icon name="add" slot="icon-only"></ion-icon>
+                </ion-button>
+            </div>
+            <div class="training__row">
+               <span class="training__label">
+                    Name
+                </span>
+
+                <ion-item lines="none">
+                    <ion-input placeholder="Enter Input"></ion-input>
+                </ion-item>
+
+                <ion-button (click)="addImage()" expand="full" color="secondary" size="small"
+                >
+                    <ion-icon name="image" slot="icon-only"></ion-icon>
+                </ion-button>
+            </div>
+            <div class="training__row training__row--wrap">
+                <span class="training__label">
+                    Sets
+                </span>
+                <ion-item lines="none">
+                    <ion-select placeholder="Steps">
+                        <ion-select-option value="f">Steps</ion-select-option>
+                        <ion-select-option value="m">Steps 1</ion-select-option>
+                        <ion-select-option value="m">Steps 2</ion-select-option>
+                    </ion-select>
+
+                </ion-item>
+                <ion-item lines="none">
+                    <ion-select placeholder="Steps">
+                        <ion-select-option value="f">Steps</ion-select-option>
+                        <ion-select-option value="m">Steps 1</ion-select-option>
+                        <ion-select-option value="m">Steps 2</ion-select-option>
+                    </ion-select>
+
+                </ion-item>
+
+                <ion-button (click)="addExercise()" expand="full" color="secondary" size="small"
+                >
+                    <ion-icon name="add" slot="icon-only"></ion-icon>
+                </ion-button>
+            </div>
+            <div class="training__row">
+                <div class="table">
+                    <div class="table__tr">
+                        <div class="table__td">Set</div>
+                        <div class="table__td">Weight (kg)</div>
+                        <div class="table__td">Reps</div>
+                    </div>
+                    <div class="table__tr">
+                        <div class="table__td">Goal</div>
+                        <div class="table__td">150</div>
+                        <div class="table__td">3</div>
+                    </div>
+                    <div class="table__tr">
+                        <div class="table__td">1</div>
+                        <div class="table__td">90</div>
+                        <div class="table__td">
+                            3
+                            <div class="actions">
+                                <ion-icon name="close"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table__tr table__tr--selected">
+                        <div class="table__td">2</div>
+                        <div class="table__td">100</div>
+                        <div class="table__td">
+                            3
+                            <div class="actions">
+                                <ion-icon name="close"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="training__row">
+                <div class="training__buttons">
+                    <ion-button color="dark" expand="full" (click)="deleteExercise()">
+                        <div class="training__btn">
+                            <span class="training__btn-text">Delete exercise</span>
+                        </div>
+                    </ion-button>
+                    <ion-button color="secondary" expand="full" (click)="saveExercise()">
+                        <div class="training__btn">
+                            <span class="training__btn-text">Save exercise</span>
+                        </div>
+                    </ion-button>
+                    <ion-button color="secondary" expand="full" (click)="saveProgram()">
+                        <div class="training__btn">
+                            <span class="training__btn-text">Save programme</span>
+                        </div>
+                    </ion-button>
+                </div>
+            </div>
         </div>
     </app-tracking-layout>
 </app-main-layout>
