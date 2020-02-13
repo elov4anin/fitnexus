@@ -40,7 +40,7 @@
 
     &__card {
         width: 100%;
-        padding: 23px;
+        padding: 20px 23px;
         display: flex;
         align-items: center;
     }
@@ -65,7 +65,7 @@
     &__count {
         font-family: $font-family-oswald;
         font-size: 60px;
-        line-height: 80px;
+        line-height: 60px;
         font-weight: 300;
         color: $dark-gray1;
         margin-right: 11px;
