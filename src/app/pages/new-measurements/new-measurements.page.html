@@ -1,9 +1,80 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>new-measurements</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-main-layout
+        [titlePage]="pageTitle"
+>
+  <app-tracking-layout>
+    <app-body-comp-layout>
 
-<ion-content>
+      <div class="measurements ion-align-items-center ion-justify-content-center ion-padding-start ion-padding-end">
 
-</ion-content>
+        <ion-card>
+         <div class="measurements__card">
+           <div class="measurements__col">
+             <span class="measurements__label">Left arm</span>
+           </div>
+           <div class="measurements__col">
+             <span class="measurements__count">30</span>
+             <span class="measurements__text">cm</span>
+           </div>
+         </div>
+        </ion-card>
+
+        <ion-card>
+          <div class="measurements__card">
+            <div class="measurements__col">
+              <span class="measurements__label">Left arm</span>
+            </div>
+            <div class="measurements__col">
+              <span class="measurements__count">30</span>
+              <span class="measurements__text">cm</span>
+            </div>
+          </div>
+        </ion-card>
+
+        <ion-card>
+          <div class="measurements__card">
+            <div class="measurements__col">
+              <span class="measurements__label">Left arm</span>
+            </div>
+            <div class="measurements__col">
+              <span class="measurements__count">30</span>
+              <span class="measurements__text">cm</span>
+            </div>
+          </div>
+        </ion-card>
+
+        <ion-card>
+          <div class="measurements__card">
+            <div class="measurements__col">
+              <span class="measurements__label">Left arm</span>
+            </div>
+            <div class="measurements__col">
+              <span class="measurements__count">30</span>
+              <span class="measurements__text">cm</span>
+            </div>
+          </div>
+        </ion-card>
+
+        <ion-card>
+          <div class="measurements__card">
+            <div class="measurements__col">
+              <span class="measurements__label">Left arm</span>
+            </div>
+            <div class="measurements__col">
+              <span class="measurements__count">30</span>
+              <span class="measurements__text">cm</span>
+            </div>
+          </div>
+        </ion-card>
+
+
+
+        <ion-button expand="full" (click)="save()" color="secondary" class="measurements__btn">
+          <div class="d-flex flex ion-justify-content-center ion-align-items-center">
+            <div class="measurements__btn-text">Save</div>
+          </div>
+        </ion-button>
+      </div>
+
+    </app-body-comp-layout>
+  </app-tracking-layout>
+</app-main-layout>

@@ -1,0 +1,82 @@
+@import "variables";
+
+:host {
+    ::ng-deep ion-content {
+        --background: $gray;
+    }
+}
+
+.measurements {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // height: calc(100% - 59px);
+    padding-top: 0;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background: $white;
+
+    &__btn {
+        width: 100%;
+        box-shadow: 0 3px 6px 0 $light-gray1;
+        margin-bottom: 16px;
+    }
+
+    &__btn-text {
+        font-family: $font-family-oswald;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: $white;
+        margin-left: 10px;
+    }
+    ion-card {
+        width: 100%;
+        margin-bottom: 0;
+        &:last-of-type {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__card {
+        width: 100%;
+        padding: 23px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__col {
+        flex: 1 0 200px;
+        display: flex;
+        align-items: center;
+        &:first-of-type {
+            flex: 1 0 100px;
+        }
+    }
+
+    &__label {
+        font-family: $font-family-helvetica;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 300;
+        color: $blue2;
+    }
+
+    &__count {
+        font-family: $font-family-oswald;
+        font-size: 60px;
+        line-height: 80px;
+        font-weight: 300;
+        color: $dark-gray1;
+        margin-right: 11px;
+    }
+
+    &__text {
+        font-family: $font-family-oswald;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 300;
+        color: $light-gray3;
+    }
+}
+

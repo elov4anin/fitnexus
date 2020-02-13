@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-new-measurements',
-  templateUrl: './new-measurements.page.html',
-  styleUrls: ['./new-measurements.page.scss'],
+    selector: 'app-new-measurements',
+    templateUrl: './new-measurements.page.html',
+    styleUrls: ['./new-measurements.page.scss'],
 })
 export class NewMeasurementsPage implements OnInit {
+    pageTitle: string = 'TRACKING - BODY COMP';
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
+    save() {
+
+    }
 }

@@ -92,6 +92,10 @@ const routes: Routes = [
     path: 'before-after',
     loadChildren: () => import('./pages/before-after/before-after.module').then( m => m.BeforeAfterPageModule)
   },
+  {
+    path: 'stat-measurements',
+    loadChildren: () => import('./pages/stat-measurements/stat-measurements.module').then( m => m.StatMeasurementsPageModule)
+  },
 
 ];
 
