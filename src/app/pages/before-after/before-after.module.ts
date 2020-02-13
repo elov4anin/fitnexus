@@ -1,20 +1,16 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import {NgModule} from '@angular/core';
 
-import { IonicModule } from '@ionic/angular';
+import {BeforeAfterPageRoutingModule} from './before-after-routing.module';
 
-import { BeforeAfterPageRoutingModule } from './before-after-routing.module';
-
-import { BeforeAfterPage } from './before-after.page';
+import {BeforeAfterPage} from './before-after.page';
+import {SharedModule} from "../../shared/shared.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    BeforeAfterPageRoutingModule
-  ],
-  declarations: [BeforeAfterPage]
+    imports: [
+        SharedModule,
+        BeforeAfterPageRoutingModule
+    ],
+    declarations: [BeforeAfterPage]
 })
-export class BeforeAfterPageModule {}
+export class BeforeAfterPageModule {
+}

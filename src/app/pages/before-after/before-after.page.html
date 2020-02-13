@@ -1,9 +1,34 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>before-after</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-main-layout
+        [titlePage]="pageTitle"
+>
+  <app-tracking-layout>
+    <app-body-comp-layout>
 
-<ion-content>
+      <div class="add-body ion-align-items-center ion-justify-content-center">
+        <ion-button expand="full" (click)="addNewPicture()" color="secondary" class="add-body__btn">
+          <div class="d-flex flex ion-justify-content-center ion-align-items-center">
+            <ion-icon name="add" size="lagre"></ion-icon>
+            <div class="add-body__btn-text">Add new picture</div>
+          </div>
+        </ion-button>
+        <ion-card>
+          <ion-img src="/assets/images/news.png" alt=""></ion-img>
+          <span class="card__title">20/01/2019</span>
+        </ion-card>
 
-</ion-content>
+        <ion-card>
+          <ion-img src="/assets/images/news.png" alt=""></ion-img>
+          <span class="card__title">20/01/2019</span>
+        </ion-card>
+
+        <ion-card>
+          <ion-img src="/assets/images/news.png" alt=""></ion-img>
+          <span class="card__title">20/01/2019</span>
+        </ion-card>
+
+
+      </div>
+
+    </app-body-comp-layout>
+  </app-tracking-layout>
+</app-main-layout>
