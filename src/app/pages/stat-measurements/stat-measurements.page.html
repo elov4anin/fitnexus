@@ -1,9 +1,126 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>stat-measurements</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-main-layout
+        [titlePage]="pageTitle"
+>
+  <app-tracking-layout>
+    <app-body-comp-layout>
 
-<ion-content>
+      <div class="measurements ion-align-items-center ion-justify-content-center ion-padding-start ion-padding-end">
+        <ion-item lines="none">
+          <ion-select placeholder="Steps">
+            <ion-select-option value="f">Steps</ion-select-option>
+            <ion-select-option value="m">Steps 1</ion-select-option>
+            <ion-select-option value="m">Steps 2</ion-select-option>
+          </ion-select>
+        </ion-item>
 
-</ion-content>
+        <ion-card>
+          <div class="measurements__card">
+            <div class="measurements__col">
+              <span class="measurements__label">Left arm</span>
+            </div>
+            <div class="measurements__col ion-justify-content-between">
+              <div class="d-flex ion-justify-content-center ion-align-items-center">
+                <span class="measurements__count">30</span>
+                <span class="measurements__text">cm</span>
+              </div>
+              <div class="measurements__changed measurements__changed--up">
+                <ion-icon src="assets/images/svg-icons/ios-arrow-up.svg" color="secondary"></ion-icon>
+                <span class="measurements__text">1 cm</span>
+              </div>
+            </div>
+          </div>
+        </ion-card>
+
+        <ion-card>
+          <div class="measurements__card">
+            <div class="measurements__col">
+              <span class="measurements__label">Left arm</span>
+            </div>
+            <div class="measurements__col ion-justify-content-between">
+              <div class="d-flex ion-justify-content-center ion-align-items-center">
+                <span class="measurements__count">30</span>
+                <span class="measurements__text">cm</span>
+              </div>
+              <div class="measurements__changed measurements__changed--up">
+                <div class="equal"></div>
+              </div>
+            </div>
+          </div>
+        </ion-card>
+
+        <ion-card>
+          <div class="measurements__card">
+            <div class="measurements__col">
+              <span class="measurements__label">Left arm</span>
+            </div>
+            <div class="measurements__col ion-justify-content-between">
+              <div class="d-flex ion-justify-content-center ion-align-items-center">
+                <span class="measurements__count">30</span>
+                <span class="measurements__text">cm</span>
+              </div>
+              <div class="measurements__changed measurements__changed--down">
+                <ion-icon src="assets/images/svg-icons/ios-arrow-down.svg" color="secondary"></ion-icon>
+                <span class="measurements__text">1 cm</span>
+              </div>
+            </div>
+          </div>
+        </ion-card>
+
+
+        <ion-card>
+          <div class="measurements__card">
+            <div class="measurements__col">
+              <span class="measurements__label">Left arm</span>
+            </div>
+            <div class="measurements__col ion-justify-content-between">
+              <div class="d-flex ion-justify-content-center ion-align-items-center">
+                <span class="measurements__count">30</span>
+                <span class="measurements__text">cm</span>
+              </div>
+              <div class="measurements__changed measurements__changed--up">
+                <ion-icon src="assets/images/svg-icons/ios-arrow-up.svg" color="secondary"></ion-icon>
+                <span class="measurements__text">1 cm</span>
+              </div>
+            </div>
+          </div>
+        </ion-card>
+
+        <ion-card>
+          <div class="measurements__card">
+            <div class="measurements__col">
+              <span class="measurements__label">Left arm</span>
+            </div>
+            <div class="measurements__col ion-justify-content-between">
+              <div class="d-flex ion-justify-content-center ion-align-items-center">
+                <span class="measurements__count">30</span>
+                <span class="measurements__text">cm</span>
+              </div>
+              <div class="measurements__changed measurements__changed--up">
+                <div class="equal"></div>
+              </div>
+            </div>
+          </div>
+        </ion-card>
+
+        <ion-card>
+          <div class="measurements__card">
+            <div class="measurements__col">
+              <span class="measurements__label">Left arm</span>
+            </div>
+            <div class="measurements__col ion-justify-content-between">
+              <div class="d-flex ion-justify-content-center ion-align-items-center">
+                <span class="measurements__count">30</span>
+                <span class="measurements__text">cm</span>
+              </div>
+              <div class="measurements__changed measurements__changed--down">
+                <ion-icon src="assets/images/svg-icons/ios-arrow-down.svg" color="secondary"></ion-icon>
+                <span class="measurements__text">1 cm</span>
+              </div>
+            </div>
+          </div>
+        </ion-card>
+      </div>
+
+    </app-body-comp-layout>
+  </app-tracking-layout>
+</app-main-layout>

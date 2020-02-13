@@ -1,0 +1,116 @@
+@import "variables";
+
+:host {
+    ::ng-deep ion-content {
+        --background: $gray;
+    }
+}
+
+.measurements {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // height: calc(100% - 59px);
+    padding-top: 25px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background: $white;
+
+    ion-item {
+        height: 40px;
+        box-shadow: 0 3px 6px 0 $light-gray1;
+        border: 1px solid $gray;
+        --padding-start: 10px;
+        width: 100%;
+
+        ion-select {
+            max-width: 100%;
+            --padding-start: 0px;
+            width: 100%;
+        }
+    }
+
+    ion-card {
+        width: 100%;
+        margin-bottom: 0;
+        border-radius: 2px;
+        &:last-of-type {
+            margin-bottom: 23px;
+        }
+    }
+
+    &__card {
+        width: 100%;
+        padding: 20px 23px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__col {
+        flex: 1 0 165px;
+        display: flex;
+        align-items: center;
+        &:first-of-type {
+            flex: 1 0 100px;
+        }
+    }
+
+    &__label {
+        font-family: $font-family-helvetica;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 300;
+        color: $blue2;
+    }
+
+    &__count {
+        font-family: $font-family-oswald;
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: 300;
+        color: $dark-gray1;
+        margin-right: 11px;
+    }
+
+    &__text {
+        font-family: $font-family-oswald;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 300;
+        color: $light-gray3;
+    }
+
+    &__changed {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6px;
+
+        ion-icon {
+            width: 28px;
+            font-size: 16px;
+        }
+
+        .equal {
+            width: 26px;
+            height: 5px;
+            background: $blue2;
+        }
+
+        &--up {
+            .measurements__text {
+                color: $blue2;
+
+            }
+        }
+
+        &--down {
+            .measurements__text {
+                color: $dark-gray1;
+
+            }
+        }
+    }
+}
+

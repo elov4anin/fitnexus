@@ -1,20 +1,16 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import {NgModule} from '@angular/core';
 
-import { IonicModule } from '@ionic/angular';
+import {StatMeasurementsPageRoutingModule} from './stat-measurements-routing.module';
 
-import { StatMeasurementsPageRoutingModule } from './stat-measurements-routing.module';
-
-import { StatMeasurementsPage } from './stat-measurements.page';
+import {StatMeasurementsPage} from './stat-measurements.page';
+import {SharedModule} from "../../shared/shared.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    StatMeasurementsPageRoutingModule
-  ],
-  declarations: [StatMeasurementsPage]
+    imports: [
+        SharedModule,
+        StatMeasurementsPageRoutingModule
+    ],
+    declarations: [StatMeasurementsPage]
 })
-export class StatMeasurementsPageModule {}
+export class StatMeasurementsPageModule {
+}

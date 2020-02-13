@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stat-measurements.page.scss'],
 })
 export class StatMeasurementsPage implements OnInit {
+  pageTitle: string = 'TRACKING - BODY COMP';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
+  save() {
+
+  }
 }

@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-new-measurements',
@@ -8,13 +9,13 @@ import {Component, OnInit} from '@angular/core';
 export class NewMeasurementsPage implements OnInit {
     pageTitle: string = 'TRACKING - BODY COMP';
 
-    constructor() {
+    constructor(private _router: Router) {
     }
 
     ngOnInit() {
     }
 
-    save() {
-
+    save(): void {
+        this._router.navigate(["/stat-measurements"]);
     }
 }
