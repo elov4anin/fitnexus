@@ -1,16 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
-  selector: 'app-rating',
-  templateUrl: './rating.page.html',
-  styleUrls: ['./rating.page.scss'],
+    selector: 'app-rating',
+    templateUrl: './rating.page.html',
+    styleUrls: ['./rating.page.scss'],
 })
 export class RatingPage implements OnInit {
     pageTitle: string = 'Rankings - Challenges';
 
-  constructor() { }
+    repeat: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
 
-  ngOnInit() {
-  }
+    constructor(private _router: Router) {
+    }
+
+    ngOnInit() {
+    }
+
+    openNewsPage() {
+        this._router.navigate(['/', 'news-feed', 1])
+    }
+
 
 }

@@ -96,6 +96,10 @@ const routes: Routes = [
     path: 'stat-measurements',
     loadChildren: () => import('./pages/stat-measurements/stat-measurements.module').then( m => m.StatMeasurementsPageModule)
   },
+  {
+    path: 'leaderboard',
+    loadChildren: () => import('./pages/leaderboard/leaderboard.module').then( m => m.LeaderboardPageModule)
+  },
 
 ];
 

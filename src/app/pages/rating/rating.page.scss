@@ -1,0 +1,11 @@
+@import "variables";
+:host {
+    ::ng-deep ion-content {
+        --background: $gray;
+    }
+
+}
+
+.card-item {
+    margin-bottom: 11px;
+}

@@ -1,5 +1,9 @@
 <app-main-layout
         [titlePage]="pageTitle"
 >
-  sdcfsdfasdf
+  <app-challenges-layout>
+    <div class="card-item" *ngFor="let item of repeat">
+      <app-card-challenge (click)="openNewsPage()"></app-card-challenge>
+    </div>
+  </app-challenges-layout>
 </app-main-layout>
