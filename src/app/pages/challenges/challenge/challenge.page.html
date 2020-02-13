@@ -1,0 +1,40 @@
+<app-main-layout
+        [titlePage]="pageTitle"
+>
+    <app-challenges-layout>
+        <div class="challenge">
+            <app-card-challenge [needDescription]="true" class="news__card"></app-card-challenge>
+
+            <div class="divisor"></div>
+            <div class="challenge__block ion-margin-start ion-margin-end ion-padding-start ion-padding-end">
+                <span class="challenge__title">Challenge available: </span>
+                <span class="challenge__text">21/01/2020 - 21/02/2020</span>
+            </div>
+            <div class="challenge__block ion-margin-start ion-margin-end ion-padding-start ion-padding-end">
+                <span class="challenge__title">Goal: </span>
+                <span class="challenge__text">5000m</span>
+            </div>
+
+            <div class="challenge__buttons   ion-padding-start ion-padding-end">
+              <ion-button
+                          class="challenge__btn"
+                          [color]="'dark'"
+                          expand="full"
+                          (click)="connectDevice()"
+              >
+                <span class="challenge__btn-text">Connect device</span>
+              </ion-button>
+              <ion-button
+                          class="challenge__btn"
+                          [color]="'secondary'"
+                          expand="full"
+                          (click)="joinChallenge()"
+              >
+                <span class="challenge__btn-text">Join challenge</span>
+              </ion-button>
+            </div>
+
+        </div>
+
+    </app-challenges-layout>
+</app-main-layout>

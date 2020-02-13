@@ -3,10 +3,10 @@ import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-rating',
-    templateUrl: './rating.page.html',
-    styleUrls: ['./rating.page.scss'],
+    templateUrl: './challenges.page.html',
+    styleUrls: ['./challenges.page.scss'],
 })
-export class RatingPage implements OnInit {
+export class ChallengesPage implements OnInit {
     pageTitle: string = 'Rankings - Challenges';
 
     repeat: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -18,7 +18,7 @@ export class RatingPage implements OnInit {
     }
 
     openNewsPage() {
-        this._router.navigate(['/', 'news-feed', 1])
+        this._router.navigate(['/', 'challenges', 1])
     }
 
 

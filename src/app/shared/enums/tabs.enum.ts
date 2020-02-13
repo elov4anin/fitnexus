@@ -26,6 +26,6 @@ export const TabsEnum2RoutingMapping: Record<TabsEnum, string> = {
     NEWS: 'news-feed',
     STATS: 'add-device',
     CALENDAR: 'calendar',
-    RATING: 'rating',
+    RATING: 'challenges',
     FOOD: 'food'
 };

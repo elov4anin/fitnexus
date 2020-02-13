@@ -10,6 +10,7 @@ import {WeeklyStatComponent} from "./components/weekly-stat/weekly-stat.componen
 import {LibraryLayoutComponent} from "./layouts/library-layout/library-layout.component";
 import {BodyCompLayoutComponent} from "./layouts/body-comp-layout/body-comp-layout.component";
 import {ChallengesLayoutComponent} from "./layouts/challenges-layout/challenges-layout.component";
+import {CardChallengeComponent} from "./components/card-challenge/card-challenge.component";
 
 const ANGULAR_MODULES = [
     CommonModule,
@@ -26,7 +27,8 @@ const COMPONENTS = [
     WeeklyStatComponent,
     LibraryLayoutComponent,
     BodyCompLayoutComponent,
-    ChallengesLayoutComponent
+    ChallengesLayoutComponent,
+    CardChallengeComponent
 ];
 
 

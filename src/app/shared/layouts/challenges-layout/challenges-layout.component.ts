@@ -13,7 +13,7 @@ export class ChallengesLayoutComponent implements OnInit {
     {
       text: 'Challenges',
       icon: 'ios-flag.svg',
-      redirectTo: 'rating',
+      redirectTo: 'challenges',
       active: true
     },
     {

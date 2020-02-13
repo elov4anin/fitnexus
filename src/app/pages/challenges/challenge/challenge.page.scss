@@ -1,0 +1,80 @@
+@import "variables";
+:host {
+    ::ng-deep ion-content {
+        --background: $gray;
+    }
+    ::ng-deep .news__card > ion-card.card__wrapper {
+        box-shadow: none;
+    }
+}
+
+.challenge {
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 66px);
+        padding-top: 0px;
+        background: $white;
+
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        font-family: $font-family-helvetica;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 300;
+        color: $dark-gray1;
+    }
+
+    &__text {
+        font-family: $font-family-helvetica;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 300;
+        color: $blue2;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+
+        ion-button {
+            width: 42%;
+            height: 40px;
+            box-shadow: 0 3px 6px 0 $light-gray1;
+
+        }
+    }
+
+    &__btn {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+        margin: 11px;
+
+    }
+
+    &__btn-text {
+        font-family: $font-family-oswald;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+}
+
+.divisor {
+    width: 100%;
+    height: 1px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+
+    background: #B8B8B8;
+}
+

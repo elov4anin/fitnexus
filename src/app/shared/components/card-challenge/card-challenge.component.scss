@@ -45,6 +45,26 @@ ion-card.card__wrapper {
         line-height: 20px;
         color: $blue;
     }
+
+    &__desc {
+        display: none;
+        font-family: $font-family-helvetica;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 18px;
+        color: $dark-gray1;
+    }
+
+    &--vertical {
+        flex-direction: column;
+        .card__desc {
+            display: block;
+
+        }
+        span {
+            margin-bottom: 10px;
+        }
+    }
 }
 
 .connect {

@@ -1,6 +1,6 @@
 <ion-card class="card__wrapper">
   <div class="card__img">
-    <div class="connect" [ngClass]="{'connect--show': true}">
+    <div class="connect" [ngClass]="{'connect--show': !needDescription}">
       <div class="connect__img">
         <ion-img src="assets/images/svg-icons/md-watch.svg"></ion-img>
       </div>
@@ -10,9 +10,10 @@
     </div>
   </div>
   <ion-card-content>
-    <div class="card">
+    <div class="card" [ngClass]="{'card--vertical': needDescription}">
       <span class="card__title">Run - 5.5k</span>
       <span class="card__text">722 participants</span>
+      <span class="card__desc">Run the length of The Great Wall of China</span>
     </div>
   </ion-card-content>
 </ion-card>

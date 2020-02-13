@@ -41,8 +41,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/calendar/calendar.module').then(m => m.CalendarPageModule)
   },
   {
-    path: 'rating',
-    loadChildren: () => import('./pages/rating/rating.module').then(m => m.RatingPageModule)
+    path: 'challenges',
+    loadChildren: () => import('./pages/challenges/challenges.module').then(m => m.ChallengesModule)
   },
   {
     path: 'food',
