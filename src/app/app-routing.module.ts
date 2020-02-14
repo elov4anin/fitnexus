@@ -100,6 +100,10 @@ const routes: Routes = [
     path: 'leaderboard',
     loadChildren: () => import('./pages/leaderboard/leaderboard.module').then( m => m.LeaderboardPageModule)
   },
+  {
+    path: 'meal-planner',
+    loadChildren: () => import('./pages/meal-planner/meal-planner.module').then( m => m.MealPlannerPageModule)
+  },
 
 ];
 

@@ -11,6 +11,7 @@ import {LibraryLayoutComponent} from "./layouts/library-layout/library-layout.co
 import {BodyCompLayoutComponent} from "./layouts/body-comp-layout/body-comp-layout.component";
 import {ChallengesLayoutComponent} from "./layouts/challenges-layout/challenges-layout.component";
 import {CardChallengeComponent} from "./components/card-challenge/card-challenge.component";
+import {MealsLayoutComponent} from "./layouts/meals-layout/meals-layout.component";
 
 const ANGULAR_MODULES = [
     CommonModule,
@@ -28,7 +29,8 @@ const COMPONENTS = [
     LibraryLayoutComponent,
     BodyCompLayoutComponent,
     ChallengesLayoutComponent,
-    CardChallengeComponent
+    CardChallengeComponent,
+    MealsLayoutComponent
 ];
 
 
