@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-leaderboard',
-  templateUrl: './leaderboard.page.html',
-  styleUrls: ['./leaderboard.page.scss'],
+    selector: 'app-leaderboard',
+    templateUrl: './leaderboard.page.html',
+    styleUrls: ['./leaderboard.page.scss'],
 })
 export class LeaderboardPage implements OnInit {
+    pageTitle: string = "Complete";
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
+    openFilter() {
+
+    }
 }

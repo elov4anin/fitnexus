@@ -1,20 +1,16 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import {NgModule} from '@angular/core';
 
-import { IonicModule } from '@ionic/angular';
+import {LeaderboardPageRoutingModule} from './leaderboard-routing.module';
 
-import { LeaderboardPageRoutingModule } from './leaderboard-routing.module';
-
-import { LeaderboardPage } from './leaderboard.page';
+import {LeaderboardPage} from './leaderboard.page';
+import {SharedModule} from "../../shared/shared.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    LeaderboardPageRoutingModule
-  ],
-  declarations: [LeaderboardPage]
+    imports: [
+        SharedModule,
+        LeaderboardPageRoutingModule
+    ],
+    declarations: [LeaderboardPage]
 })
-export class LeaderboardPageModule {}
+export class LeaderboardPageModule {
+}
