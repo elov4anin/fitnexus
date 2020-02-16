@@ -11,15 +11,15 @@ import ITopButton = ICommon.ITopButton;
 export class ClassLayoutComponent implements OnInit {
   buttons: ITopButton[] = [
     {
-      text: 'Upcoming',
-      icon: 'ios-clock.svg',
-      redirectTo: 'calendar',
+      text: 'Class',
+      icon: 'ios-person-white.svg',
+      redirectTo: 'class',
       active: true
     },
     {
-      text: 'My bookings',
+      text: 'Feedback',
       icon: 'ios-journal.svg',
-      redirectTo: 'my-bookings',
+      redirectTo: 'feedback',
       active: false
     },
 

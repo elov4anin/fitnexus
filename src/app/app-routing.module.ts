@@ -112,6 +112,10 @@ const routes: Routes = [
     path: 'class',
     loadChildren: () => import('./pages/class/class.module').then( m => m.ClassPageModule)
   },
+  {
+    path: 'feedback',
+    loadChildren: () => import('./pages/feedback/feedback.module').then( m => m.FeedbackPageModule)
+  },
 
 ];
 

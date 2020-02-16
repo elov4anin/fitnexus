@@ -6,21 +6,25 @@
             --background: $gray;
         }
 
-        rating {
+        ion-card {
+            rating {
+                ion-button {
+                    margin: 0;
+                    --padding-start: 2px;
+                    --padding-end: 2px;
+                    height: 20px;
+                }
 
-            ion-button {
-                margin: 0;
-                --padding-start: 2px;
-                --padding-end: 2px;
-            }
-            ion-icon {
-                font-size: 18px !important;
-                color: $gray;
+                ion-icon {
+                    font-size: 18px !important;
+                    color: $gray;
 
-                &.filled {
-                    color: $blue;
+                    &.filled {
+                        color: $blue;
+                    }
                 }
             }
+
         }
     }
 }
@@ -30,8 +34,8 @@
 .class {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    padding-top: 0;
+    // height: 100%;
+    padding-top: 10px;
     background: $white;
 
     border-top-right-radius: 15px;
@@ -42,7 +46,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 22px 32px;
+        padding: 12px 32px;
         border-bottom: 0.5px solid $gray;
 
         &--no-bb {
@@ -66,7 +70,7 @@
         justify-content: space-between;
     }
 }
-
+/*
 .spin-class {
     display: flex;
     justify-content: space-between;
@@ -116,30 +120,53 @@
     }
 
 
-}
+}*/
 
 .person-card {
+    display: flex;
     margin: 8px auto;
+    width: 100%;
     border-radius: 2px;
-    width: 48%;
+    border: 0;
+    box-shadow: none;
 
     &__img {
-        width: 100%;
-        height: 115px;
+        width: 71px;
+        height: 71px;
         background: $gray;
         --border: 0
     }
 
     &__wrapper {
-        padding: 12px;
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px 12px;
+    }
+
+    &__rating {
+
+    }
+
+    &__name {
+        font-family: $font-family-oswald;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
         text-align: center;
+        color: $blue;
+        margin-left: 3px;
+
+        margin-bottom: 3px;
     }
 
     &__text {
+        margin-left: 3px;
         font-family: $font-family-helvetica;
         font-weight: 300;
         font-size: 12px;
         line-height: 15px;
-        color: $blue2;
+        color: $dark-gray1;
     }
 }
