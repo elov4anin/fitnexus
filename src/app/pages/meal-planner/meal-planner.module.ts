@@ -1,20 +1,16 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import {NgModule} from '@angular/core';
 
-import { IonicModule } from '@ionic/angular';
+import {MealPlannerPageRoutingModule} from './meal-planner-routing.module';
 
-import { MealPlannerPageRoutingModule } from './meal-planner-routing.module';
-
-import { MealPlannerPage } from './meal-planner.page';
+import {MealPlannerPage} from './meal-planner.page';
+import {SharedModule} from "../../shared/shared.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    MealPlannerPageRoutingModule
-  ],
-  declarations: [MealPlannerPage]
+    imports: [
+        SharedModule,
+        MealPlannerPageRoutingModule
+    ],
+    declarations: [MealPlannerPage]
 })
-export class MealPlannerPageModule {}
+export class MealPlannerPageModule {
+}
