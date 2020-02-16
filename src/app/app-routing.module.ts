@@ -104,6 +104,10 @@ const routes: Routes = [
     path: 'meal-planner',
     loadChildren: () => import('./pages/meal-planner/meal-planner.module').then( m => m.MealPlannerPageModule)
   },
+  {
+    path: 'my-bookings',
+    loadChildren: () => import('./pages/my-bookings/my-bookings.module').then( m => m.MyBookingsPageModule)
+  },
 
 ];
 

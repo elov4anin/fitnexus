@@ -11,15 +11,15 @@ import ITopButton = ICommon.ITopButton;
 export class SheduleLayoutComponent implements OnInit {
   buttons: ITopButton[] = [
     {
-      text: 'Library',
-      icon: 'ios-journal.svg',
-      redirectTo: 'library-programs',
+      text: 'Upcoming',
+      icon: 'ios-clock.svg',
+      redirectTo: 'calendar',
       active: true
     },
     {
-      text: 'My programmes',
-      icon: 'ios-person-nav.svg',
-      redirectTo: 'my-programs',
+      text: 'My bookings',
+      icon: 'ios-journal.svg',
+      redirectTo: 'my-bookings',
       active: false
     },
 

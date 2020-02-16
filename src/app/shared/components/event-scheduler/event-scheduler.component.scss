@@ -6,6 +6,8 @@
 
 ion-card.event-card {
     margin: 0 0 12px;
+    border: 0.5px solid $gray;
+    border-radius: 2px;
 }
 .event {
     display: flex;
