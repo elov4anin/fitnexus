@@ -1,0 +1,61 @@
+@import "variables";
+
+:host {
+    width: 100%;
+}
+
+ion-card.event-card {
+    margin: 0 0 12px;
+}
+.event {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px;
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    &__name {
+        font-family: $font-family-oswald;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: $dark-gray1;
+        margin-bottom: 3px;
+    }
+
+    &__time {
+        font-family: $font-family-helvetica;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        color: $blue2;
+    }
+
+
+    &__btn {
+        // margin-top: auto;
+        // margin-bottom: 28px;
+        // margin-top: 45px;
+        width: 114px;
+        height: 40px;
+        --border-radius: 2px;
+        border-radius: 2px;
+    }
+
+    &__btn-text {
+        font-family: $font-family-oswald;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: $white;
+        margin-left: 10px;
+    }
+}

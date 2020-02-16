@@ -1,5 +1,19 @@
 <app-main-layout
         [titlePage]="pageTitle"
 >
-  sdcfsdfasdf
+  <app-shedule-layout>
+    <div class="calendar">
+      <div class="calendar__block">
+        Scheduler
+      </div>
+      <div class="calendar__block flex-column">
+        <span class="calendar__day-title">Tuesday 2nd July</span>
+        <app-event-scheduler type="info"></app-event-scheduler>
+        <app-event-scheduler type="info"></app-event-scheduler>
+        <app-event-scheduler type="info"></app-event-scheduler>
+        <app-event-scheduler type="info"></app-event-scheduler>
+        <app-event-scheduler type="info"></app-event-scheduler>
+      </div>
+    </div>
+  </app-shedule-layout>
 </app-main-layout>

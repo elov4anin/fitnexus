@@ -1,0 +1,37 @@
+@import "variables";
+
+:host {
+    ::ng-deep ion-content {
+        --background: $gray;
+    }
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    // height: calc(100% - 66px);
+    padding-top: 0px;
+    background: $white;
+
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+    &__block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px 32px;
+        border-bottom: 0.5px solid $gray;
+    }
+
+    &__day-title {
+        align-self: flex-start;
+        margin-bottom: 25px;
+        font-family: $font-family-helvetica;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        color: $blue2;
+    }
+}

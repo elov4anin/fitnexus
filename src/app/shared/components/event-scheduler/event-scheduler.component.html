@@ -1,0 +1,21 @@
+<ion-card class="event-card">
+  <div class="event ion-justify-content-between">
+    <div class="event__desc">
+        <span class="event__name">
+         Spin class
+        </span>
+      <span class="event__time">
+        7:30
+      </span>
+    </div>
+    <div class="col">
+      <ion-button expand="full" (click)="onClick()" color="dark" class="event__btn">
+        <div class="d-flex flex ion-justify-content-between ion-align-items-center">
+          <div class="event__btn-text">{{type ==='info' ? 'Info' : 'Cancel'}}</div>
+
+          <ion-icon name="arrow-forward"></ion-icon>
+        </div>
+      </ion-button>
+    </div>
+  </div>
+</ion-card>
