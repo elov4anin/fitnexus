@@ -1,0 +1,66 @@
+<app-main-layout
+        [titlePage]="pageTitle"
+>
+  <app-class-layout>
+    <div class="class">
+      <div class="class__block">
+       <div class="spin-class">
+         <div class="spin-class__desc">
+           <div class="spin-class__title">Spin class</div>
+           <div class="spin-class__text">Tue 2nd July - 07:30</div>
+           <div class="spin-class__text">Remaining Spaces: 10</div>
+           <div class="spin-class__rating">
+             <rating [rate]="rate"
+                     readonly="false"
+                      size="small"
+             (rateChange)="onRateChange($event)">
+             </rating>
+           </div>
+         </div>
+         <div class="spin-class__col">
+           <ion-button expand="full" (click)="bookNow()" color="dark" class="spin-class__btn">
+             <div class="d-flex flex ion-justify-content-between ion-align-items-center">
+               <div class="spin-class__btn-text">Book now</div>
+             </div>
+           </ion-button>
+         </div>
+       </div>
+      </div>
+
+      <div class="class__block  class__block--no-bb flex-column">
+        <div class="class__block-title">
+          Who's going?
+        </div>
+        <div class="class__block-wrapper">
+          <ion-card class="person-card">
+            <ion-img src="assets/images/news.png" class="person-card__img"></ion-img>
+            <div class="person-card__wrapper">
+              <span class="person-card__text">Emma Jogger</span>
+            </div>
+          </ion-card>
+
+          <ion-card class="person-card">
+            <ion-img src="assets/images/news.png" class="person-card__img"></ion-img>
+            <div class="person-card__wrapper">
+              <span class="person-card__text">Emma Jogger</span>
+            </div>
+          </ion-card>
+
+          <ion-card class="person-card">
+            <ion-img src="assets/images/news.png" class="person-card__img"></ion-img>
+            <div class="person-card__wrapper">
+              <span class="person-card__text">Emma Jogger</span>
+            </div>
+          </ion-card>
+
+          <ion-card class="person-card">
+            <ion-img src="assets/images/news.png" class="person-card__img"></ion-img>
+            <div class="person-card__wrapper">
+              <span class="person-card__text">Emma Jogger</span>
+            </div>
+          </ion-card>
+        </div>
+      </div>
+    </div>
+  </app-class-layout>
+</app-main-layout>

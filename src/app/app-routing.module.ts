@@ -108,6 +108,10 @@ const routes: Routes = [
     path: 'my-bookings',
     loadChildren: () => import('./pages/my-bookings/my-bookings.module').then( m => m.MyBookingsPageModule)
   },
+  {
+    path: 'class',
+    loadChildren: () => import('./pages/class/class.module').then( m => m.ClassPageModule)
+  },
 
 ];
 

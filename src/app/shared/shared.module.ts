@@ -14,6 +14,7 @@ import {CardChallengeComponent} from "./components/card-challenge/card-challenge
 import {MealsLayoutComponent} from "./layouts/meals-layout/meals-layout.component";
 import {SheduleLayoutComponent} from "./layouts/shedule-layout/shedule-layout.component";
 import {EventSchedulerComponent} from "./components/event-scheduler/event-scheduler.component";
+import {ClassLayoutComponent} from "./layouts/class-layout/class-layout.component";
 
 const ANGULAR_MODULES = [
     CommonModule,
@@ -34,7 +35,8 @@ const COMPONENTS = [
     CardChallengeComponent,
     MealsLayoutComponent,
     SheduleLayoutComponent,
-    EventSchedulerComponent
+    EventSchedulerComponent,
+    ClassLayoutComponent
 ];
 
 
