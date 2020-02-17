@@ -4,7 +4,36 @@
   <app-shedule-layout>
     <div class="calendar">
       <div class="calendar__block">
-        Scheduler
+        <div class="control">
+          <ion-button expand="full" (click)="back()" color="light" class="control__btn">
+            <div class="d-flex flex ion-justify-content-center ion-align-items-center">
+              <ion-icon name="arrow-back" color="secondary" slot="icon-only"></ion-icon>
+            </div>
+          </ion-button>
+          <span class="control__title">
+            {{viewTitle}}
+          </span>
+          <ion-button expand="full" (click)="forward()" color="light"   class="control__btn">
+            <div class="d-flex flex ion-justify-content-center ion-align-items-center">
+              <ion-icon name="arrow-forward" color="secondary" slot="icon-only"></ion-icon>
+            </div>
+          </ion-button>
+        </div>
+
+      </div>
+      <div class="calendar__block calendar__block--calendar">
+        <calendar [eventSource]="eventSource"
+                  [calendarMode]="calendar.mode"
+                  [currentDate]="calendar.currentDate"
+                  (onCurrentDateChanged)="onCurrentDateChanged($event)"
+                  (onEventSelected)="onEventSelected($event)"
+                  (onTitleChanged)="onViewTitleChanged($event)"
+                  (onTimeSelected)="onTimeSelected($event)"
+                  formatDayHeader="EEEEEE"
+                  step="30">
+
+
+        </calendar>
       </div>
       <div class="calendar__block flex-column">
         <span class="calendar__day-title">Tuesday 2nd July</span>

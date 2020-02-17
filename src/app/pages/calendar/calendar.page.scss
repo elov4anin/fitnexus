@@ -1,9 +1,47 @@
 @import "variables";
 
 :host {
-    ::ng-deep ion-content {
-        --background: $gray;
+    ::ng-deep {
+        ion-content {
+            --background: $gray;
+        }
+        calendar {
+            .table-bordered {
+                border: 0!important;
+            }
+            th {
+                border: 0!important;
+                font-family: $font-family-oswald;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: $blue;
+                small {
+                    font-size: 14px;
+                }
+            }
+            td {
+                border: 0!important;
+                font-family: $font-family-oswald;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 16px;
+                color: $dark-gray1;
+            }
+
+            td.monthview-selected {
+                border-radius: 2px;
+                background: $dark-gray1;
+                color: $white;
+                font-weight: 400;
+
+            }
+        }
+
+
+
     }
+
 }
 
 .calendar {
@@ -23,6 +61,11 @@
         align-items: center;
         padding: 22px 32px;
         border-bottom: 0.5px solid $gray;
+
+        &--calendar {
+            display: block;
+           // width: 330px;
+        }
     }
 
     &__day-title {
@@ -35,3 +78,31 @@
         color: $blue2;
     }
 }
+.control {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__title {
+        font-family: $font-family-helvetica;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        color: $dark-gray1;
+    }
+
+    ion-button {
+        --background: transparent!important;
+        --ion-color-base: transparent!important;
+    }
+}
+
+.custom-day-template {
+    font-family: $font-family-oswald;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: $dark-gray1;
+}
+
