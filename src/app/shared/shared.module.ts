@@ -16,6 +16,8 @@ import {SheduleLayoutComponent} from "./layouts/shedule-layout/shedule-layout.co
 import {EventSchedulerComponent} from "./components/event-scheduler/event-scheduler.component";
 import {ClassLayoutComponent} from "./layouts/class-layout/class-layout.component";
 import {AccountLayoutComponent} from "./layouts/account-layout/account-layout.component";
+import {MessagesLayoutComponent} from "./layouts/messages-layout/messages-layout.component";
+import {MessagesIntoLayoutComponent} from "./layouts/messages-into-layout/messages-into-layout.component";
 
 const ANGULAR_MODULES = [
     CommonModule,
@@ -38,7 +40,9 @@ const COMPONENTS = [
     SheduleLayoutComponent,
     EventSchedulerComponent,
     ClassLayoutComponent,
-    AccountLayoutComponent
+    AccountLayoutComponent,
+    MessagesLayoutComponent,
+    MessagesIntoLayoutComponent
 ];
 
 

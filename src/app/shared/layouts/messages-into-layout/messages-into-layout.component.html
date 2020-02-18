@@ -1,0 +1,14 @@
+<div class="body-comp-layout ion-align-items-center ">
+  <div class="body-comp-layout__header ">
+    <div class="submenu__buttons">
+      <ion-button *ngFor="let button of buttons"
+                  [color]="button.active ? 'secondary': 'dark'"
+                  expand="full"
+                  (click)="toggleButton(button.redirectTo)"
+      >
+        <span class="submenu__btn-text">{{button.text}}</span>
+      </ion-button>
+    </div>
+  </div>
+  <ng-content></ng-content>
+</div>
