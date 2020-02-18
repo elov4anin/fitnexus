@@ -20,6 +20,6 @@ export class LoginPage implements OnInit {
     }
 
     login(): void {
-        this._router.navigate(['/system', 'get-started']);
+        this._router.navigate(['/get-started']);
     }
 }

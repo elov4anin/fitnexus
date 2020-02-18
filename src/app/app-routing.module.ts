@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'system',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -19,11 +19,7 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then(m => m.LoginPageModule)
   },
-  {
-    path: '',
-    redirectTo: 'get-started',
-    pathMatch: 'full'
-  },
+
   {
     path: 'news-feed',
     loadChildren: () => import('./pages/news-feed/news-feed.module').then(m => m.NewsFeedPageModule)
@@ -115,6 +111,10 @@ const routes: Routes = [
   {
     path: 'feedback',
     loadChildren: () => import('./pages/feedback/feedback.module').then( m => m.FeedbackPageModule)
+  },
+  {
+    path: 'measurement-detail',
+    loadChildren: () => import('./pages/measurement-detail/measurement-detail.module').then( m => m.MeasurementDetailPageModule)
   },
 
 ];

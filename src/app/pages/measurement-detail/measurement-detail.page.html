@@ -1,0 +1,42 @@
+<app-main-layout
+        [titlePage]="pageTitle"
+>
+  <app-tracking-layout>
+
+    <div class="measurement">
+      <div class="measurement__header">
+        <ion-item lines="none">
+          <ion-select placeholder="Steps">
+            <ion-select-option value="f">Steps</ion-select-option>
+            <ion-select-option value="m">Steps 1</ion-select-option>
+            <ion-select-option value="m">Steps 2</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-button (click)="addMeasurement()" expand="full" color="secondary"
+        >
+
+          <ion-icon name="add" slot="icon-only"></ion-icon>
+          <div class="measurement__btn-text">Add measurement</div>
+        </ion-button>
+      </div>
+      <div class="d-flex ion-align-self-start ion-align-items-center ion-padding-start ion-padding-end steps">
+        <div class="steps__info">
+          <span class="steps__count">
+           30cm
+          </span>
+          <span class="steps__text">
+            Highest record between 22 - 28 Dec 2019
+          </span>
+        </div>
+
+
+      </div>
+      <div class="d-flex ion-align-self-start ion-align-items-center ion-padding-start ion-padding-end steps">
+        <app-weekly-stat></app-weekly-stat>
+      </div>
+
+    </div>
+
+  </app-tracking-layout>
+</app-main-layout>

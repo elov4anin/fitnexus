@@ -20,12 +20,12 @@ export class AppComponent {
       url: 'messages',
     },
     {
-      title: 'Account',
+      title: 'Get-started',
       url: 'get-started',
     },
     {
-      title: 'Admin',
-      url: 'admin',
+      title: 'Login',
+      url: 'login',
     }
   ];
 
