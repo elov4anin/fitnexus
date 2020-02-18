@@ -1,3 +1,11 @@
-<p>
-  account-layout works!
-</p>
+<div class="submenu__buttons ion-padding-start ion-padding-end">
+  <ion-button *ngFor="let button of buttons"
+              (click)="toggleButton(button.redirectTo)"
+  >
+    <ion-icon src="/assets/images/svg-icons/{{button.icon}}" slot="icon-only"></ion-icon>
+  </ion-button>
+</div>
+<div class="layout-content">
+  <ng-content></ng-content>
+</div>
+

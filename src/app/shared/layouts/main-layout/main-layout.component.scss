@@ -54,6 +54,10 @@
         text-transform: uppercase;
     }
 
+    ion-content {
+        --background: transparent;
+    }
+
 
 }
 
@@ -118,4 +122,5 @@ ion-menu-button {
         color: $white;
     }
 }
+
 
