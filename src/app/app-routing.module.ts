@@ -116,6 +116,10 @@ const routes: Routes = [
     path: 'measurement-detail',
     loadChildren: () => import('./pages/measurement-detail/measurement-detail.module').then( m => m.MeasurementDetailPageModule)
   },
+  {
+    path: 'account',
+    loadChildren: () => import('./pages/account/account.module').then( m => m.AccountPageModule)
+  },
 
 ];
 

@@ -64,7 +64,7 @@
 ion-menu-button {
     width: 23px;
     height: 23px;
-    --background: url('/assets/images/no_photo.png') center no-repeat;
+    //--background: url('/assets/images/no_photo.png') center no-repeat;
     --border-radius: 50%;
 
     &.menu-button-disabled {
@@ -73,6 +73,11 @@ ion-menu-button {
         --background: $ligth-black;
         --border-radius: 50%;
         opacity: 1;
+    }
+    img {
+        width: 23px;
+        height: 23px;
+        max-width: none;
     }
 }
 
