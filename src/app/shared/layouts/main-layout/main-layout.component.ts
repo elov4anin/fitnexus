@@ -16,6 +16,7 @@ import {
 })
 export class MainLayoutComponent implements OnInit {
     @Input() titlePage: string;
+    @Input() isAccount: boolean = false;
 
     public readonly tabs = Object.keys(TabsEnum).map(
         (key) => TabsEnum[key]

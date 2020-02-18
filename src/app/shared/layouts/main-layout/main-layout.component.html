@@ -1,15 +1,19 @@
-<ion-header>
-  <ion-toolbar class="ion-justify-content-start">
+<ion-header [ngClass]="{'profile-header': isAccount}">
+  <ion-toolbar class="ion-justify-content-start " >
     <ion-buttons slot="start" class="pl28">
       <ion-menu-button>
-          <img src='/assets/images/no_photo.png' alt="Открыть меню">
+          <img src='/assets/images/no_photo.png' width="23" height="23" alt="">
       </ion-menu-button>
     </ion-buttons>
-    <div class="d-flex ion-justify-content-between ion-align-items-center pr12">
+    <div class="d-flex ion-justify-content-between ion-align-items-center pr12"  *ngIf="!isAccount">
       <ion-text class="page-title">{{titlePage}}</ion-text>
       <ion-button class="barcode" size="small"><ion-img src="/assets/images/svg-icons/ios-barcode.svg"></ion-img></ion-button>
     </div>
   </ion-toolbar>
+    <div class="profile-header__wrap" *ngIf="isAccount">
+        <img class="profile-header__img" src='/assets/images/no_photo@2x.png' alt="">
+        <span class="profile-header__name">Richard Chestday</span>
+    </div>
 </ion-header>
 
 <ion-content class="mt20">

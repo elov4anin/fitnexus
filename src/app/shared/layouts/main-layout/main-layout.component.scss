@@ -7,15 +7,20 @@
     background-color: $gray;
 
     ion-header {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-bottom: 18px;
+        background: $white;
+
         &.header-md:after {
             display: none;
         }
         ion-toolbar {
-            padding-top: 8px;
-            padding-bottom: 8px;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-            margin-bottom: 18px;
+            --background: transparent;
+            --border-width: 0;
+
 
             ion-button.barcode {
                 --background: transparent;
@@ -62,8 +67,8 @@
 }
 
 ion-menu-button {
-    width: 23px;
-    height: 23px;
+    width: 25px;
+    height: 25px;
     //--background: url('/assets/images/no_photo.png') center no-repeat;
     --border-radius: 50%;
 
@@ -75,9 +80,42 @@ ion-menu-button {
         opacity: 1;
     }
     img {
-        width: 23px;
-        height: 23px;
-        max-width: none;
+        width: 23px !important;
+        height: 23px !important;
+        max-width: none !important;
+        padding: 0;
+        min-width: 23px;
+    }
+}
+
+.profile-header {
+    background: linear-gradient(89deg, rgba(0, 126, 191, 0.89) 0%, rgba(0, 211, 255, 0.89) 100%),
+    url("/assets/images/login_bg.png") center no-repeat  !important;
+
+
+    &__wrap {
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 32px;
+    }
+
+    &__img {
+        width: 84px;
+        height: 84px;
+
+        border-radius: 50%;
+    }
+
+    &__name {
+        margin-top: 10px;
+
+        font-family: $font-family-oswald;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+        color: $white;
     }
 }
 
