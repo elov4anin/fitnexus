@@ -1,11 +1,12 @@
 import {Component, OnInit} from '@angular/core';
+import {PageBaseComponent} from "../../shared/components/page-base/page-base.component";
 
 @Component({
     selector: 'app-calendar',
     templateUrl: './calendar.page.html',
     styleUrls: ['./calendar.page.scss'],
 })
-export class CalendarPage implements OnInit {
+export class CalendarPage extends PageBaseComponent implements OnInit {
     pageTitle: string = 'Classes - Upcoming';
     eventSource: any;
     viewTitle;
@@ -43,6 +44,7 @@ export class CalendarPage implements OnInit {
     };
 
     constructor() {
+        super();
     }
 
     ngOnInit() {

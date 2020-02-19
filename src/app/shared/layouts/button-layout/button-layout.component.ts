@@ -115,6 +115,27 @@ export class ButtonLayoutComponent implements OnInit {
                 this.template = 2;
                 break
             }
+
+            case LayoutsEnum.CALENDAR: {
+                this.buttons =  [
+                    {
+                        text: 'Upcoming',
+                        icon: 'ios-clock.svg',
+                        redirectTo: 'calendar',
+                        active: true
+                    },
+                    {
+                        text: 'My bookings',
+                        icon: 'ios-journal.svg',
+                        redirectTo: 'my-bookings',
+                        active: false
+                    },
+
+
+                ];
+                this.template = 1;
+                break
+            }
         }
     }
 }

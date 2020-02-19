@@ -1,8 +1,11 @@
 @import "variables";
 
 :host {
-    ::ng-deep ion-content {
-        --background: $gray;
+    ::ng-deep {
+        app-button-layout .layout-content {
+            height: inherit;
+            min-height: 100%;
+        }
     }
 }
 
@@ -11,10 +14,7 @@
     flex-direction: column;
     // height: calc(100% - 66px);
     padding-top: 10px;
-    background: $white;
 
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
 
     &__block {
         width: 100%;

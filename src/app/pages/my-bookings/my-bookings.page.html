@@ -1,7 +1,7 @@
 <app-main-layout
         [titlePage]="pageTitle"
 >
-  <app-shedule-layout>
+  <app-button-layout [listBtnForLayout]="listBtnForLayout.CALENDAR">
     <div class="calendar">
       <div class="calendar__block flex-column">
         <span class="calendar__day-title">Tuesday 2nd July</span>
@@ -20,5 +20,5 @@
         <app-event-scheduler></app-event-scheduler>
       </div>
     </div>
-  </app-shedule-layout>
+  </app-button-layout>
 </app-main-layout>

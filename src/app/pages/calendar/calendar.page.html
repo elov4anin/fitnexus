@@ -1,7 +1,7 @@
 <app-main-layout
         [titlePage]="pageTitle"
 >
-  <app-shedule-layout>
+  <app-button-layout [listBtnForLayout]="listBtnForLayout.CALENDAR">
     <div class="calendar">
       <div class="calendar__block">
         <div class="control">
@@ -44,5 +44,5 @@
         <app-event-scheduler type="info"></app-event-scheduler>
       </div>
     </div>
-  </app-shedule-layout>
+  </app-button-layout>
 </app-main-layout>
