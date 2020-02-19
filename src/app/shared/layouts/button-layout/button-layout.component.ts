@@ -115,7 +115,6 @@ export class ButtonLayoutComponent implements OnInit {
                 this.template = 2;
                 break
             }
-
             case LayoutsEnum.CALENDAR: {
                 this.buttons =  [
                     {
@@ -130,8 +129,24 @@ export class ButtonLayoutComponent implements OnInit {
                         redirectTo: 'my-bookings',
                         active: false
                     },
-
-
+                ];
+                this.template = 1;
+                break
+            }
+            case LayoutsEnum.CHALLENGES: {
+                this.buttons =  [
+                    {
+                        text: 'Challenges',
+                        icon: 'ios-flag.svg',
+                        redirectTo: 'challenges',
+                        active: true
+                    },
+                    {
+                        text: 'Leaderboard',
+                        icon: 'ios-list.svg',
+                        redirectTo: 'leaderboard',
+                        active: false
+                    }
                 ];
                 this.template = 1;
                 break

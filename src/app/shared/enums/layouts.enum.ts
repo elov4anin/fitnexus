@@ -2,6 +2,7 @@ export enum LayoutsEnum {
     ACCOUNT = 'ACCOUNT',
     NEWS = 'NEWS',
     TRACKING = 'TRACKING',
-    CALENDAR = 'CALENDAR'
+    CALENDAR = 'CALENDAR',
+    CHALLENGES = 'CHALLENGES'
 
 }

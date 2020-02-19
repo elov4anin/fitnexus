@@ -2,7 +2,7 @@
         [titlePage]="pageTitle"
         [isNeedBack]="true"
 >
-    <app-challenges-layout>
+    <app-button-layout [listBtnForLayout]="listBtnForLayout.CHALLENGES">
         <div class="challenge">
             <app-card-challenge [needDescription]="true" class="news__card"></app-card-challenge>
 
@@ -37,5 +37,5 @@
 
         </div>
 
-    </app-challenges-layout>
+    </app-button-layout>
 </app-main-layout>

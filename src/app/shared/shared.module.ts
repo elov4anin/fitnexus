@@ -7,7 +7,6 @@ import {CardNews} from "./components/card-news/card-news.component";
 import {WeeklyStatComponent} from "./components/weekly-stat/weekly-stat.component";
 import {LibraryLayoutComponent} from "./layouts/library-layout/library-layout.component";
 import {BodyCompLayoutComponent} from "./layouts/body-comp-layout/body-comp-layout.component";
-import {ChallengesLayoutComponent} from "./layouts/challenges-layout/challenges-layout.component";
 import {CardChallengeComponent} from "./components/card-challenge/card-challenge.component";
 import {MealsLayoutComponent} from "./layouts/meals-layout/meals-layout.component";
 import {EventSchedulerComponent} from "./components/event-scheduler/event-scheduler.component";
@@ -31,7 +30,6 @@ const COMPONENTS = [
     WeeklyStatComponent,
     LibraryLayoutComponent,
     BodyCompLayoutComponent,
-    ChallengesLayoutComponent,
     CardChallengeComponent,
     MealsLayoutComponent,
     EventSchedulerComponent,
