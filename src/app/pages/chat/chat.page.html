@@ -1,0 +1,27 @@
+<app-main-layout
+        [titlePage]="pageTitle"
+>
+  <app-messages-layout>
+    <app-messages-into-layout>
+      <div class="chat ion-padding-end ion-padding-start">
+        <ion-list lines="none">
+          <ion-item>
+            <app-message></app-message>
+          </ion-item>
+          <ion-item>
+            <app-message [isYou]="true"></app-message>
+          </ion-item>
+        </ion-list>
+
+        <div class="add-comment">
+          <ion-input placeholder="Write a message"></ion-input>
+          <ion-icon class="add-comment__attach-icon" src="/assets/images/svg-icons/ios-attach.svg"></ion-icon>
+          <ion-button (click)="addComment()" expand="full" color="secondary" size="small"
+          >
+            <ion-icon name="add" slot="icon-only"></ion-icon>
+          </ion-button>
+        </div>
+      </div>
+    </app-messages-into-layout>
+  </app-messages-layout>
+</app-main-layout>
