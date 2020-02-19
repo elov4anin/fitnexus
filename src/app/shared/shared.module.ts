@@ -8,7 +8,6 @@ import {WeeklyStatComponent} from "./components/weekly-stat/weekly-stat.componen
 import {BodyCompLayoutComponent} from "./layouts/body-comp-layout/body-comp-layout.component";
 import {CardChallengeComponent} from "./components/card-challenge/card-challenge.component";
 import {EventSchedulerComponent} from "./components/event-scheduler/event-scheduler.component";
-import {ClassLayoutComponent} from "./layouts/class-layout/class-layout.component";
 import {MessagesIntoLayoutComponent} from "./layouts/messages-into-layout/messages-into-layout.component";
 import {ButtonLayoutComponent} from "./layouts/button-layout/button-layout.component";
 import {PageBaseComponent} from "./components/page-base/page-base.component";
@@ -23,14 +22,13 @@ const ANGULAR_MODULES = [
 const COMPONENTS = [
     PageBaseComponent,
     MainLayoutComponent,
+    ButtonLayoutComponent,
+    MessagesIntoLayoutComponent,
+    BodyCompLayoutComponent,
     CardNews,
     WeeklyStatComponent,
-    BodyCompLayoutComponent,
     CardChallengeComponent,
     EventSchedulerComponent,
-    ClassLayoutComponent,
-    MessagesIntoLayoutComponent,
-    ButtonLayoutComponent
 ];
 
 

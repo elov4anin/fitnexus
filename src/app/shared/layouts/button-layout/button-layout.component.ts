@@ -179,7 +179,7 @@ export class ButtonLayoutComponent implements OnInit {
                     },
                     {
                         text: 'My programmes',
-                        icon: 'ios-person-nav.svg',
+                        icon: 'ios-person-white.svg',
                         redirectTo: 'my-programs',
                         active: false
                     },
@@ -211,6 +211,25 @@ export class ButtonLayoutComponent implements OnInit {
 
                 ];
                 this.template = 2;
+                break
+            }
+            case LayoutsEnum.CLASSES: {
+                this.buttons =  [
+                    {
+                        text: 'Class',
+                        icon: 'ios-person-white.svg',
+                        redirectTo: 'class',
+                        active: true
+                    },
+                    {
+                        text: 'Feedback',
+                        icon: 'ios-journal.svg',
+                        redirectTo: 'feedback',
+                        active: false
+                    },
+
+                ];
+                this.template = 1;
                 break
             }
         }

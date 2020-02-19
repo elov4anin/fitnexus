@@ -2,9 +2,6 @@
 
 :host {
     ::ng-deep {
-        ion-content {
-            --background: $gray;
-        }
 
         rating {
 
@@ -30,8 +27,6 @@
 .class {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    padding-top: 0;
     background: $white;
 
     border-top-right-radius: 15px;
