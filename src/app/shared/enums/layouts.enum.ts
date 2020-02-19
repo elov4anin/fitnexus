@@ -3,6 +3,7 @@ export enum LayoutsEnum {
     NEWS = 'NEWS',
     TRACKING = 'TRACKING',
     CALENDAR = 'CALENDAR',
-    CHALLENGES = 'CHALLENGES'
+    CHALLENGES = 'CHALLENGES',
+    MEALS = 'MEALS'
 
 }

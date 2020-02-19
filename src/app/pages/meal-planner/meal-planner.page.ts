@@ -1,13 +1,14 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {IonSlides} from "@ionic/angular";
 import {ISlideInfo} from "../get-started/get-started.page";
+import {PageBaseComponent} from "../../shared/components/page-base/page-base.component";
 
 @Component({
   selector: 'app-meal-planner',
   templateUrl: './meal-planner.page.html',
   styleUrls: ['./meal-planner.page.scss'],
 })
-export class MealPlannerPage implements OnInit {
+export class MealPlannerPage extends PageBaseComponent implements OnInit {
 
   pageTitle: string = "TRACKING - PROGRAMMES";
   @ViewChild('slider', {static: false}) slider: IonSlides;
@@ -42,7 +43,9 @@ export class MealPlannerPage implements OnInit {
       imgSrc: "/assets/images/news@2x.png"
     }
   ];
-  constructor() { }
+  constructor() {
+    super();
+  }
 
   ngOnInit() {
   }

@@ -151,6 +151,24 @@ export class ButtonLayoutComponent implements OnInit {
                 this.template = 1;
                 break
             }
+            case LayoutsEnum.MEALS: {
+                this.buttons =  [
+                    {
+                        text: 'Meals',
+                        icon: 'ios-restaurant-white.svg',
+                        redirectTo: 'food',
+                        active: true
+                    },
+                    {
+                        text: 'Meal Planner',
+                        icon: 'ios-checkbox.svg',
+                        redirectTo: 'meal-planner',
+                        active: false
+                    }
+                ];
+                this.template = 1;
+                break
+            }
         }
     }
 }
