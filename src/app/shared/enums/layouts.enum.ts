@@ -5,6 +5,7 @@ export enum LayoutsEnum {
     CALENDAR = 'CALENDAR',
     CHALLENGES = 'CHALLENGES',
     MEALS = 'MEALS',
-    LIBRARY = 'LIBRARY'
+    LIBRARY = 'LIBRARY',
+    MESSAGES ='MESSAGES'
 
 }

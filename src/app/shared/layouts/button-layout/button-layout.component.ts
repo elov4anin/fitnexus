@@ -188,6 +188,31 @@ export class ButtonLayoutComponent implements OnInit {
                 this.template = 1;
                 break
             }
+            case LayoutsEnum.MESSAGES: {
+                this.buttons =  [
+                    {
+                        text: 'trackers',
+                        icon: 'ios-person-black.svg',
+                        redirectTo: 'stat-by-device',
+                        active: true
+                    },
+                    {
+                        text: 'fitness',
+                        icon: 'ios-fitness.svg',
+                        redirectTo: 'welcome-programs',
+                        active: false
+                    },
+                    {
+                        text: 'body-comp',
+                        icon: 'ios-photos-black.svg',
+                        redirectTo: 'add-body-comp',
+                        active: false
+                    }
+
+                ];
+                this.template = 2;
+                break
+            }
         }
     }
 }

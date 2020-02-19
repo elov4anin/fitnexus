@@ -1,7 +1,7 @@
 <app-main-layout
         [titlePage]="pageTitle"
 >
-  <app-messages-layout>
+  <app-button-layout [listBtnForLayout]="listBtnForLayout.MESSAGES">
     <app-messages-into-layout>
       <div class="message-members">
           <ion-item>
@@ -28,6 +28,6 @@
           </ion-item>
       </div>
     </app-messages-into-layout>
-  </app-messages-layout>
+  </app-button-layout>
 </app-main-layout>
 
