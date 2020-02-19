@@ -29,6 +29,12 @@
                 --background-focused: #d7d8da;
                 --background-activated: #d7d8da;
             }
+
+
+            ion-button.back-button {
+                margin-left: -9px;
+                --padding-start: 0;
+            }
         }
     }
 

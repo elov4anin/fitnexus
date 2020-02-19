@@ -1,7 +1,10 @@
 <ion-header [ngClass]="{'profile-header': isAccount}">
   <ion-toolbar class="ion-justify-content-start " >
     <ion-buttons slot="start" class="pl28">
-      <ion-menu-button>
+        <ion-button *ngIf="isNeedBack" color="dark" (click)="back()" class="back-button">
+            <ion-icon name="arrow-back" slot="icon-only"></ion-icon>
+        </ion-button>
+      <ion-menu-button *ngIf="!isNeedBack">
           <img src='/assets/images/no_photo.png' width="23" height="23" alt="">
       </ion-menu-button>
     </ion-buttons>

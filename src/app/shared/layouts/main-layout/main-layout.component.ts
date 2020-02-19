@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
-import {ICommon} from "../../interfaces/common.interfaces";
+import { Location } from "@angular/common";
+
 import {
     TabsEnum,
     TabsEnum2IconActiveMapping,
@@ -17,7 +18,7 @@ import {
 export class MainLayoutComponent implements OnInit {
     @Input() titlePage: string;
     @Input() isAccount: boolean = false;
-
+    @Input() isNeedBack: boolean = false;
     public readonly tabs = Object.keys(TabsEnum).map(
         (key) => TabsEnum[key]
     );
@@ -25,7 +26,7 @@ export class MainLayoutComponent implements OnInit {
     public readonly TabsEnum2IconMapping = TabsEnum2IconMapping;
     public readonly TabsEnum2RoutingMapping = TabsEnum2RoutingMapping;
 
-    constructor(private _router: Router) {
+    constructor(private _router: Router, private _location: Location) {
     }
 
     ngOnInit(): void {
@@ -69,5 +70,9 @@ export class MainLayoutComponent implements OnInit {
                 }
 
         }
+    }
+
+    back() {
+        this._location.back()
     }
 }
