@@ -4,6 +4,7 @@ export enum LayoutsEnum {
     TRACKING = 'TRACKING',
     CALENDAR = 'CALENDAR',
     CHALLENGES = 'CHALLENGES',
-    MEALS = 'MEALS'
+    MEALS = 'MEALS',
+    LIBRARY = 'LIBRARY'
 
 }

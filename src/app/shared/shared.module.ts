@@ -5,7 +5,6 @@ import {IonicModule} from "@ionic/angular";
 import {MainLayoutComponent} from "./layouts/main-layout/main-layout.component";
 import {CardNews} from "./components/card-news/card-news.component";
 import {WeeklyStatComponent} from "./components/weekly-stat/weekly-stat.component";
-import {LibraryLayoutComponent} from "./layouts/library-layout/library-layout.component";
 import {BodyCompLayoutComponent} from "./layouts/body-comp-layout/body-comp-layout.component";
 import {CardChallengeComponent} from "./components/card-challenge/card-challenge.component";
 import {EventSchedulerComponent} from "./components/event-scheduler/event-scheduler.component";
@@ -27,7 +26,6 @@ const COMPONENTS = [
     MainLayoutComponent,
     CardNews,
     WeeklyStatComponent,
-    LibraryLayoutComponent,
     BodyCompLayoutComponent,
     CardChallengeComponent,
     EventSchedulerComponent,

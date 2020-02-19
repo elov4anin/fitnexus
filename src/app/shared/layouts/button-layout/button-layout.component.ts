@@ -169,6 +169,25 @@ export class ButtonLayoutComponent implements OnInit {
                 this.template = 1;
                 break
             }
+            case LayoutsEnum.LIBRARY: {
+                this.buttons =  [
+                    {
+                        text: 'Library',
+                        icon: 'ios-journal.svg',
+                        redirectTo: 'library-programs',
+                        active: true
+                    },
+                    {
+                        text: 'My programmes',
+                        icon: 'ios-person-nav.svg',
+                        redirectTo: 'my-programs',
+                        active: false
+                    },
+
+                ];
+                this.template = 1;
+                break
+            }
         }
     }
 }
