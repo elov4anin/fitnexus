@@ -1,0 +1,9 @@
+<div class="message" [ngClass]="{'message--is-you': isYou}">
+  <div class="message__col">
+    <ion-img class="message__img" src="/assets/images/news.png"></ion-img>
+  </div>
+  <div class="message__col" [ngClass]="{'message__col--align': isYou}">
+    <span class="message__name">Emma Jogger</span>
+    <span class="message__text">Hey, how's it going?</span>
+  </div>
+</div>

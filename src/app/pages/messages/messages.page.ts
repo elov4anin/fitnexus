@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-messages',
@@ -8,10 +9,13 @@ import {Component, OnInit} from '@angular/core';
 export class MessagesPage implements OnInit {
     pageTitle: string = 'Messages';
 
-    constructor() {
+    constructor(private _router: Router) {
     }
 
     ngOnInit() {
     }
 
+    openChat() {
+        this._router.navigate(["/chat"])
+    }
 }

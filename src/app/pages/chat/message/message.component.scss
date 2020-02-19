@@ -1,0 +1,71 @@
+@import "variables";
+:host {
+    width: 100%;
+}
+.message {
+    position: relative;
+    display: flex;
+    background-color: $blue;
+    padding: 15px;
+    margin-bottom: 32px;
+
+    box-shadow: 0 3px 6px 0 $light-gray1;
+
+    &:before {
+        content: ' ';
+        position: absolute;
+        bottom: -13px;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 14px 14px 0;
+        border-color: transparent $blue transparent transparent;
+    }
+
+    &--is-you {
+        flex-direction: row-reverse;
+        background-color: $dark-gray1;
+        &:before {
+            right: auto;
+            left: 0;
+            border-width: 14px 14px 0 0;
+            border-color: $dark-gray1 transparent transparent transparent;
+        }
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        //align-items: center;
+        justify-content: center;
+
+        &--align {
+            align-items: flex-end;
+        }
+    }
+
+    &__img {
+        background-color: $gray;
+        width: 39px;
+        height: 39px;
+        border-radius: 2px;
+    }
+
+    &__name {
+        margin: auto 15px;
+        font-family: $font-family-oswald;
+        font-size: 16px;
+        line-height: 24px;
+        color: $white;
+    }
+
+    &__text {
+        margin: auto 15px;
+        font-family: $font-family-helvetica;
+        font-size: 12px;
+        line-height: 15px;
+        color: $white;
+    }
+
+}
