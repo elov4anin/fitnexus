@@ -1,16 +1,18 @@
 import {Component, OnInit} from '@angular/core';
 import {ICommon} from "../../shared/interfaces/common.interfaces";
 import ITopButton = ICommon.ITopButton;
+import {PageBaseComponent} from "../../shared/components/page-base/page-base.component";
 
 @Component({
     selector: 'app-members',
     templateUrl: './members.page.html',
     styleUrls: ['./members.page.scss'],
 })
-export class MembersPage implements OnInit {
+export class MembersPage extends PageBaseComponent implements OnInit {
     pageTitle: string = 'Members';
 
     constructor() {
+        super();
     }
 
     ngOnInit() {

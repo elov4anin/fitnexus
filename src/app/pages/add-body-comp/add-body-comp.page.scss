@@ -1,21 +1,20 @@
 @import "variables";
 :host {
     ::ng-deep {
-        ion-content {
-            --background: $gray;
+        app-body-comp-layout .body-comp-layout {
+            height: 100%;
         }
     }
 }
 
-
 .add-body {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 59px);
+    height:100%;
     padding-top: 0;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    background: $white;
+    // border-top-right-radius: 15px;
+    // border-top-left-radius: 15px;
+    // background: $white;
 
     &__title {
         margin-bottom: 8px;

@@ -1,11 +1,11 @@
 <app-main-layout
         [titlePage]="pageTitle"
 >
-  <app-news-feed-layout>
+  <app-button-layout [listBtnForLayout]="listBtnForLayout.NEWS">
     <div class="card-item" *ngFor="let item of repeat">
       <app-card-news (click)="openNewsPage()"></app-card-news>
     </div>
 
-  </app-news-feed-layout>
+  </app-button-layout>
 
 </app-main-layout>

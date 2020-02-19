@@ -1,8 +1,9 @@
 @import "variables";
 
 :host {
-    ::ng-deep ion-content {
-        --background: $gray;
+    ::ng-deep app-button-layout .layout-content {
+        height: auto;
+        min-height: 100%;
     }
 }
 
@@ -11,11 +12,6 @@
     flex-direction: column;
     // height: calc(100% - 60px);
     padding-top: 13px;
-    background: $white;
-
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-
 
     &__row {
         width: 100%;

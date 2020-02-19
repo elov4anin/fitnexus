@@ -2,12 +2,12 @@
         [titlePage]="pageTitle"
         [isNeedBack]="true"
 >
-    <app-tracking-layout>
+    <app-button-layout [listBtnForLayout]="listBtnForLayout.TRACKING">
         <div class="training">
             <div class="training__row">
-            <span class="training__label">
-              Exercises
-            </span>
+                <span class="training__label">
+                  Exercises
+                </span>
 
                 <ion-item lines="none">
                     <ion-select placeholder="Steps">
@@ -117,5 +117,5 @@
                 </div>
             </div>
         </div>
-    </app-tracking-layout>
+    </app-button-layout>
 </app-main-layout>

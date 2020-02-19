@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { AccountLayoutComponent } from './account-layout.component';
+import { ButtonLayoutComponent } from './button-layout.component';
 
-describe('AccountLayoutComponent', () => {
-  let component: AccountLayoutComponent;
-  let fixture: ComponentFixture<AccountLayoutComponent>;
+describe('ButtonLayoutComponent', () => {
+  let component: ButtonLayoutComponent;
+  let fixture: ComponentFixture<ButtonLayoutComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AccountLayoutComponent ],
+      declarations: [ ButtonLayoutComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(AccountLayoutComponent);
+    fixture = TestBed.createComponent(ButtonLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

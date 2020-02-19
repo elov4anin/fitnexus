@@ -3,9 +3,7 @@ import {CommonModule} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {IonicModule} from "@ionic/angular";
 import {MainLayoutComponent} from "./layouts/main-layout/main-layout.component";
-import {NewsFeedLayoutComponent} from "./layouts/news-feed-layout/news-feed-layout.component";
 import {CardNews} from "./components/card-news/card-news.component";
-import {TrackingLayoutComponent} from "./layouts/tracking-layout/tracking-layout.component";
 import {WeeklyStatComponent} from "./components/weekly-stat/weekly-stat.component";
 import {LibraryLayoutComponent} from "./layouts/library-layout/library-layout.component";
 import {BodyCompLayoutComponent} from "./layouts/body-comp-layout/body-comp-layout.component";
@@ -15,9 +13,10 @@ import {MealsLayoutComponent} from "./layouts/meals-layout/meals-layout.componen
 import {SheduleLayoutComponent} from "./layouts/shedule-layout/shedule-layout.component";
 import {EventSchedulerComponent} from "./components/event-scheduler/event-scheduler.component";
 import {ClassLayoutComponent} from "./layouts/class-layout/class-layout.component";
-import {AccountLayoutComponent} from "./layouts/account-layout/account-layout.component";
 import {MessagesLayoutComponent} from "./layouts/messages-layout/messages-layout.component";
 import {MessagesIntoLayoutComponent} from "./layouts/messages-into-layout/messages-into-layout.component";
+import {ButtonLayoutComponent} from "./layouts/button-layout/button-layout.component";
+import {PageBaseComponent} from "./components/page-base/page-base.component";
 
 const ANGULAR_MODULES = [
     CommonModule,
@@ -27,10 +26,9 @@ const ANGULAR_MODULES = [
 ];
 
 const COMPONENTS = [
+    PageBaseComponent,
     MainLayoutComponent,
-    NewsFeedLayoutComponent,
     CardNews,
-    TrackingLayoutComponent,
     WeeklyStatComponent,
     LibraryLayoutComponent,
     BodyCompLayoutComponent,
@@ -40,9 +38,9 @@ const COMPONENTS = [
     SheduleLayoutComponent,
     EventSchedulerComponent,
     ClassLayoutComponent,
-    AccountLayoutComponent,
     MessagesLayoutComponent,
-    MessagesIntoLayoutComponent
+    MessagesIntoLayoutComponent,
+    ButtonLayoutComponent
 ];
 
 

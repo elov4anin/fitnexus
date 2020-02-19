@@ -3,6 +3,10 @@
     ::ng-deep .news__card > ion-card.card__wrapper {
         box-shadow: none;
     }
+
+    ::ng-deep app-main-layout ion-content {
+        background: $white;
+    }
 }
 
 ion-list {

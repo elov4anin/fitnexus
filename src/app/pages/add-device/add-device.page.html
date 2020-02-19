@@ -1,7 +1,7 @@
 <app-main-layout
         [titlePage]="pageTitle"
 >
-  <app-tracking-layout>
+  <app-button-layout  [listBtnForLayout]="listBtnForLayout.TRACKING">
       <div class="add-device ion-align-items-center ion-justify-content-center ion-padding-start ion-padding-end">
           <div class="add-device__title">
               Welcome to your fitness tracker!
@@ -17,6 +17,6 @@
               </div>
           </ion-button>
       </div>
-  </app-tracking-layout>
+  </app-button-layout>
 </app-main-layout>
 

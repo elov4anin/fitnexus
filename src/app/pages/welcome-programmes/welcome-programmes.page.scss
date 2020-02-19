@@ -1,20 +1,10 @@
 @import "variables";
 
-:host {
-    ::ng-deep ion-content {
-        --background: $gray;
-    }
-}
-
 
 .add-device {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 59px);
-    padding-top: 0;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    background: $white;
+    height: 100%;
 
     &__title {
         margin-bottom: 8px;

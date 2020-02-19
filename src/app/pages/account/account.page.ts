@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {LayoutsEnum} from "../../shared/enums/layouts.enum";
 
 @Component({
     selector: 'app-account',
@@ -7,6 +8,8 @@ import {Component, OnInit} from '@angular/core';
 })
 export class AccountPage implements OnInit {
     pageTitle: string = '';
+
+    readonly listBtnForLayout = LayoutsEnum;
 
     constructor() {
     }

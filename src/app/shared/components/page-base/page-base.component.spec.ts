@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { TrackingLayoutComponent } from './tracking-layout.component';
+import { PageBaseComponent } from './page-base.component';
 
-describe('TrackingLayoutComponent', () => {
-  let component: TrackingLayoutComponent;
-  let fixture: ComponentFixture<TrackingLayoutComponent>;
+describe('PageBaseComponent', () => {
+  let component: PageBaseComponent;
+  let fixture: ComponentFixture<PageBaseComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TrackingLayoutComponent ],
+      declarations: [ PageBaseComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(TrackingLayoutComponent);
+    fixture = TestBed.createComponent(PageBaseComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

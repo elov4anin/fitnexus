@@ -2,7 +2,7 @@
         [titlePage]="pageTitle"
         [isAccount]="true"
 >
-    <app-account-layout>
+    <app-button-layout [listBtnForLayout]="listBtnForLayout.ACCOUNT">
         <div class="account ion-padding-start ion-padding-end">
             <div class="account__row">
                 <ion-item lines="none">
@@ -27,5 +27,5 @@
                 </ion-button>
             </div>
         </div>
-    </app-account-layout>
+    </app-button-layout>
 </app-main-layout>

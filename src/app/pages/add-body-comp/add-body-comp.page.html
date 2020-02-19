@@ -1,8 +1,8 @@
 <app-main-layout
         [titlePage]="pageTitle"
 >
-  <app-tracking-layout>
-      <app-body-comp-layout>
+  <app-button-layout  [listBtnForLayout]="listBtnForLayout.TRACKING">
+      <app-body-comp-layout style="height: 100%">
 
           <div class="add-body ion-align-items-center ion-justify-content-center">
               <div class="add-body__title">
@@ -20,5 +20,5 @@
           </div>
 
       </app-body-comp-layout>
-  </app-tracking-layout>
+  </app-button-layout>
 </app-main-layout>

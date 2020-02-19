@@ -1,20 +1,11 @@
 @import "variables";
 
-:host {
-    ::ng-deep ion-content {
-        --background: $gray;
-    }
-}
 
 .measurements {
     display: flex;
     flex-direction: column;
     width: 100%;
-    // height: calc(100% - 59px);
-    padding-top: 25px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    background: $white;
+    padding-top: 22px;
 
     ion-item {
         height: 40px;
