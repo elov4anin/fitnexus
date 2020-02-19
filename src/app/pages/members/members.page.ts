@@ -1,6 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {ICommon} from "../../shared/interfaces/common.interfaces";
-import ITopButton = ICommon.ITopButton;
 import {PageBaseComponent} from "../../shared/components/page-base/page-base.component";
 
 @Component({

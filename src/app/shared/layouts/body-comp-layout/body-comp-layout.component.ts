@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute, NavigationEnd, RouteConfigLoadEnd, Router} from "@angular/router";
+import {NavigationEnd, Router} from "@angular/router";
 import {ICommon} from "../../interfaces/common.interfaces";
 import ITopButton = ICommon.ITopButton;
 
