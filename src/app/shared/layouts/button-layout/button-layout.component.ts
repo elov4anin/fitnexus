@@ -52,21 +52,24 @@ export class ButtonLayoutComponent implements OnInit {
             case LayoutsEnum.ACCOUNT: {
                 this.buttons = [
                     {
-                        text: 'trackers',
+                        text: 'account',
                         icon: 'ios-person-black.svg',
-                        redirectTo: 'stat-by-device',
+                        activeIcon: 'ios-person-blue.svg',
+                        redirectTo: 'account',
                         active: true
                     },
                     {
                         text: 'fitness',
                         icon: 'ios-fitness.svg',
+                        activeIcon: 'ios-fitness-blue.svg',
                         redirectTo: 'welcome-programs',
                         active: false
                     },
                     {
-                        text: 'body-comp',
+                        text: 'messages',
                         icon: 'ios-photos-black.svg',
-                        redirectTo: 'add-body-comp',
+                        activeIcon: 'ios-photos-blue.svg',
+                        redirectTo: 'messages',
                         active: false
                     }
                 ];
@@ -95,19 +98,22 @@ export class ButtonLayoutComponent implements OnInit {
                 this.buttons = [
                     {
                         text: 'trackers',
-                        icon: 'md-watch-blue.svg',
+                        icon: 'md-watch-black.svg',
+                        activeIcon: 'md-watch-blue.svg',
                         redirectTo: 'stat-by-device',
                         active: true
                     },
                     {
                         text: 'fitness',
                         icon: 'ios-fitness.svg',
+                        activeIcon: 'ios-fitness-blue.svg',
                         redirectTo: 'welcome-programs',
                         active: false
                     },
                     {
                         text: 'body-comp',
                         icon: 'ios-man.svg',
+                        activeIcon: 'ios-man-blue.svg',
                         redirectTo: 'add-body-comp',
                         active: false
                     }
@@ -186,31 +192,6 @@ export class ButtonLayoutComponent implements OnInit {
 
                 ];
                 this.template = 1;
-                break
-            }
-            case LayoutsEnum.MESSAGES: {
-                this.buttons =  [
-                    {
-                        text: 'trackers',
-                        icon: 'ios-person-black.svg',
-                        redirectTo: 'stat-by-device',
-                        active: true
-                    },
-                    {
-                        text: 'fitness',
-                        icon: 'ios-fitness.svg',
-                        redirectTo: 'welcome-programs',
-                        active: false
-                    },
-                    {
-                        text: 'body-comp',
-                        icon: 'ios-photos-black.svg',
-                        redirectTo: 'add-body-comp',
-                        active: false
-                    }
-
-                ];
-                this.template = 2;
                 break
             }
             case LayoutsEnum.CLASSES: {
