@@ -7,6 +7,7 @@ import {PageBaseComponent} from "../../shared/components/page-base/page-base.com
     styleUrls: ['./calendar.page.scss'],
 })
 export class CalendarPage extends PageBaseComponent implements OnInit {
+
     pageTitle: string = 'Classes - Upcoming';
     eventSource: any;
     viewTitle;
@@ -130,11 +131,14 @@ export class CalendarPage extends PageBaseComponent implements OnInit {
         return date < current;
     };
 
-    back() {
 
+    nextSlide() {
+        const mySwiper = document.querySelector('.swiper-container')['swiper'];
+        mySwiper.slideNext();
     }
 
-    forward() {
-
+    prevSlide() {
+        const mySwiper = document.querySelector('.swiper-container')['swiper'];
+        mySwiper.slidePrev();
     }
 }
