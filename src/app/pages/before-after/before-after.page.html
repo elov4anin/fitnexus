@@ -2,7 +2,7 @@
         [titlePage]="pageTitle"
 >
   <app-button-layout [listBtnForLayout]="listBtnForLayout.TRACKING">
-    <app-body-comp-layout>
+    <app-button-into-layout [listBtnForLayout]="listBtnForLayout.BODY">
 
       <div class="add-body ion-align-items-center ion-justify-content-center">
         <ion-button expand="full" (click)="addNewPicture()" color="secondary" class="add-body__btn">
@@ -29,6 +29,6 @@
 
       </div>
 
-    </app-body-comp-layout>
+    </app-button-into-layout>
   </app-button-layout>
 </app-main-layout>

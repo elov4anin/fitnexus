@@ -7,6 +7,8 @@ export enum LayoutsEnum {
     MEALS = 'MEALS',
     LIBRARY = 'LIBRARY',
     MESSAGES ='MESSAGES',
-    CLASSES = 'CLASSES'
+    CLASSES = 'CLASSES',
 
+    MESSAGES_INTO ='MESSAGES_INTO',
+    BODY ='BODY',
 }

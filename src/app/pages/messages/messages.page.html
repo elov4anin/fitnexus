@@ -2,7 +2,7 @@
         [titlePage]="pageTitle"
 >
   <app-button-layout [listBtnForLayout]="listBtnForLayout.MESSAGES">
-    <app-messages-into-layout>
+    <app-button-into-layout [listBtnForLayout]="listBtnForLayout.MESSAGES_INTO">
       <div class="message-members">
           <ion-item>
             <ion-card class="ion-margin-start ion-margin-end" (click)="openChat()">
@@ -27,7 +27,7 @@
             </ion-card>
           </ion-item>
       </div>
-    </app-messages-into-layout>
+    </app-button-into-layout>
   </app-button-layout>
 </app-main-layout>
 

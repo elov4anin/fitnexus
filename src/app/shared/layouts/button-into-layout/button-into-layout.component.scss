@@ -3,6 +3,8 @@
 
 .submenu {
     &__buttons {
+        flex: 1 0 auto;
+
         display: flex;
         flex-wrap: wrap;
         margin: auto;
@@ -48,7 +50,8 @@ ion-icon {
 .body-comp-layout {
     display: flex;
     flex-direction: column;
-    // height: calc(100% - 59px);
+    height: calc(100% - 59px);
+    min-height: 100%;
     padding-top: 0;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
