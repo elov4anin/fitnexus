@@ -5,6 +5,7 @@ import {FeedbackPageRoutingModule} from './feedback-routing.module';
 import {FeedbackPage} from './feedback.page';
 import {IonicRatingModule} from "ionic4-rating/dist";
 import {SharedModule} from "../../shared/shared.module";
+import {LeaveFeedbackComponent} from "./leave-feedback/leave-feedback.component";
 
 @NgModule({
     imports: [
@@ -12,7 +13,7 @@ import {SharedModule} from "../../shared/shared.module";
         FeedbackPageRoutingModule,
         IonicRatingModule,
     ],
-    declarations: [FeedbackPage]
+    declarations: [FeedbackPage, LeaveFeedbackComponent]
 })
 export class FeedbackPageModule {
 }

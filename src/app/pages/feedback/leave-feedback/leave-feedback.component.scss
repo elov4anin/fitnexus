@@ -1,0 +1,81 @@
+@import "variables";
+
+:host {
+    width: 100%;
+
+    ::ng-deep {
+        rating {
+            ion-button {
+                margin: 0;
+                --padding-start: 2px;
+                --padding-end: 2px;
+                height: 20px;
+            }
+
+            ion-icon {
+                font-size: 20px !important;
+                color: $gray;
+
+                &.filled {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+.add-feedback {
+    display: flex;;
+    flex: 1 0 auto;
+    box-shadow: 0 3px 6px 0 $light-gray1;
+
+    &__attach-icon {
+        margin: auto;
+    }
+
+    &__wrapper {
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        border: 1px solid $light-gray;
+    }
+
+    .divisor {
+        height: 1px;
+        background: $light-gray;
+        width: 100%;
+        margin-top: 6px;
+    }
+}
+
+
+ion-input {
+    max-width: 100%;
+    --padding-start: 10px;
+    width: 100%;
+    height: 40px;
+
+    font-family: $font-family-helvetica;
+    font-size: 12px;
+    color: $dark-gray1;
+
+
+
+}
+ion-button {
+    height: 69px;
+    width: 40px;
+    margin: 0;
+
+}
+
+ion-icon {
+    font-size: 18px;
+}
+
+.add-feedback__rating {
+    margin-top: 5px;
+    margin-left: 5px;
+}
