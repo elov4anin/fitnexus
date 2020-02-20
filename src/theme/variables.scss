@@ -87,17 +87,27 @@ ion-button {
 
 ion-searchbar {
     .searchbar-input-container {
+        height: 38px!important;
         box-shadow: 0 3px 6px 0 $light-gray1;
+
+        input.searchbar-input {
+            font-family: $font-family-helvetica !important;
+            font-size: 12px !important;
+            font-weight: 300 !important;
+            line-height: 15px !important;
+            border: 0.5px solid $light-gray !important;
+            border-radius: 0 !important;
+            color: $dark-gray1 !important;
+            background-color: $white!important;
+            height: 38px!important;
+        }
+        .searchbar-search-icon.sc-ion-searchbar-md {
+            top: 9px;
+        }
+        .searchbar-input.sc-ion-searchbar-md {
+            box-shadow: none;
+        }
     }
 
-    input.searchbar-input {
-        font-family: $font-family-helvetica !important;
-        font-size: 12px !important;
-        font-weight: 300 !important;
-        line-height: 15px !important;
-        border: 0.5px solid $light-gray !important;
-        border-radius: 0 !important;
-        color: $dark-gray1 !important;
-        background-color: $white!important;
-    }
+
 }

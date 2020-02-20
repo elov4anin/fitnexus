@@ -14,15 +14,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 22px 32px;
+        padding: 16px 32px;
         border-bottom: 0.5px solid $gray;
 
         ion-searchbar {
-            height: 40px;
+            height: 52px;
         }
         ion-button {
-            height: 36px;
+            height: 38px;
             width: 44px;
+            box-shadow: 0 3px 6px 0 $light-gray1;
         }
         ion-icon {
             font-size: 14px;
