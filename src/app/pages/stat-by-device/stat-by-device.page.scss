@@ -3,7 +3,11 @@
 .stat-by-device {
     display: flex;
     flex-direction: column;
+    padding-bottom: 22px;
+    background-color: $white;
 
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 
     ion-item {
         height: 40px;

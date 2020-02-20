@@ -78,7 +78,11 @@
     --ion-color-light-tint: #f5f6f9;
 
     --ion-padding: 32px;
+}
 
+ion-button {
+    text-transform: none;
+    font-weight: 300;
 }
 
 ion-searchbar {

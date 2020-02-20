@@ -1,10 +1,18 @@
 @import "variables";
 
+:host {
+    ::ng-deep {
+        app-button-layout .layout-content {
+            height: calc(100% - 51px);
+        }
+    }
+}
 
 .add-device {
     display: flex;
     flex-direction: column;
     height: 100%;
+
 
     &__title {
         margin-bottom: 8px;

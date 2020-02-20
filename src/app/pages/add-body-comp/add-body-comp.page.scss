@@ -1,6 +1,9 @@
 @import "variables";
 :host {
     ::ng-deep {
+        app-button-layout .layout-content {
+            height: calc(100% - 51px);
+        }
         app-button-into-layout .body-comp-layout {
             height: 100%;
         }
