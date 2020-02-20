@@ -1,34 +1,36 @@
-<div class="premium">
-  <div class="premium__header ion-padding-start ion-padding-end">
-      <span class="title">Become a premium member </span>
-      <span class="today">TODAY!</span>
+<perfect-scrollbar>
+  <div class="premium">
+    <div class="premium__header ion-padding-start ion-padding-end">
+        <span class="title">Become a premium member </span>
+        <span class="today">TODAY!</span>
+    </div>
+
+    <span class="premium__text ion-padding-start ion-padding-end">
+      Gain access to our premium workout library, as well as our incredible diet library and meal planner!
+    </span>
+
+
+    <div class="premium__buttons ion-padding-start ion-padding-end">
+      <ion-button color="primary" expand="full" (click)="openPage()">
+        <div class="premium__btn">
+          <span class="premium__btn-text">Monthly</span>
+          <span class="premium__btn-cost">£7.99</span>
+        </div>
+      </ion-button>
+      <ion-button color="primary" expand="full" (click)="openPage()">
+        <div class="premium__btn">
+          <span class="premium__btn-text">3 Months</span>
+          <span class="premium__btn-cost">£19.99 (Save 17%)</span>
+        </div>
+      </ion-button>
+      <ion-button color="secondary" expand="full" (click)="openPage()">
+        <div class="premium__btn">
+          <span class="premium__btn-text">12 Months</span>
+          <span class="premium__btn-cost">£69.00 (Save 29% & FREE 7 Day Trial!)</span>
+        </div>
+      </ion-button>
+    </div>
+
+
   </div>
-
-  <span class="premium__text ion-padding-start ion-padding-end">
-    Gain access to our premium workout library, as well as our incredible diet library and meal planner!
-  </span>
-
-
-  <div class="premium__buttons ion-padding-start ion-padding-end">
-    <ion-button color="primary" expand="full" (click)="openPage()">
-      <div class="premium__btn">
-        <span class="premium__btn-text">Monthly</span>
-        <span class="premium__btn-cost">£7.99</span>
-      </div>
-    </ion-button>
-    <ion-button color="primary" expand="full" (click)="openPage()">
-      <div class="premium__btn">
-        <span class="premium__btn-text">3 Months</span>
-        <span class="premium__btn-cost">£19.99 (Save 17%)</span>
-      </div>
-    </ion-button>
-    <ion-button color="secondary" expand="full" (click)="openPage()">
-      <div class="premium__btn">
-        <span class="premium__btn-text">12 Months</span>
-        <span class="premium__btn-cost">£69.00 (Save 29% & FREE 7 Day Trial!)</span>
-      </div>
-    </ion-button>
-  </div>
-
-
-</div>
+</perfect-scrollbar>

@@ -9,7 +9,7 @@ import {PremiumSlideComponent} from "./components/premium-slide/premium-slide.co
 @NgModule({
     imports: [
         SharedModule,
-        GetStartedPageRoutingModule,
+        GetStartedPageRoutingModule
     ],
     declarations: [GetStartedPage, SlideComponent, PremiumSlideComponent]
 })

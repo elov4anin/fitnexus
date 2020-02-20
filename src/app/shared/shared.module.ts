@@ -10,12 +10,15 @@ import {EventSchedulerComponent} from "./components/event-scheduler/event-schedu
 import {ButtonLayoutComponent} from "./layouts/button-layout/button-layout.component";
 import {PageBaseComponent} from "./components/page-base/page-base.component";
 import {ButtonIntoLayoutComponent} from "./layouts/button-into-layout/button-into-layout.component";
+import {PerfectScrollbarModule} from "ngx-perfect-scrollbar";
 
 const ANGULAR_MODULES = [
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
     IonicModule,
+
+    PerfectScrollbarModule
 ];
 
 const COMPONENTS = [

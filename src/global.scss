@@ -27,3 +27,13 @@
 
 $ionicons-font-path: "~ionicons/dist/fonts";
 @import '~ionicons/dist/scss/ionicons.scss';
+
+
+perfect-scrollbar>.ps.ps--active-y>.ps__rail-y {
+    width: 6px!important;
+
+    .ps__thumb-y {
+        width: 3px;
+        right: 3px;
+    }
+}

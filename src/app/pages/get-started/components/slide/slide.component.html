@@ -1,4 +1,7 @@
-<div class="slide ion-padding-start ion-padding-end">
+<perfect-scrollbar>
+  <div class="slide ion-padding-start ion-padding-end">
+
+
   <ng-container *ngIf="!slide.isPhotoSlide; else photoBlock">
     <div class="slide__img slide__img--{{slide.icon}}">
     </div>
@@ -19,3 +22,5 @@
     </div>
   </ion-button>
 </div>
+
+</perfect-scrollbar>

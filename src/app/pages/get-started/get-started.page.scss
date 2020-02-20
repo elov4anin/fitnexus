@@ -12,6 +12,7 @@
 :host {
     ::ng-deep ion-content {
         --background: $gray;
+        --overflow: hidden;
     }
 
     ::ng-deep ion-slides.custom-slides {
