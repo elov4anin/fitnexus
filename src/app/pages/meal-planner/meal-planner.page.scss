@@ -1,15 +1,9 @@
 @import "variables";
 
-:host {
-    ::ng-deep ion-content {
-        --background: $gray;
-    }
-}
-
 .library {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 66px);
+    //height: calc(100% - 66px);
     padding-top: 0px;
     background: $white;
 

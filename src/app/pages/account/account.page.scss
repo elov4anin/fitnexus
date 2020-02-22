@@ -1,4 +1,10 @@
 @import "variables";
+
+:host{
+    ::ng-deep app-button-layout .layout-content {
+        height: auto;
+    }
+}
 .account {
     display: flex;
     flex-direction: column;
