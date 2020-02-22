@@ -108,6 +108,15 @@ ion-searchbar {
             box-shadow: none;
         }
     }
+}
 
-
+rating {
+    .sc-ion-buttons-md-s .button-has-icon-only.button-clear {
+        --padding-top: 0;
+        --padding-end: 0;
+        --padding-bottom: 0;
+        --padding-start: 0;
+        width: 24px;
+        height: 18px;
+    }
 }
