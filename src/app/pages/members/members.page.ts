@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {PageBaseComponent} from "../../shared/components/page-base/page-base.component";
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-members',
@@ -9,7 +10,7 @@ import {PageBaseComponent} from "../../shared/components/page-base/page-base.com
 export class MembersPage extends PageBaseComponent implements OnInit {
     pageTitle: string = 'Members';
 
-    constructor() {
+    constructor(private _router: Router) {
         super();
     }
 
@@ -17,6 +18,7 @@ export class MembersPage extends PageBaseComponent implements OnInit {
     }
 
     apply() {
+        this._router.navigate(["/members-connect"])
 
     }
 }

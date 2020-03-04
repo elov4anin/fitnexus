@@ -1,0 +1,90 @@
+<app-main-layout
+        [titlePage]="pageTitle"
+>
+  <app-button-layout [listBtnForLayout]="listBtnForLayout.NEWS">
+    <div class="members ion-padding-start ion-padding-end">
+      <div class="members__icon">
+
+      </div>
+      <div class="members__title">
+        Connect with your fellow members
+      </div>
+      <div class="members__row">
+        <ion-button color="light"
+                    expand="full"
+                    (click)="toggleFilter()"
+        >
+          <ion-icon class="submenu__btn-icon" src="/assets/images/svg-icons/ios-settings.svg"></ion-icon>
+          <span class="submenu__btn-text">Filter</span>
+        </ion-button>
+        <ion-button color="light"
+                    expand="full"
+                    (click)="refresh()"
+        >
+          <ion-icon class="submenu__btn-icon" src="/assets/images/svg-icons/md-refresh.svg"></ion-icon>
+          <span class="submenu__btn-text">Refresh</span>
+        </ion-button>
+      </div>
+      <div class="class__block  class__block--no-bb flex-column">
+        <div class="class__block-wrapper">
+          <ion-card class="person-card">
+            <ion-img src="assets/images/news.png" class="person-card__img"></ion-img>
+            <div class="person-card__wrapper">
+              <span class="person-card__text">Emma Jogger</span>
+            </div>
+          </ion-card>
+
+          <ion-card class="person-card">
+            <ion-img src="assets/images/news.png" class="person-card__img"></ion-img>
+            <div class="person-card__wrapper">
+              <span class="person-card__text">Emma Jogger</span>
+            </div>
+          </ion-card>
+
+          <ion-card class="person-card">
+            <ion-img src="assets/images/news.png" class="person-card__img"></ion-img>
+            <div class="person-card__wrapper">
+              <span class="person-card__text">Emma Jogger</span>
+            </div>
+          </ion-card>
+
+          <ion-card class="person-card">
+            <ion-img src="assets/images/news.png" class="person-card__img"></ion-img>
+            <div class="person-card__wrapper">
+              <span class="person-card__text">Emma Jogger</span>
+            </div>
+          </ion-card>
+
+          <ion-card class="person-card">
+            <ion-img src="assets/images/news.png" class="person-card__img"></ion-img>
+            <div class="person-card__wrapper">
+              <span class="person-card__text">Emma Jogger</span>
+            </div>
+          </ion-card>
+
+          <ion-card class="person-card">
+            <ion-img src="assets/images/news.png" class="person-card__img"></ion-img>
+            <div class="person-card__wrapper">
+              <span class="person-card__text">Emma Jogger</span>
+            </div>
+          </ion-card>
+
+          <ion-card class="person-card">
+            <ion-img src="assets/images/news.png" class="person-card__img"></ion-img>
+            <div class="person-card__wrapper">
+              <span class="person-card__text">Emma Jogger</span>
+            </div>
+          </ion-card>
+
+          <ion-card class="person-card">
+            <ion-img src="assets/images/news.png" class="person-card__img"></ion-img>
+            <div class="person-card__wrapper">
+              <span class="person-card__text">Emma Jogger</span>
+            </div>
+          </ion-card>
+        </div>
+      </div>
+    </div>
+
+  </app-button-layout>
+</app-main-layout>

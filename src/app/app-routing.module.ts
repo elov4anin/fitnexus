@@ -128,6 +128,10 @@ const routes: Routes = [
     path: 'chat',
     loadChildren: () => import('./pages/chat/chat.module').then( m => m.ChatPageModule)
   },
+  {
+    path: 'members-connect',
+    loadChildren: () => import('./pages/members-connect/members-connect.module').then( m => m.MembersConnectPageModule)
+  },
 
 ];
 
