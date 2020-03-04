@@ -6,7 +6,6 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./card-news.component.scss'],
 })
 export class CardNews implements OnInit {
-  @Input() isNeedBoldTitle: boolean = false;
 
   constructor() { }
 
