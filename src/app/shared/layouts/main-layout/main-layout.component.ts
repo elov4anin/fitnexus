@@ -19,6 +19,8 @@ export class MainLayoutComponent implements OnInit {
     @Input() titlePage: string;
     @Input() isAccount: boolean = false;
     @Input() isNeedBack: boolean = false;
+    @Input() isNeedLogo: boolean = false;
+
     public readonly tabs = Object.keys(TabsEnum).map(
         (key) => TabsEnum[key]
     );

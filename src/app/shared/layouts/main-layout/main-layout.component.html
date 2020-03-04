@@ -1,18 +1,21 @@
 <ion-header [ngClass]="{'profile-header': isAccount}">
-  <ion-toolbar class="ion-justify-content-start " >
-    <ion-buttons slot="start" class="pl28">
-        <ion-button *ngIf="isNeedBack" color="dark" (click)="back()" class="back-button">
-            <ion-icon name="arrow-back" slot="icon-only"></ion-icon>
-        </ion-button>
-      <ion-menu-button *ngIf="!isNeedBack">
-          <img src='/assets/images/no_photo.png' width="23" height="23" alt="">
-      </ion-menu-button>
-    </ion-buttons>
-    <div class="d-flex ion-justify-content-between ion-align-items-center pr12"  *ngIf="!isAccount">
-      <ion-text class="page-title">{{titlePage}}</ion-text>
-      <ion-button class="barcode" size="small"><ion-img src="/assets/images/svg-icons/ios-barcode.svg"></ion-img></ion-button>
-    </div>
-  </ion-toolbar>
+    <ion-toolbar class="ion-justify-content-start ">
+        <ion-buttons slot="start" class="pl28">
+            <ion-button *ngIf="isNeedBack" color="dark" (click)="back()" class="back-button">
+                <ion-icon name="arrow-back" slot="icon-only"></ion-icon>
+            </ion-button>
+            <ion-menu-button *ngIf="!isNeedBack">
+                <img src='/assets/images/no_photo.png' width="23" height="23" alt="">
+            </ion-menu-button>
+        </ion-buttons>
+        <div class="d-flex ion-justify-content-between ion-align-items-center pr12" *ngIf="!isAccount">
+            <ion-text class="page-title" *ngIf="!isNeedLogo">{{titlePage}}</ion-text>
+            <img class="page-logo" *ngIf="isNeedLogo" src='/assets/images/logo_black.png' width="86" height="15"  alt="">
+            <ion-button class="barcode" size="small">
+                <ion-img src="/assets/images/svg-icons/ios-barcode.svg"></ion-img>
+            </ion-button>
+        </div>
+    </ion-toolbar>
     <div class="profile-header__wrap" *ngIf="isAccount">
         <img class="profile-header__img" src='/assets/images/no_photo@2x.png' alt="">
         <span class="profile-header__name">Richard Chestday</span>
@@ -20,11 +23,11 @@
 </ion-header>
 
 <ion-content class="mt20">
-  <ng-content></ng-content>
+    <ng-content></ng-content>
 </ion-content>
 <ion-footer>
     <ion-toolbar>
-        <ion-buttons >
+        <ion-buttons>
             <ion-button *ngFor="let tab of tabs" (click)="tabClicked(TabsEnum2RoutingMapping[tab])" color="light">
                 <ion-icon [src]="'/assets/images/svg-icons/'+ getActiveTabIcon(tab)" slot="icon-only"></ion-icon>
             </ion-button>
