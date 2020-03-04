@@ -11,14 +11,11 @@ ion-list {
 
 ion-item {
     --background: transparent;
-
     border-bottom: 1px solid $white;
-
     transition: border-bottom-color 0.2s;
 
     &.invalid {
         border-bottom: 1px solid red;
-
     }
 }
 
@@ -62,4 +59,21 @@ ion-label {
     ion-icon {
         font-size: 12px;
     }
+}
+.create-btn {
+    --ion-color-base: transparent!important;
+    --box-shadow: none;
+}
+.create-btn-text {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    color: $white;
+    text-transform: uppercase;
+}
+
+ion-footer ion-toolbar {
+    --border-width: 0px;
+    --background: #363636;
 }
