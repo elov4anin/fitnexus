@@ -132,6 +132,10 @@ const routes: Routes = [
     path: 'members-connect',
     loadChildren: () => import('./pages/members-connect/members-connect.module').then( m => m.MembersConnectPageModule)
   },
+  {
+    path: 'stat-program',
+    loadChildren: () => import('./pages/stat-program/stat-program.module').then( m => m.StatProgramPageModule)
+  },
 
 ];
 

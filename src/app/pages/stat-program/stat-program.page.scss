@@ -1,0 +1,131 @@
+@import "variables";
+
+.stat-by-device {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 22px;
+    background-color: $white;
+
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+    ion-item {
+        height: 40px;
+        box-shadow: 0 3px 6px 0 $light-gray1;
+    }
+
+    ion-select {
+        max-width: 100%;
+        --padding-start: 0px;
+        width: 100%;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        padding: 22px 32px;
+        border-bottom: 0.5px solid $gray;
+    }
+
+    &__select-block {
+        width: 100%;
+        padding-top: 22px;
+        padding-bottom: 22px;
+
+        ion-item {
+            border: 1px solid $gray;
+            --padding-start: 10px;
+
+            &:first-of-type {
+                width: 35%
+            }
+            &:last-of-type {
+                width: 60%;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 8px;
+        font-family: $font-family-oswald;
+        font-size: 16px;
+        color: $ligth-black;
+        line-height: 24px;
+
+    }
+
+    &__text {
+        margin-bottom: 29px;
+        font-family: $font-family-helvetica;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 300;
+        color: $ligth-black;
+    }
+
+    &__btn {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+        margin: 11px;
+        width: 40%;
+        height: 40px;
+        box-shadow: 0 3px 6px 0 $light-gray1;
+        margin-top: 45px;
+        --border-radius: 2px;
+        border-radius: 2px;
+
+        &:nth-of-type(2) {
+            width: 47%;
+        }
+    }
+
+    &__btn-text {
+        font-family: $font-family-oswald;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: $white;
+        margin-left: 10px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.steps {
+    width: 100%;
+    margin-bottom: 15px;
+
+    ion-icon {
+        width: 27px;
+        font-size: 48px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__count {
+        font-family: $font-family-oswald;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 30px;
+        color: $dark-gray1;
+        margin-bottom: 3px;
+    }
+
+    &__text {
+        font-family: $font-family-helvetica;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 300;
+        color: $ligth-black;
+    }
+}
