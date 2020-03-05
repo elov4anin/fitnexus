@@ -10,7 +10,7 @@ import {PageBaseComponent} from "../../shared/components/page-base/page-base.com
 })
 export class MealPlannerPage extends PageBaseComponent implements OnInit {
 
-  pageTitle: string = "TRACKING - PROGRAMMES";
+  pageTitle: string = "MEAL PLANNER";
   @ViewChild('slider', {static: false}) slider: IonSlides;
   slideOpts = {
     initialSlide: 0,
