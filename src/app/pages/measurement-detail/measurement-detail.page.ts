@@ -8,6 +8,7 @@ import {PageBaseComponent} from "../../shared/components/page-base/page-base.com
 })
 export class MeasurementDetailPage extends PageBaseComponent implements OnInit {
     pageTitle: string = ' ';
+    selectedMeasurement: any;
 
     constructor() {
         super();
@@ -18,5 +19,15 @@ export class MeasurementDetailPage extends PageBaseComponent implements OnInit {
 
     addMeasurement() {
 
+    }
+
+    ionViewDidEnter() {
+        const ionSelects = document.querySelectorAll('ion-select');
+        ionSelects.forEach((ionSelect) => {
+            const selectIconInner = ionSelect.shadowRoot.querySelector('.select-icon').querySelector('.select-icon-inner');
+            if(selectIconInner){
+                selectIconInner.setAttribute('style', 'display: none !important');
+            }
+        });
     }
 }

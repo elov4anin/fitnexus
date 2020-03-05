@@ -140,7 +140,7 @@ export class ButtonLayoutComponent implements OnInit {
                         activeIcon: 'ios-man-blue.svg',
                         redirectTo: 'add-body-comp',
                         active: false,
-                        activePages: ['add-body-comp'],
+                        activePages: ['add-body-comp', 'before-after', 'new-measurements', 'stat-measurements', 'measurement-detail'],
                     }
                 ];
                 this.template = 2;

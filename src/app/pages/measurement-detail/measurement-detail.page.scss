@@ -1,5 +1,11 @@
 @import "variables";
 
+:host{
+    ::ng-deep app-button-layout .layout-content {
+        height: calc(100% - 40px);
+        min-height: 100%;
+    }
+}
 
 .measurement {
     display: flex;
@@ -30,6 +36,9 @@
         }
         ion-icon {
             font-size: 20px;
+            min-width: 20px;
+            margin-top: 3px;
+            margin-right: 0;
         }
 
         ion-item {
@@ -79,6 +88,7 @@
             font-weight: 500;
             line-height: 30px;
             color: $dark-gray1;
+            margin-bottom: 8px;
         }
 
         &__text {

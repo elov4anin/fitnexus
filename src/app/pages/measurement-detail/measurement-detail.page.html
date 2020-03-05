@@ -6,12 +6,15 @@
 
     <div class="measurement">
       <div class="measurement__header">
+
         <ion-item lines="none">
-          <ion-select placeholder="Steps">
+          <ion-label class="select-white-placeholder" slot="start" *ngIf="!selectedMeasurement">Select measu...</ion-label>
+          <ion-select placeholder="" [(ngModel)]="selectedMeasurement">
             <ion-select-option value="f">Steps</ion-select-option>
             <ion-select-option value="m">Steps 1</ion-select-option>
             <ion-select-option value="m">Steps 2</ion-select-option>
           </ion-select>
+          <ion-icon color="secondary" name="arrow-down" mode="ios" slot="end" size="small"></ion-icon>
         </ion-item>
 
         <ion-button (click)="addMeasurement()" expand="full" color="secondary"
