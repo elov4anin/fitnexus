@@ -132,7 +132,7 @@ export class ButtonLayoutComponent implements OnInit {
                         activeIcon: 'ios-fitness-blue.svg',
                         redirectTo: 'welcome-programs',
                         active: false,
-                        activePages: ['welcome-programs', 'training'],
+                        activePages: ['welcome-programs', 'training', 'stat-program'],
                     },
                     {
                         text: 'body-comp',

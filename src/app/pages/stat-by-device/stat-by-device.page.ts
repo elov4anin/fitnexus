@@ -14,7 +14,6 @@ export class StatByDevicePage extends PageBaseComponent implements OnInit {
     selectedDevice: any;
     @ViewChildren('ion-select') selectsRef: QueryList<IonSelect>;
     selectedStep: any;
-    selectedDateRange: any;
 
     dateRange: { from: string; to: string; };
     type: 'string'; // 'string' | 'js-date' | 'moment' | 'time' | 'object'

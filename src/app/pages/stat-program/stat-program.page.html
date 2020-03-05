@@ -8,31 +8,40 @@
           Select your programme
         </div>
 
-        <ion-item  color="secondary" class="" >
-          <ion-select placeholder="Select One">
-            <ion-select-option value="f">Strength 1</ion-select-option>
-            <ion-select-option value="m">Strength 2</ion-select-option>
-            <ion-select-option value="m">Strength 3</ion-select-option>
+        <ion-item  color="secondary">
+          <ion-label class="select-blue-placeholder" slot="start" *ngIf="!selectedProgram">Select One</ion-label>
+          <ion-select placeholder="" [(ngModel)]="selectedProgram" class="select-blue">
+            <ion-select-option value="f">Program 1</ion-select-option>
+            <ion-select-option value="m">Program 2</ion-select-option>
+            <ion-select-option value="m">Program 3</ion-select-option>
           </ion-select>
+          <ion-icon color="light" name="arrow-down" mode="ios" slot="end" size="small"></ion-icon>
         </ion-item>
 
 
       </div>
       <div class="stat-by-device__select-block d-flex ion-align-items-center ion-justify-content-between ion-padding-start ion-padding-end">
         <ion-item lines="none">
-          <ion-select placeholder="Squats">
-            <ion-select-option value="f">Squats</ion-select-option>
-            <ion-select-option value="m">Squats 1</ion-select-option>
-            <ion-select-option value="m">Squats 2</ion-select-option>
-          </ion-select>
-
+          <ion-label class="select-white-placeholder" slot="start" *ngIf="!selectedSquats">Squats</ion-label>
+          <ion-select placeholder="" [(ngModel)]="selectedSquats">
+              <ion-select-option value="f">Squats</ion-select-option>
+              <ion-select-option value="m">Squats 1</ion-select-option>
+              <ion-select-option value="m">Squats 2</ion-select-option>
+            </ion-select>
+          <ion-icon color="secondary" name="arrow-down" mode="ios" slot="end" size="small"></ion-icon>
         </ion-item>
-        <ion-item lines="none">
-          <ion-select placeholder="22 - 28 Dec 2019">
-            <ion-select-option value="f">22 - 28 Dec 2019</ion-select-option>
-            <ion-select-option value="m">22 - 28 Dec 2019</ion-select-option>
-            <ion-select-option value="m">22 - 28 Dec 2019</ion-select-option>
-          </ion-select>
+        <ion-item lines="none" (click)="openCalendar()">
+          <ion-label class="select-white-placeholder" slot="start" >{{dateRangeLabel}}</ion-label>
+          <ion-calendar [(ngModel)]="dateRange"
+                        [options]="optionsRange"
+                        [type]="type"
+                        color="secondary"
+                        [format]="'YYYY-MM-DD'"
+                        (click)="openCalendar()"
+                        class="visually-hidden"
+          >
+        </ion-calendar>
+        <ion-icon color="secondary" name="arrow-down" mode="ios" slot="end" size="small"></ion-icon>
         </ion-item>
       </div>
       <div class="d-flex ion-align-self-start ion-align-items-center ion-padding-start ion-padding-end steps">
