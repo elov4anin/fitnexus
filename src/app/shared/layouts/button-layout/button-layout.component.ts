@@ -124,7 +124,7 @@ export class ButtonLayoutComponent implements OnInit {
                         activeIcon: 'md-watch-blue.svg',
                         redirectTo: 'stat-by-device',
                         active: true,
-                        activePages: ['stat-by-device'],
+                        activePages: ['stat-by-device', 'add-device'],
                     },
                     {
                         text: 'fitness',
