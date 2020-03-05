@@ -3,6 +3,7 @@
               [color]="button.active ? 'secondary': 'dark'"
               expand="full"
               (click)="toggleButton(button.redirectTo)"
+              [ngClass]="{'once': buttons.length ===1 }"
   >
     <ion-icon src="/assets/images/svg-icons/{{button.icon}}"></ion-icon>
     <span class="submenu__btn-text">{{button.text}}</span>

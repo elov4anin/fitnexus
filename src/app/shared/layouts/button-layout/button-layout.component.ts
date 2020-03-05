@@ -82,6 +82,20 @@ export class ButtonLayoutComponent implements OnInit {
                 this.template = 2;
                 break;
             }
+            case LayoutsEnum.MESSAGES: {
+                this.buttons = [
+                    {
+                        text: 'New message',
+                        icon: 'ios-mail.svg',
+                        activeIcon: 'ios-mail.svg',
+                        redirectTo: 'messages',
+                        active: true,
+                        activePages: ['messages'],
+                    },
+                ];
+                this.template = 1;
+                break;
+            }
             case LayoutsEnum.NEWS: {
                 this.buttons = [
                     {

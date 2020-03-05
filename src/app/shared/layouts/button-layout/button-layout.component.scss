@@ -14,7 +14,17 @@
             width: 42%;
             height: 40px;
             box-shadow: 0 3px 6px 0 $light-gray1;
+            border-radius: 2px;
+            --border-radius: 2px;
 
+        }
+        ion-button.once {
+            width: 100%;
+
+            ion-icon {
+                margin-left: -26px;
+                margin-right: 26px;
+            }
         }
     }
 
