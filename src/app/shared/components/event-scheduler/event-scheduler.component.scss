@@ -49,6 +49,7 @@ ion-card.event-card {
         height: 40px;
         --border-radius: 2px;
         border-radius: 2px;
+        box-shadow: 0 3px 6px 0 $light-gray1;
     }
 
     &__btn-text {
