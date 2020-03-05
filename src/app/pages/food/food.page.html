@@ -6,18 +6,22 @@
       <div class="library">
         <div class="library__header">
           <ion-item lines="none">
-            <ion-select placeholder="Steps">
-              <ion-select-option value="f">Steps</ion-select-option>
-              <ion-select-option value="m">Steps 1</ion-select-option>
-              <ion-select-option value="m">Steps 2</ion-select-option>
+            <ion-label class="select-white-placeholder" slot="start" *ngIf="!selectedType">Any type</ion-label>
+            <ion-select placeholder="" [(ngModel)]="selectedType">
+              <ion-select-option value="f">type</ion-select-option>
+              <ion-select-option value="m">type 1</ion-select-option>
+              <ion-select-option value="s">type 2</ion-select-option>
             </ion-select>
+            <ion-icon color="secondary" name="arrow-down" mode="ios" slot="end" size="small"></ion-icon>
           </ion-item>
           <ion-item lines="none">
-            <ion-select placeholder="Steps">
-              <ion-select-option value="f">Steps</ion-select-option>
-              <ion-select-option value="m">Steps 1</ion-select-option>
-              <ion-select-option value="m">Steps 2</ion-select-option>
+            <ion-label class="select-white-placeholder" slot="start" *ngIf="!selectedMeal">Any meal</ion-label>
+            <ion-select placeholder="" [(ngModel)]="selectedMeal">
+              <ion-select-option value="f">meal</ion-select-option>
+              <ion-select-option value="m">meal 1</ion-select-option>
+              <ion-select-option value="s">meal 2</ion-select-option>
             </ion-select>
+            <ion-icon color="secondary" name="arrow-down" mode="ios" slot="end" size="small"></ion-icon>
           </ion-item>
         </div>
         <div class="library__header library__header--no-bordrer-bottom ">
