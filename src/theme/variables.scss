@@ -120,3 +120,11 @@ rating {
         height: 18px;
     }
 }
+
+ion-select {
+    font-weight: 300;
+    font-family: $font-family-helvetica;
+    color: $dark-gray1 !important;
+    font-size: 12px;
+    line-height: 15px;
+}
