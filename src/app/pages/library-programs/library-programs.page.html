@@ -14,18 +14,22 @@
       </div>
       <div class="library__header">
         <ion-item lines="none">
-          <ion-select placeholder="Steps">
-            <ion-select-option value="f">Steps</ion-select-option>
-            <ion-select-option value="m">Steps 1</ion-select-option>
-            <ion-select-option value="m">Steps 2</ion-select-option>
+          <ion-label class="select-white-placeholder" slot="start" *ngIf="!selectedBodyFilter">Body Filter</ion-label>
+          <ion-select placeholder="" [(ngModel)]="selectedBodyFilter">
+            <ion-select-option value="f">Body Filter 1</ion-select-option>
+            <ion-select-option value="m">Body Filter 2</ion-select-option>
+            <ion-select-option value="m">Body Filter 3</ion-select-option>
           </ion-select>
+          <ion-icon color="secondary" name="arrow-down" mode="ios" slot="end" size="small"></ion-icon>
         </ion-item>
           <ion-item lines="none">
-            <ion-select placeholder="Steps">
+            <ion-label class="select-white-placeholder" slot="start" *ngIf="!selectedDiffFilter">Difficulty filter</ion-label>
+            <ion-select placeholder="" [(ngModel)]="selectedDiffFilter">
               <ion-select-option value="f">Steps</ion-select-option>
               <ion-select-option value="m">Steps 1</ion-select-option>
               <ion-select-option value="m">Steps 2</ion-select-option>
             </ion-select>
+            <ion-icon color="secondary" name="arrow-down" mode="ios" slot="end" size="small"></ion-icon>
           </ion-item>
       </div>
       <div class="library__title">Newest</div>

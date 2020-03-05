@@ -43,6 +43,8 @@ export class LibraryProgramsPage extends PageBaseComponent implements OnInit, Af
             imgSrc: "/assets/images/news@2x.png"
         }
     ];
+    selectedBodyFilter: any;
+    selectedDiffFilter: any;
 
     constructor() {
         super();
@@ -50,6 +52,16 @@ export class LibraryProgramsPage extends PageBaseComponent implements OnInit, Af
 
     ngOnInit() {
 
+    }
+
+    ionViewDidEnter() {
+        const ionSelects = document.querySelectorAll('ion-select');
+        ionSelects.forEach((ionSelect) => {
+            const selectIconInner = ionSelect.shadowRoot.querySelector('.select-icon').querySelector('.select-icon-inner');
+            if(selectIconInner){
+                selectIconInner.setAttribute('style', 'display: none !important');
+            }
+        });
     }
 
     ngAfterViewInit(): void {
