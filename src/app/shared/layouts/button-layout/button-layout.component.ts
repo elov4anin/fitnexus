@@ -110,7 +110,7 @@ export class ButtonLayoutComponent implements OnInit {
                         icon: 'ios-person-white.svg',
                         redirectTo: 'members',
                         active: false,
-                        activePages: ['members'],
+                        activePages: ['members', 'members-connect'],
                     }
                 ];
                 this.template = 1;
