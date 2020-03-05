@@ -6,18 +6,22 @@
     <div class="library">
       <div class="library__header">
         <ion-item lines="none">
-          <ion-select placeholder="Steps">
+          <ion-label class="select-white-placeholder" slot="start" *ngIf="!selectedStep">Steps</ion-label>
+          <ion-select placeholder="" [(ngModel)]="selectedStep">
             <ion-select-option value="f">Steps</ion-select-option>
             <ion-select-option value="m">Steps 1</ion-select-option>
             <ion-select-option value="m">Steps 2</ion-select-option>
           </ion-select>
+          <ion-icon color="secondary" name="arrow-down" mode="ios" slot="end" size="small"></ion-icon>
         </ion-item>
         <ion-item lines="none">
-          <ion-select placeholder="Steps">
+          <ion-label class="select-white-placeholder" slot="start" *ngIf="!selectedYear">Steps</ion-label>
+          <ion-select placeholder="" [(ngModel)]="selectedYear">
             <ion-select-option value="f">Steps</ion-select-option>
             <ion-select-option value="m">Steps 1</ion-select-option>
             <ion-select-option value="m">Steps 2</ion-select-option>
           </ion-select>
+          <ion-icon color="secondary" name="arrow-down" mode="ios" slot="end" size="small"></ion-icon>
         </ion-item>
         <ion-button (click)="openFilter()" expand="full" color="secondary" size="small"
         >
