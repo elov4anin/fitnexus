@@ -39,6 +39,9 @@ export class ButtonLayoutComponent implements OnInit {
     }
 
     private setActiveButton(url: string): void {
+        if (url.includes('/')) {
+            url = url.split('/')[0];
+        }
         const idx = this.buttons.findIndex(b => b.activePages.includes(url));
         this.buttons.forEach(b => b.active = false);
         this.buttons[idx] = {
