@@ -39,7 +39,7 @@ export class ButtonLayoutComponent implements OnInit {
     }
 
     private setActiveButton(url: string): void {
-        const idx = this.buttons.findIndex(b => b.redirectTo === url);
+        const idx = this.buttons.findIndex(b => b.activePages.includes(url));
         this.buttons.forEach(b => b.active = false);
         this.buttons[idx] = {
             ...this.buttons[idx],
@@ -56,21 +56,24 @@ export class ButtonLayoutComponent implements OnInit {
                         icon: 'ios-person-black.svg',
                         activeIcon: 'ios-person-blue.svg',
                         redirectTo: 'account',
-                        active: true
+                        active: true,
+                        activePages: ['account'],
                     },
                     {
                         text: 'fitness',
                         icon: 'ios-fitness.svg',
                         activeIcon: 'ios-fitness-blue.svg',
                         redirectTo: 'welcome-programs',
-                        active: false
+                        active: false,
+                        activePages: ['welcome-programs'],
                     },
                     {
                         text: 'messages',
                         icon: 'ios-photos-black.svg',
                         activeIcon: 'ios-photos-blue.svg',
                         redirectTo: 'messages',
-                        active: false
+                        active: false,
+                        activePages: ['messages'],
                     }
                 ];
                 this.template = 2;
@@ -82,13 +85,15 @@ export class ButtonLayoutComponent implements OnInit {
                         text: 'Feed',
                         icon: 'ios-list-box-white.svg',
                         redirectTo: 'news-feed',
-                        active: true
+                        active: true,
+                        activePages: ['news-feed'],
                     },
                     {
                         text: 'Members',
                         icon: 'ios-person-white.svg',
                         redirectTo: 'members',
-                        active: false
+                        active: false,
+                        activePages: ['members'],
                     }
                 ];
                 this.template = 1;
@@ -101,21 +106,24 @@ export class ButtonLayoutComponent implements OnInit {
                         icon: 'md-watch-black.svg',
                         activeIcon: 'md-watch-blue.svg',
                         redirectTo: 'stat-by-device',
-                        active: true
+                        active: true,
+                        activePages: ['stat-by-device'],
                     },
                     {
                         text: 'fitness',
                         icon: 'ios-fitness.svg',
                         activeIcon: 'ios-fitness-blue.svg',
                         redirectTo: 'welcome-programs',
-                        active: false
+                        active: false,
+                        activePages: ['welcome-programs', 'training'],
                     },
                     {
                         text: 'body-comp',
                         icon: 'ios-man.svg',
                         activeIcon: 'ios-man-blue.svg',
                         redirectTo: 'add-body-comp',
-                        active: false
+                        active: false,
+                        activePages: ['add-body-comp'],
                     }
                 ];
                 this.template = 2;
@@ -127,13 +135,15 @@ export class ButtonLayoutComponent implements OnInit {
                         text: 'Upcoming',
                         icon: 'ios-clock.svg',
                         redirectTo: 'calendar',
-                        active: true
+                        active: true,
+                        activePages: ['calendar'],
                     },
                     {
                         text: 'My bookings',
                         icon: 'ios-journal.svg',
                         redirectTo: 'my-bookings',
-                        active: false
+                        active: false,
+                        activePages: ['my-bookings'],
                     },
                 ];
                 this.template = 1;
@@ -145,13 +155,15 @@ export class ButtonLayoutComponent implements OnInit {
                         text: 'Challenges',
                         icon: 'ios-flag.svg',
                         redirectTo: 'challenges',
-                        active: true
+                        active: true,
+                        activePages: ['challenges'],
                     },
                     {
                         text: 'Leaderboard',
                         icon: 'ios-list.svg',
                         redirectTo: 'leaderboard',
-                        active: false
+                        active: false,
+                        activePages: ['leaderboard'],
                     }
                 ];
                 this.template = 1;
@@ -163,13 +175,15 @@ export class ButtonLayoutComponent implements OnInit {
                         text: 'Meals',
                         icon: 'ios-restaurant-white.svg',
                         redirectTo: 'food',
-                        active: true
+                        active: true,
+                        activePages: ['food'],
                     },
                     {
                         text: 'Meal Planner',
                         icon: 'ios-checkbox.svg',
                         redirectTo: 'meal-planner',
-                        active: false
+                        active: false,
+                        activePages: ['meal-planner'],
                     }
                 ];
                 this.template = 1;
@@ -181,13 +195,15 @@ export class ButtonLayoutComponent implements OnInit {
                         text: 'Library',
                         icon: 'ios-journal.svg',
                         redirectTo: 'library-programs',
-                        active: true
+                        active: true,
+                        activePages: ['library-programs'],
                     },
                     {
                         text: 'My programmes',
                         icon: 'ios-person-white.svg',
                         redirectTo: 'my-programs',
-                        active: false
+                        active: false,
+                        activePages: ['my-programs'],
                     },
 
                 ];
@@ -200,15 +216,16 @@ export class ButtonLayoutComponent implements OnInit {
                         text: 'Class',
                         icon: 'ios-person-white.svg',
                         redirectTo: 'class',
-                        active: true
+                        active: true,
+                        activePages: ['class'],
                     },
                     {
                         text: 'Feedback',
                         icon: 'ios-journal.svg',
                         redirectTo: 'feedback',
-                        active: false
+                        active: false,
+                        activePages: ['feedback'],
                     },
-
                 ];
                 this.template = 1;
                 break

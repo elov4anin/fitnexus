@@ -9,7 +9,8 @@ export namespace ICommon {
         text: string;
         icon?: string;
         activeIcon?: string;
-        redirectTo?: string
-        active: boolean
+        redirectTo?: string;
+        activePages?: string[];
+        active: boolean;
     }
 }
