@@ -9,12 +9,25 @@ import {Router} from "@angular/router";
 })
 export class TrainingPage extends PageBaseComponent implements OnInit {
     pageTitle: string = ' ';
+    selectedExercises: any;
+    selectedWeight: any;
+    selectedReps: any;
 
     constructor(private _router: Router) {
         super();
     }
 
     ngOnInit() {
+    }
+
+    ionViewDidEnter() {
+        const ionSelects = document.querySelectorAll('ion-select');
+        ionSelects.forEach((ionSelect) => {
+            const selectIconInner = ionSelect.shadowRoot.querySelector('.select-icon').querySelector('.select-icon-inner');
+            if(selectIconInner){
+                selectIconInner.setAttribute('style', 'display: none !important');
+            }
+        });
     }
 
     addExercise() {

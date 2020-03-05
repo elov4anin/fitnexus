@@ -172,4 +172,15 @@ ion-select.select-blue {
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
 }
+ion-input {
+    --placeholder-opacity: 1!important;
+}
+input::placeholder {
+    font-weight: 300 !important;
+    font-family: $font-family-helvetica !important;
+    color: $dark-gray1 !important;
+    font-size: 12px !important;
+    line-height: 15px;
+    opacity: 1;
+}
 

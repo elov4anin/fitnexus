@@ -10,12 +10,13 @@
                 </span>
 
                 <ion-item lines="none">
-                    <ion-select placeholder="Steps">
-                        <ion-select-option value="f">Steps</ion-select-option>
-                        <ion-select-option value="m">Steps 1</ion-select-option>
-                        <ion-select-option value="m">Steps 2</ion-select-option>
+                    <ion-label class="select-white-placeholder" slot="start" *ngIf="!selectedExercises">Select</ion-label>
+                    <ion-select placeholder="" [(ngModel)]="selectedExercises">
+                        <ion-select-option value="f">Exercises 1</ion-select-option>
+                        <ion-select-option value="m">Exercises 2</ion-select-option>
+                        <ion-select-option value="m">Exercises 3</ion-select-option>
                     </ion-select>
-
+                    <ion-icon color="secondary" name="arrow-down" mode="ios" slot="end" size="small"></ion-icon>
                 </ion-item>
 
                 <ion-button (click)="addExercise()" expand="full" color="secondary" size="small"
@@ -41,21 +42,23 @@
                 <span class="training__label">
                     Sets
                 </span>
-                <ion-item lines="none">
-                    <ion-select placeholder="Steps">
-                        <ion-select-option value="f">Steps</ion-select-option>
-                        <ion-select-option value="m">Steps 1</ion-select-option>
-                        <ion-select-option value="m">Steps 2</ion-select-option>
+                <ion-item lines="none" style="width: 100px;">
+                    <ion-label class="select-white-placeholder" slot="start" *ngIf="!selectedWeight">Weight (kg)</ion-label>
+                    <ion-select placeholder="" [(ngModel)]="selectedWeight">
+                        <ion-select-option value="f">100</ion-select-option>
+                        <ion-select-option value="m">200</ion-select-option>
+                        <ion-select-option value="m">300</ion-select-option>
                     </ion-select>
-
+                    <ion-icon color="secondary" name="arrow-down" mode="ios" slot="end" size="small"></ion-icon>
                 </ion-item>
-                <ion-item lines="none">
-                    <ion-select placeholder="Steps">
-                        <ion-select-option value="f">Steps</ion-select-option>
-                        <ion-select-option value="m">Steps 1</ion-select-option>
-                        <ion-select-option value="m">Steps 2</ion-select-option>
+                <ion-item lines="none" style="width: 100px;">
+                    <ion-label class="select-white-placeholder" slot="start" *ngIf="!selectedReps">Reps</ion-label>
+                    <ion-select placeholder="" [(ngModel)]="selectedReps">
+                        <ion-select-option value="f">Reps 1</ion-select-option>
+                        <ion-select-option value="m">Reps 2</ion-select-option>
+                        <ion-select-option value="m">Reps 3</ion-select-option>
                     </ion-select>
-
+                    <ion-icon color="secondary" name="arrow-down" mode="ios" slot="end" size="small"></ion-icon>
                 </ion-item>
 
                 <ion-button (click)="addExercise()" expand="full" color="secondary" size="small"
