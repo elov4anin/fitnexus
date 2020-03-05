@@ -39,7 +39,7 @@ export class ButtonIntoLayoutComponent implements OnInit {
   }
 
   private setActiveButton(url: string): void {
-    const idx = this.buttons.findIndex(b => b.redirectTo === url);
+    const idx = this.buttons.findIndex(b => b.activePages.includes(url));
     this.buttons.forEach(b => b.active = false);
     this.buttons[idx] = {
       ...this.buttons[idx],
@@ -55,13 +55,15 @@ export class ButtonIntoLayoutComponent implements OnInit {
             text: 'Members',
             icon: '',
             redirectTo: 'messages',
-            active: true
+            active: true,
+            activePages: ['messages'],
           },
           {
             text: 'Staff',
             icon: '',
             redirectTo: 'new-measurements',
-            active: false
+            active: false,
+            activePages: ['new-measurements'],
           },
         ];
         this.template = 1;
@@ -73,13 +75,15 @@ export class ButtonIntoLayoutComponent implements OnInit {
             text: 'Before & after',
             icon: 'ios-photos.svg',
             redirectTo: 'before-after',
-            active: false
+            active: false,
+            activePages: ['before-after'],
           },
           {
             text: 'New measurements',
             icon: 'ios-body.svg',
             redirectTo: 'new-measurements',
-            active: false
+            active: false,
+            activePages: ['new-measurements'],
           },
         ];
         this.template = 1;

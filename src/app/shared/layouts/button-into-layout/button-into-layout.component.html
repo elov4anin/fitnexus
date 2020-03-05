@@ -6,6 +6,7 @@
                   expand="full"
                   (click)="toggleButton(button.redirectTo)"
       >
+        <ion-icon *ngIf="button.icon" src="/assets/images/svg-icons/{{button.icon}}"></ion-icon>
         <span class="submenu__btn-text">{{button.text}}</span>
       </ion-button>
     </div>
