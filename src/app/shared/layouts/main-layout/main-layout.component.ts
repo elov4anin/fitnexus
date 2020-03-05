@@ -20,6 +20,7 @@ export class MainLayoutComponent implements OnInit {
     @Input() isAccount: boolean = false;
     @Input() isNeedBack: boolean = false;
     @Input() isNeedLogo: boolean = false;
+    @Input() backRoute: string;
 
     public readonly tabs = Object.keys(TabsEnum).map(
         (key) => TabsEnum[key]
@@ -75,6 +76,10 @@ export class MainLayoutComponent implements OnInit {
     }
 
     back() {
-        this._location.back()
+        if (!!this.backRoute) {
+            this._router.navigate(['/', this.backRoute])
+        } else {
+            this._location.back()
+        }
     }
 }
