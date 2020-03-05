@@ -132,6 +132,7 @@ rating {
 
 .select-white-placeholder {
     margin-top: -2px;
+    margin-right: 0;
     font-weight: 300 !important;
     font-family: $font-family-helvetica !important;
     color: $dark-gray1 !important;
@@ -157,5 +158,18 @@ ion-select.select-blue {
 }
 .alert-button.sc-ion-alert-ios {
     color: $blue;
+}
+
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
 }
 

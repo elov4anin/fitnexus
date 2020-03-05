@@ -25,6 +25,7 @@
     "@ionic/angular": "^4.7.1",
     "cordova-android": "8.0.0",
     "core-js": "^2.5.4",
+    "ion2-calendar": "^3.0.0-rc.0",
     "ionic2-calendar": "^0.5.8",
     "ionic4-rating": "^1.0.9",
     "ionicons": "^4.6.3",

@@ -11,6 +11,7 @@ import {ButtonLayoutComponent} from "./layouts/button-layout/button-layout.compo
 import {PageBaseComponent} from "./components/page-base/page-base.component";
 import {ButtonIntoLayoutComponent} from "./layouts/button-into-layout/button-into-layout.component";
 import {PerfectScrollbarModule} from "ngx-perfect-scrollbar";
+import {CalendarModule} from "ion2-calendar";
 
 const ANGULAR_MODULES = [
     CommonModule,
@@ -18,7 +19,8 @@ const ANGULAR_MODULES = [
     FormsModule,
     IonicModule,
 
-    PerfectScrollbarModule
+    PerfectScrollbarModule,
+    CalendarModule
 ];
 
 const COMPONENTS = [

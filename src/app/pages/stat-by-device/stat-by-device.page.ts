@@ -1,6 +1,8 @@
 import {AfterViewInit, Component, OnInit, QueryList, ViewChildren} from '@angular/core';
 import {PageBaseComponent} from "../../shared/components/page-base/page-base.component";
-import {IonSelect} from "@ionic/angular";
+import {IonSelect, ModalController} from "@ionic/angular";
+import {CalendarComponentOptions, CalendarModal, CalendarModalOptions, CalendarResult} from "ion2-calendar";
+import * as moment from "moment";
 
 @Component({
     selector: 'app-stat-by-device',
@@ -14,8 +16,15 @@ export class StatByDevicePage extends PageBaseComponent implements OnInit {
     selectedStep: any;
     selectedDateRange: any;
 
+    dateRange: { from: string; to: string; };
+    type: 'string'; // 'string' | 'js-date' | 'moment' | 'time' | 'object'
+    optionsRange: CalendarComponentOptions = {
+        pickMode: 'range'
+    };
+    dateRangeLabel: string = 'Select date range';
 
-    constructor() {
+
+    constructor(public modalCtrl: ModalController) {
         super();
     }
 
@@ -34,5 +43,30 @@ export class StatByDevicePage extends PageBaseComponent implements OnInit {
 
     addDevice() {
 
+    }
+
+    async openCalendar() {
+        const options: CalendarModalOptions = {
+            pickMode: 'range',
+            title: 'RANGE'
+        };
+
+        const myCalendar = await this.modalCtrl.create({
+            component: CalendarModal,
+            componentProps: { options }
+        });
+
+        myCalendar.present();
+
+        const event: any = await myCalendar.onDidDismiss();
+        const date = event.data;
+        const from = moment([date.from.years, date.from.months, date.from.date]).format('DD MMM YYYY');
+        const to = moment([date.to.years, date.to.months, date.to.date]).format('DD MMM YYYY');
+        this.dateRange = date;
+        if (!!from && !!to) {
+            this.dateRangeLabel = `${from} - ${to}`;
+        }
+
+        console.log(date, from, to);
     }
 }

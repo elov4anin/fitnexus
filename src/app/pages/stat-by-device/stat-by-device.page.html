@@ -30,13 +30,17 @@
             </ion-select>
             <ion-icon color="secondary" name="arrow-down" mode="ios" slot="end" size="small"></ion-icon>
           </ion-item>
-          <ion-item lines="none">
-            <ion-label class="select-white-placeholder" slot="start" *ngIf="!selectedDateRange">22 - 28 Dec 2019</ion-label>
-            <ion-select placeholder="" [(ngModel)]="selectedDateRange">
-              <ion-select-option value="f">22 - 28 Dec 2019</ion-select-option>
-              <ion-select-option value="m">23 - 26 Dec 2019</ion-select-option>
-              <ion-select-option value="m">24 - 27 Dec 2019</ion-select-option>
-            </ion-select>
+          <ion-item lines="none" (click)="openCalendar()">
+            <ion-label class="select-white-placeholder" slot="start" >{{dateRangeLabel}}</ion-label>
+              <ion-calendar [(ngModel)]="dateRange"
+                            [options]="optionsRange"
+                            [type]="type"
+                            color="secondary"
+                            [format]="'YYYY-MM-DD'"
+                            (click)="openCalendar()"
+                            class="visually-hidden"
+              >
+              </ion-calendar>
             <ion-icon color="secondary" name="arrow-down" mode="ios" slot="end" size="small"></ion-icon>
           </ion-item>
         </div>
