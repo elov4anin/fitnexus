@@ -1,5 +1,11 @@
 @import "variables";
 
+:host {
+    ::ng-deep app-button-layout .layout-content {
+        background: transparent;
+    }
+}
+
 .card-item {
     margin-bottom: 11px;
 }
