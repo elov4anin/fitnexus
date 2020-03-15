@@ -3,7 +3,7 @@ import {Router} from "@angular/router";
 import { Location } from "@angular/common";
 
 import {
-    TabsEnum,
+    TabsEnum, TabsEnum2ActivePagesMapping,
     TabsEnum2IconActiveMapping,
     TabsEnum2IconMapping,
     TabsEnum2RoutingMapping
@@ -40,33 +40,35 @@ export class MainLayoutComponent implements OnInit {
     }
 
     getActiveTabIcon(currentRoute: string): string {
+        const url = this._router.url.includes('/') ? this._router.url.split('/')[1] : this._router.url;
         switch (currentRoute) {
             case TabsEnum.NEWS:
-                if (this._router.url.includes(TabsEnum2RoutingMapping[currentRoute])) {
+                const activePages: string[] =['news-feed'];
+                if (TabsEnum2ActivePagesMapping[currentRoute].includes(url)) {
                     return TabsEnum2IconActiveMapping[currentRoute]
                 } else {
                     return TabsEnum2IconMapping[currentRoute]
                 }
             case TabsEnum.STATS:
-                if (this._router.url.includes(TabsEnum2RoutingMapping[currentRoute])) {
+                if (TabsEnum2ActivePagesMapping[currentRoute].includes(url)) {
                     return TabsEnum2IconActiveMapping[currentRoute]
                 } else {
                     return TabsEnum2IconMapping[currentRoute]
                 }
             case TabsEnum.CALENDAR:
-                if (this._router.url.includes(TabsEnum2RoutingMapping[currentRoute])) {
+                if (TabsEnum2ActivePagesMapping[currentRoute].includes(url)) {
                     return TabsEnum2IconActiveMapping[currentRoute]
                 } else {
                     return TabsEnum2IconMapping[currentRoute]
                 }
             case TabsEnum.RATING:
-                if (this._router.url.includes(TabsEnum2RoutingMapping[currentRoute])) {
+                if (TabsEnum2ActivePagesMapping[currentRoute].includes(url)) {
                     return TabsEnum2IconActiveMapping[currentRoute]
                 } else {
                     return TabsEnum2IconMapping[currentRoute]
                 }
             case TabsEnum.FOOD:
-                if (this._router.url.includes(TabsEnum2RoutingMapping[currentRoute])) {
+                if (TabsEnum2ActivePagesMapping[currentRoute].includes(url)) {
                     return TabsEnum2IconActiveMapping[currentRoute]
                 } else {
                     return TabsEnum2IconMapping[currentRoute]

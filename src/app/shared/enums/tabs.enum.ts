@@ -29,3 +29,24 @@ export const TabsEnum2RoutingMapping: Record<TabsEnum, string> = {
     RATING: 'challenges',
     FOOD: 'food'
 };
+
+export const TabsEnum2ActivePagesMapping: Record<TabsEnum, string[]> = {
+    NEWS: ['news-feed', 'members', 'members-connect'],
+    STATS: [
+        'stat-by-device',
+        'add-device',
+        'welcome-programs',
+        'training',
+        'stat-program',
+        'add-body-comp',
+        'before-after',
+        'new-measurements',
+        'stat-measurements',
+        'measurement-detail',
+        'library-programs',
+        'my-programs'
+    ],
+    CALENDAR: ['calendar', 'my-bookings', 'class', 'feedback'],
+    RATING: ['challenges', 'leaderboard'],
+    FOOD: ['food', 'meal-planner'],
+};
