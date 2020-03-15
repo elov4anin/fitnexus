@@ -7,7 +7,7 @@ import {PageBaseComponent} from "../../shared/components/page-base/page-base.com
     styleUrls: ['./leaderboard.page.scss'],
 })
 export class LeaderboardPage extends PageBaseComponent implements OnInit {
-    pageTitle: string = "Complete";
+    pageTitle: string = "COMPETE";
     selectedStep: any;
     selectedYear: any;
 
