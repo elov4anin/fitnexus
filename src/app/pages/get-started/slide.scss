@@ -79,7 +79,7 @@
         width: 238px;
         height: 258px;
         min-height: 258px;
-        background-color: $light-gray;
+        // background-color: $light-gray;
 
         &:before {
             content: '';
@@ -135,44 +135,51 @@
         margin-right: 10px;
     }
 }
-.slide__img--feed:before {
-    width: 81px;
-    height: 81px;
-    background-image: url("/assets/images/svg-icons/ios-list-box-slide.svg");
+.slide__img--feed {
+    background-image: url("/assets/images/svg-icons/get-started-news.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 20px 0;
 }
-.slide__img--members:before {
-    width: 119px;
-    height: 119px;
-    background-image: url("/assets/images/svg-icons/ios-person.svg");
+.slide__img--members {
+    background-image: url("/assets/images/svg-icons/get-started-members.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 20px 0;
 }
 
-.slide__img--tracking:before {
-    width: 75px;
-    height: 82px;
-    background-image: url("/assets/images/svg-icons/ios-stats-slide.svg");
+.slide__img--tracking {
+    background-image: url("/assets/images/svg-icons/get-started-tracking.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 20px 0;
 }
 
 .slide__img--nutrition:before {
-    width: 63px;
-    height: 84px;
-    background-image: url("/assets/images/svg-icons/ios-restaurant-slide.svg");
+    background-image: url("/assets/images/svg-icons/get-started-nutrition.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 20px 0;
 }
 
 .slide__img--classes:before {
-    width: 90px;
-    height: 83px;
-    background-image: url("/assets/images/svg-icons/ios-calendar-slide.svg");
+    background-image: url("/assets/images/svg-icons/get-started-classes.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 20px 0;
 }
 
 .slide__img--challenges:before {
-    width: 90px;
-    height: 83px;
-    background-image: url("/assets/images/svg-icons/ios-trophy-slide.svg");
+    background-image: url("/assets/images/svg-icons/get-started-challenges.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 20px 0;
 }
 
 .slide__img--prem:before {
-    width: 128px;
-    height: 119px;
-    background-image: url("/assets/images/svg-icons/ios-star.svg");
+    background-image: url("/assets/images/svg-icons/get-started-prem.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 20px 0;
 }
 
