@@ -37,7 +37,8 @@ export class StatMeasurementsPage extends PageBaseComponent implements OnInit {
     async openCalendar() {
         const options: CalendarModalOptions = {
             title: 'Select date',
-            color: 'secondary'
+            color: 'secondary',
+            from: new Date(2020, 0, 1)
         };
 
         const myCalendar = await this.modalCtrl.create({

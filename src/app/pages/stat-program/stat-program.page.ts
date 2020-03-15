@@ -51,8 +51,8 @@ export class StatProgramPage extends PageBaseComponent implements OnInit {
         const options: CalendarModalOptions = {
             pickMode: 'range',
             title: 'RANGE',
-            color: 'secondary'
-
+            color: 'secondary',
+            from: new Date(2020, 0, 1)
         };
 
         const myCalendar = await this.modalCtrl.create({
