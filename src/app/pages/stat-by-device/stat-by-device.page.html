@@ -33,9 +33,7 @@
           <ion-item lines="none" (click)="openCalendar()">
             <ion-label class="select-white-placeholder" slot="start" >{{dateRangeLabel}}</ion-label>
               <ion-calendar [(ngModel)]="dateRange"
-                            [options]="optionsRange"
                             [type]="type"
-                            color="secondary"
                             [format]="'YYYY-MM-DD'"
                             (click)="openCalendar()"
                             class="visually-hidden"

@@ -47,28 +47,30 @@ export class StatProgramPage extends PageBaseComponent implements OnInit {
         });
     }
 
-  async openCalendar() {
-    const options: CalendarModalOptions = {
-      pickMode: 'range',
-      title: 'RANGE'
-    };
+    async openCalendar() {
+        const options: CalendarModalOptions = {
+            pickMode: 'range',
+            title: 'RANGE',
+            color: 'secondary'
 
-    const myCalendar = await this.modalCtrl.create({
-      component: CalendarModal,
-      componentProps: { options }
-    });
+        };
 
-    myCalendar.present();
+        const myCalendar = await this.modalCtrl.create({
+            component: CalendarModal,
+            componentProps: {options}
+        });
 
-    const event: any = await myCalendar.onDidDismiss();
-    const date = event.data;
-    const from = moment([date.from.years, date.from.months, date.from.date]).format('DD MMM YYYY');
-    const to = moment([date.to.years, date.to.months, date.to.date]).format('DD MMM YYYY');
-    this.dateRange = date;
-    if (!!from && !!to) {
-      this.dateRangeLabel = `${from} - ${to}`;
+        myCalendar.present();
+
+        const event: any = await myCalendar.onDidDismiss();
+        const date = event.data;
+        const from = moment([date.from.years, date.from.months, date.from.date]).format('DD MMM YYYY');
+        const to = moment([date.to.years, date.to.months, date.to.date]).format('DD MMM YYYY');
+        this.dateRange = date;
+        if (!!from && !!to) {
+            this.dateRangeLabel = `${from} - ${to}`;
+        }
+
+        console.log(date, from, to);
     }
-
-    console.log(date, from, to);
-  }
 }

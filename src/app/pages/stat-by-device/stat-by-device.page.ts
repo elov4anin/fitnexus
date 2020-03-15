@@ -17,9 +17,7 @@ export class StatByDevicePage extends PageBaseComponent implements OnInit {
 
     dateRange: { from: string; to: string; };
     type: 'string'; // 'string' | 'js-date' | 'moment' | 'time' | 'object'
-    optionsRange: CalendarComponentOptions = {
-        pickMode: 'range'
-    };
+
     dateRangeLabel: string = 'Select date range';
 
 
@@ -47,7 +45,8 @@ export class StatByDevicePage extends PageBaseComponent implements OnInit {
     async openCalendar() {
         const options: CalendarModalOptions = {
             pickMode: 'range',
-            title: 'RANGE'
+            title: 'RANGE',
+            color: 'secondary'
         };
 
         const myCalendar = await this.modalCtrl.create({
