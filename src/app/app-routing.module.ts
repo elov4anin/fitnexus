@@ -136,6 +136,14 @@ const routes: Routes = [
     path: 'stat-program',
     loadChildren: () => import('./pages/stat-program/stat-program.module').then( m => m.StatProgramPageModule)
   },
+  {
+    path: 'notifications',
+    loadChildren: () => import('./pages/notifications/notifications.module').then( m => m.NotificationsPageModule)
+  },
+  {
+    path: 'staff',
+    loadChildren: () => import('./pages/messages-staff/messages-staff.module').then( m => m.MessagesStaffPageModule)
+  },
 
 ];
 

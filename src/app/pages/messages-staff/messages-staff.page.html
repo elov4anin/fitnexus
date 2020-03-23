@@ -1,0 +1,33 @@
+<app-main-layout
+        [titlePage]="pageTitle"
+>
+  <app-button-layout [listBtnForLayout]="listBtnForLayout.MESSAGES">
+    <app-button-into-layout [listBtnForLayout]="listBtnForLayout.MESSAGES_INTO">
+      <div class="message-members">
+        <ion-item>
+          <ion-card class="ion-margin-start ion-margin-end" (click)="openChat()">
+            <div class="card-program">
+              <ion-img src="/assets/images/news@2x.png" class="card-program__img"></ion-img>
+              <div class="card-program__wrapper">
+                <span class="card-program__title card-program__title--new">Emma Jogger</span>
+                <span class="card-program__text">Hey, how's it g...</span>
+              </div>
+            </div>
+          </ion-card>
+        </ion-item>
+        <ion-item>
+          <ion-card  class="ion-margin-start ion-margin-end">
+            <div class="card-program">
+              <ion-img src="/assets/images/news@2x.png" class="card-program__img"></ion-img>
+              <div class="card-program__wrapper">
+                <span class="card-program__title">Peter Smith</span>
+                <span class="card-program__text">Yeah I think so! </span>
+              </div>
+            </div>
+          </ion-card>
+        </ion-item>
+      </div>
+    </app-button-into-layout>
+  </app-button-layout>
+</app-main-layout>
+

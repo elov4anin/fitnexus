@@ -32,7 +32,7 @@ export class ButtonIntoLayoutComponent implements OnInit {
 
   toggleButton(redirectTo: string): void {
     if (this._router.url.includes(redirectTo)) {
-      return
+      return;
     }
     this.setActiveButton(redirectTo);
     this._router.navigate(["/", redirectTo]);
@@ -61,9 +61,9 @@ export class ButtonIntoLayoutComponent implements OnInit {
           {
             text: 'Staff',
             icon: '',
-            redirectTo: 'new-measurements',
+            redirectTo: 'staff',
             active: false,
-            activePages: ['new-measurements'],
+            activePages: ['staff'],
           },
         ];
         this.template = 1;
