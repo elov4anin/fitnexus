@@ -1,0 +1,22 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>Membership card</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="dark" (click)="dismissModal()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+
+  <div class="qr d-flex flex-column ion-justify-content-center ion-margin-top ion-padding-start ion-padding-end">
+    <span class="gr__text ion-margin-top">
+      Check in
+    </span>
+
+    <qr-code value="Yo world!" size="300" errorCorrectionLevel="M"></qr-code>
+    <span class="gr__text ion-margin-top">
+      en0000000000123012
+    </span>
+  </div>
+
+</ion-content>

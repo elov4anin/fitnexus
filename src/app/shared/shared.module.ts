@@ -12,6 +12,8 @@ import {PageBaseComponent} from "./components/page-base/page-base.component";
 import {ButtonIntoLayoutComponent} from "./layouts/button-into-layout/button-into-layout.component";
 import {PerfectScrollbarModule} from "ngx-perfect-scrollbar";
 import {CalendarModule} from "ion2-calendar";
+import {ModalQrcodeComponent} from './modals/modal-qrcode/modal-qrcode.component';
+import {QrCodeModule} from 'ng-qrcode';
 
 const ANGULAR_MODULES = [
     CommonModule,
@@ -20,7 +22,9 @@ const ANGULAR_MODULES = [
     IonicModule,
 
     PerfectScrollbarModule,
-    CalendarModule
+    CalendarModule,
+
+    QrCodeModule,
 ];
 
 const COMPONENTS = [
@@ -35,6 +39,10 @@ const COMPONENTS = [
 
 ];
 
+const MODALS = [
+    ModalQrcodeComponent
+]
+
 
 @NgModule({
     imports: [
@@ -45,7 +53,11 @@ const COMPONENTS = [
         ...COMPONENTS
     ],
     declarations: [
-        ...COMPONENTS
+        ...COMPONENTS,
+        ...MODALS
+    ],
+    entryComponents: [
+        ...MODALS
     ]
 })
 export class SharedModule {

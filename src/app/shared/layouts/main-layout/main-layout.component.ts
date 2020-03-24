@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
-import { Location } from "@angular/common";
+import {Location} from "@angular/common";
 
 import {
     TabsEnum, TabsEnum2ActivePagesMapping,
@@ -8,6 +8,8 @@ import {
     TabsEnum2IconMapping,
     TabsEnum2RoutingMapping
 } from "../../enums/tabs.enum";
+import {ModalController} from '@ionic/angular';
+import {ModalQrcodeComponent} from '../../modals/modal-qrcode/modal-qrcode.component';
 
 
 @Component({
@@ -29,7 +31,7 @@ export class MainLayoutComponent implements OnInit {
     public readonly TabsEnum2IconMapping = TabsEnum2IconMapping;
     public readonly TabsEnum2RoutingMapping = TabsEnum2RoutingMapping;
 
-    constructor(private _router: Router, private _location: Location) {
+    constructor(private _router: Router, private _location: Location, private _modalController: ModalController) {
     }
 
     ngOnInit(): void {
@@ -43,7 +45,7 @@ export class MainLayoutComponent implements OnInit {
         const url = this._router.url.includes('/') ? this._router.url.split('/')[1] : this._router.url;
         switch (currentRoute) {
             case TabsEnum.NEWS:
-                const activePages: string[] =['news-feed'];
+                const activePages: string[] = ['news-feed'];
                 if (TabsEnum2ActivePagesMapping[currentRoute].includes(url)) {
                     return TabsEnum2IconActiveMapping[currentRoute]
                 } else {
@@ -83,5 +85,12 @@ export class MainLayoutComponent implements OnInit {
         } else {
             this._location.back()
         }
+    }
+
+    async openQrCodeModal() {
+        const modal = await this._modalController.create({
+            component: ModalQrcodeComponent
+        });
+        return await modal.present();
     }
 }

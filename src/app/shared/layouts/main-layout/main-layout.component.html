@@ -11,7 +11,7 @@
         <div class="d-flex ion-justify-content-between ion-align-items-center pr12" *ngIf="!isAccount">
             <ion-text class="page-title" *ngIf="!isNeedLogo">{{titlePage}}</ion-text>
             <img class="page-logo" *ngIf="isNeedLogo" src='/assets/images/logo_black.png' width="86" height="15"  alt="">
-            <ion-button class="barcode" size="small">
+            <ion-button class="barcode" size="small" (click)="openQrCodeModal()">
                 <ion-img src="/assets/images/svg-icons/ios-barcode.svg"></ion-img>
             </ion-button>
         </div>
