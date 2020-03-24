@@ -8,6 +8,7 @@ export enum LayoutsEnum {
     LIBRARY = 'LIBRARY',
     MESSAGES ='MESSAGES',
     CLASSES = 'CLASSES',
+    NOTIFICATIONS = 'NOTIFICATIONS',
 
     MESSAGES_INTO ='MESSAGES_INTO',
     BODY ='BODY',

@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {PageBaseComponent} from '../../shared/components/page-base/page-base.component';
 
 @Component({
-  selector: 'app-notifications',
-  templateUrl: './notifications.page.html',
-  styleUrls: ['./notifications.page.scss'],
+    selector: 'app-notifications',
+    templateUrl: './notifications.page.html',
+    styleUrls: ['./notifications.page.scss'],
 })
-export class NotificationsPage implements OnInit {
+export class NotificationsPage extends PageBaseComponent implements OnInit {
+    pageTitle: string = 'Notifications';
 
-  constructor() { }
+    constructor() {
+        super();
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
 }

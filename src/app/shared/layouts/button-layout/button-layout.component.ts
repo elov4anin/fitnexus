@@ -96,6 +96,20 @@ export class ButtonLayoutComponent implements OnInit {
                 this.template = 1;
                 break;
             }
+            case LayoutsEnum.NOTIFICATIONS: {
+                this.buttons = [
+                    {
+                        text: 'Notifications',
+                        icon: 'notifications-outline.svg',
+                        activeIcon: 'notifications-outline.svg',
+                        redirectTo: 'notifications',
+                        active: true,
+                        activePages: ['notifications'],
+                    },
+                ];
+                this.template = 1;
+                break;
+            }
             case LayoutsEnum.NEWS: {
                 this.buttons = [
                     {
