@@ -14,6 +14,7 @@ import {PerfectScrollbarModule} from "ngx-perfect-scrollbar";
 import {CalendarModule} from "ion2-calendar";
 import {ModalQrcodeComponent} from './modals/modal-qrcode/modal-qrcode.component';
 import {QrCodeModule} from 'ng-qrcode';
+import {ModalConnectDevicesComponent} from './modals/modal-connect-devices/modal-connect-devices.component';
 
 const ANGULAR_MODULES = [
     CommonModule,
@@ -40,8 +41,9 @@ const COMPONENTS = [
 ];
 
 const MODALS = [
-    ModalQrcodeComponent
-]
+    ModalQrcodeComponent,
+    ModalConnectDevicesComponent
+];
 
 
 @NgModule({

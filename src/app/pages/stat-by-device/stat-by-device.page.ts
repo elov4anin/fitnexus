@@ -3,6 +3,7 @@ import {PageBaseComponent} from "../../shared/components/page-base/page-base.com
 import {IonSelect, ModalController} from "@ionic/angular";
 import {CalendarComponentOptions, CalendarModal, CalendarModalOptions, CalendarResult} from "ion2-calendar";
 import * as moment from "moment";
+import {ModalConnectDevicesComponent} from '../../shared/modals/modal-connect-devices/modal-connect-devices.component';
 
 @Component({
     selector: 'app-stat-by-device',
@@ -67,5 +68,12 @@ export class StatByDevicePage extends PageBaseComponent implements OnInit {
         }
 
         console.log(date, from, to);
+    }
+
+    async openAddDeviceModal() {
+        const modal = await this.modalCtrl.create({
+            component: ModalConnectDevicesComponent
+        });
+        return await modal.present();
     }
 }

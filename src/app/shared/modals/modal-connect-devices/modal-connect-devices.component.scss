@@ -1,0 +1,29 @@
+@import "variables"
+;
+.device-img {
+    width: 40px;
+    height: 40px;
+}
+
+ion-item {
+    --padding-start: 0;
+}
+
+.device {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+
+    &__col {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    ion-button {
+        margin: 0;
+        box-shadow: 0 3px 6px 0 $light-gray1;
+        border-radius: 12px;
+    }
+}

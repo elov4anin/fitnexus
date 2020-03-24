@@ -1,0 +1,36 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>Connect Devices</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="dark" (click)="dismissModal()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+
+  <ion-list class="">
+    <ion-item>
+      <div class="device">
+        <div class="device__col">
+          <img src="/assets/images/news@2x.png" alt="" class="device-img" slot="">
+          <ion-text class="ion-margin-start">Fitbit</ion-text>
+        </div>
+        <ion-button color="secondary" slot="end" (click)="addDevice()">Add</ion-button>
+      </div>
+
+
+    </ion-item>
+    <ion-item>
+      <div class="device">
+        <div class="device__col">
+          <img src="/assets/images/news@2x.png" alt="" class="device-img" slot="">
+          <ion-text class="ion-margin-start">Fitbit</ion-text>
+        </div>
+        <ion-button color="secondary" slot="end" (click)="addDevice()">Add</ion-button>
+      </div>
+
+
+    </ion-item>
+  </ion-list>
+
+</ion-content>
