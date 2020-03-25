@@ -1,0 +1,70 @@
+<app-main-layout
+        [titlePage]="pageTitle"
+>
+    <app-button-layout [listBtnForLayout]="listBtnForLayout.ALBUMS">
+        <div class="library">
+            <div class="library__header">
+                <div class="create" (click)="createAlbum()">
+                    <div class="create__wrap">
+                        <ion-icon name="add" size="large"></ion-icon>
+                        <span class="card-program__title">Create Album</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="library__list">
+                <ion-card>
+                    <div class="card-program" (click)="openAlbum()">
+                        <img src="/assets/images/news@2x.png" class="card-program__img">
+                        <div class="card-program__wrapper">
+                            <span class="card-program__title">My Album</span>
+                            <span class="card-program__text">5 Photos</span>
+                        </div>
+                    </div>
+                </ion-card>
+
+                <ion-card>
+                    <div class="card-program">
+                        <img src="/assets/images/news@2x.png" class="card-program__img">
+                        <div class="card-program__wrapper">
+                            <span class="card-program__title">My Album</span>
+                            <span class="card-program__text">5 Photos</span>
+                        </div>
+                    </div>
+                </ion-card>
+
+                <ion-card>
+                    <div class="card-program">
+                        <img src="/assets/images/news@2x.png" class="card-program__img">
+                        <div class="card-program__wrapper">
+                            <span class="card-program__title">My Album</span>
+                            <span class="card-program__text">5 Photos</span>
+                        </div>
+                    </div>
+                </ion-card>
+
+                <ion-card>
+                    <div class="card-program">
+                        <img src="/assets/images/news@2x.png" class="card-program__img">
+                        <div class="card-program__wrapper">
+                            <span class="card-program__title">My Album</span>
+                            <span class="card-program__text">5 Photos</span>
+                        </div>
+                    </div>
+                </ion-card>
+
+                <ion-card>
+                    <div class="card-program">
+                        <img src="/assets/images/news@2x.png" class="card-program__img">
+                        <div class="card-program__wrapper">
+                            <span class="card-program__title">My Album</span>
+                            <span class="card-program__text">5 Photos</span>
+                        </div>
+                    </div>
+                </ion-card>
+
+            </div>
+        </div>
+    </app-button-layout>
+</app-main-layout>
+

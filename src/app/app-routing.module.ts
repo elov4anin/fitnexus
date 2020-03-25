@@ -144,6 +144,10 @@ const routes: Routes = [
     path: 'staff',
     loadChildren: () => import('./pages/messages-staff/messages-staff.module').then( m => m.MessagesStaffPageModule)
   },
+  {
+    path: 'albums',
+    loadChildren: () => import('./pages/albums/albums.module').then( m => m.AlbumsPageModule)
+  },
 
 ];
 

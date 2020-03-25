@@ -71,12 +71,12 @@ export class ButtonLayoutComponent implements OnInit {
                         activePages: ['welcome-programs'],
                     },
                     {
-                        text: 'messages',
+                        text: 'albums',
                         icon: 'ios-photos-black.svg',
                         activeIcon: 'ios-photos-blue.svg',
-                        redirectTo: 'messages',
+                        redirectTo: 'albums',
                         active: false,
-                        activePages: ['messages'],
+                        activePages: ['albums'],
                     }
                 ];
                 this.template = 2;
@@ -105,6 +105,21 @@ export class ButtonLayoutComponent implements OnInit {
                         redirectTo: 'notifications',
                         active: true,
                         activePages: ['notifications'],
+                    },
+                ];
+                this.template = 1;
+                break;
+            }
+
+            case LayoutsEnum.ALBUMS: {
+                this.buttons = [
+                    {
+                        text: 'Albums',
+                        icon: 'ios-photos-white.svg',
+                        activeIcon: 'ios-photos-white.svg',
+                        redirectTo: 'albums',
+                        active: true,
+                        activePages: ['albums'],
                     },
                 ];
                 this.template = 1;
