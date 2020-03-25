@@ -7,11 +7,13 @@
     background-color: $gray;
 
     ion-header {
+        position: absolute!important;
+        top: 0;
         padding-top: 8px;
         padding-bottom: 8px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-        margin-bottom: 20px;
+        //margin-bottom: 20px;
         background: $white;
         box-shadow: 0 3px 6px 0 $light-gray1;
 
@@ -64,6 +66,7 @@
 
     ion-content {
         --background: transparent;
+        --padding-top: 60px;
     }
 
 

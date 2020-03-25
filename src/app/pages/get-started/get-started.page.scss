@@ -13,6 +13,7 @@
     ::ng-deep ion-content {
         --background: $gray;
         --overflow: hidden;
+        --padding-top: 75px!important;
     }
 
     ::ng-deep ion-slides.custom-slides {

@@ -5,11 +5,13 @@
     }
 
     ::ng-deep app-main-layout ion-content {
-        background: $white;
+        // background: $white;
+        --padding-top: 82px!important;
     }
 }
 
 ion-list {
+    padding-top: 33px;
     ion-item {
         margin-bottom: 33px;
         ion-avatar {
@@ -30,6 +32,8 @@ ion-list {
 
 .comment-add {
     // display: flex;
+    background: $white;
+    padding-bottom: 20px;
 
     ion-item {
         --padding-start: 0;
@@ -81,9 +85,7 @@ ion-list {
 }
 .divisor {
     width: 100%;
-    height: 1px;
-    margin-top: 20px;
-    margin-bottom: 33px;
+    height: 2px;
 
     background: #B8B8B8;
 }

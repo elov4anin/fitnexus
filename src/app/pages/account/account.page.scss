@@ -4,6 +4,10 @@
     ::ng-deep app-button-layout .layout-content {
         height: auto;
     }
+    ::ng-deep app-main-layout ion-content {
+        // background: $white;
+        --padding-top: 222px!important;
+    }
 }
 .account {
     display: flex;
