@@ -141,7 +141,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/notifications/notifications.module').then( m => m.NotificationsPageModule)
   },
   {
-    path: 'staff',
+    path: 'stuFff',
     loadChildren: () => import('./pages/messages-staff/messages-staff.module').then( m => m.MessagesStaffPageModule)
   },
   {

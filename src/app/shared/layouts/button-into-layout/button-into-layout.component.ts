@@ -59,11 +59,11 @@ export class ButtonIntoLayoutComponent implements OnInit {
             activePages: ['messages'],
           },
           {
-            text: 'Staff',
+            text: 'Stuff',
             icon: '',
-            redirectTo: 'staff',
+            redirectTo: 'stuff',
             active: false,
-            activePages: ['staff'],
+            activePages: ['stuff'],
           },
         ];
         this.template = 1;

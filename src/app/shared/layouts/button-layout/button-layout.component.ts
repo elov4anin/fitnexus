@@ -90,7 +90,7 @@ export class ButtonLayoutComponent implements OnInit {
                         activeIcon: 'ios-mail.svg',
                         redirectTo: 'messages',
                         active: true,
-                        activePages: ['messages', 'chat', 'staff'],
+                        activePages: ['messages', 'chat', 'stuff'],
                     },
                 ];
                 this.template = 1;

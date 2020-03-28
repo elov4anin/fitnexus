@@ -8,7 +8,7 @@ import {PageBaseComponent} from '../../shared/components/page-base/page-base.com
     styleUrls: ['./messages-staff.page.scss'],
 })
 export class MessagesStaffPage extends PageBaseComponent implements OnInit {
-    pageTitle: string = 'Stuff';
+    pageTitle: string = 'Stфff';
 
     constructor(private _router: Router) {
         super();
