@@ -80,7 +80,8 @@
 }
 .slide {
     position: relative;
-    width: 162px;
+    //width: 162px;
+    margin: auto 10px;
     border-bottom: 0.5px solid $gray;
     box-shadow: 0 3px 6px 0 $light-gray1;
     border-radius: 2px;
@@ -106,7 +107,7 @@
 .ios,
 .wp {
     .swiper-slide {
-        width: 231px !important;
+        // width: 231px !important;
     }
 }
 
@@ -138,6 +139,9 @@ ion-card {
         width: 80px;
         height: 84px;
         background-color: $gray1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     &__wrapper {
@@ -169,10 +173,14 @@ ion-card {
 
     &__delete {
         position: absolute;
-        top: 5px;
-        right: 5px;
-        width: 15px;
-        height: 15px;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+
+        ion-icon {
+            font-size: 20px;
+        }
     }
 
 }

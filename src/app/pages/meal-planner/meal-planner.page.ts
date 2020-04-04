@@ -15,7 +15,8 @@ export class MealPlannerPage extends PageBaseComponent implements OnInit {
   slideOpts = {
     initialSlide: 0,
     speed: 400,
-    loop: true
+    loop: true,
+    slidesPerView: 2,
   };
   sliders: ISlideInfo[] = [
     {
