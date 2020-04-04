@@ -38,7 +38,8 @@
         <ion-slides #slider pager="false" [options]="slideOpts" class="custom-slides">
           <ion-slide *ngFor =" let slide of sliders">
             <div class="slide">
-              <ion-img src="{{slide.imgSrc}}"></ion-img>
+              <div class="slide__img"  [ngStyle]="{'background-image':'url('+slide.imgSrc+')'}"></div>
+            <!--  <img src="{{slide.imgSrc}}">-->
               <h2 class="slide__title">
                 <span class="block">{{slide.title}}</span>
               </h2>
@@ -50,7 +51,7 @@
       <div class="library__list">
         <ion-card>
           <div class="card-program">
-            <ion-img src="/assets/images/news@2x.png" class="card-program__img"></ion-img>
+            <div class="card-program__img" [ngStyle]="{'background-image':'url(/assets/images/news@2x.png)'}"></div>
             <div class="card-program__wrapper">
               <span class="card-program__title">Cardio Basic</span>
               <span class="card-program__test">07/12/2019 </span>
@@ -61,7 +62,8 @@
         </ion-card>
         <ion-card>
           <div class="card-program">
-            <ion-img src="/assets/images/news@2x.png" class="card-program__img"></ion-img>
+           <!-- <ion-img src="/assets/images/news@2x.png" class="card-program__img"></ion-img>-->
+            <div class="card-program__img" [ngStyle]="{'background-image':'url(/assets/images/news@2x.png)'}"></div>
             <div class="card-program__wrapper">
               <span class="card-program__title">Cardio Basic</span>
               <span class="card-program__test">07/12/2019 </span>
@@ -72,7 +74,7 @@
         </ion-card>
         <ion-card>
           <div class="card-program">
-            <ion-img src="/assets/images/news@2x.png" class="card-program__img"></ion-img>
+            <div class="card-program__img" [ngStyle]="{'background-image':'url(/assets/images/news@2x.png)'}"></div>
             <div class="card-program__wrapper">
               <span class="card-program__title">Cardio Basic</span>
               <span class="card-program__test">07/12/2019 </span>

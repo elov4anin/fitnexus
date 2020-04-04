@@ -15,31 +15,32 @@ export class LibraryProgramsPage extends PageBaseComponent implements OnInit, Af
     slideOpts = {
         initialSlide: 0,
         speed: 400,
-        loop: true
+        loop: true,
+        slidesPerView: 2,
     };
     sliders: ISlideInfo[] = [
         {
-            title: "Cardio Basic",
+            title: "Cardio Basic 1",
             imgSrc: "/assets/images/news@2x.png"
         },
         {
-            title: "Cardio Basic",
+            title: "Cardio Basic 2",
             imgSrc: "/assets/images/news@2x.png"
         },
         {
-            title: "Cardio Basic",
+            title: "Cardio Basic 3",
             imgSrc: "/assets/images/news@2x.png"
         },
         {
-            title: "Cardio Basic",
+            title: "Cardio Basic 4",
             imgSrc: "/assets/images/news@2x.png"
         },
         {
-            title: "Cardio Basic",
+            title: "Cardio Basic 5",
             imgSrc: "/assets/images/news@2x.png"
         },
         {
-            title: "Cardio Basic",
+            title: "Cardio Basic 6",
             imgSrc: "/assets/images/news@2x.png"
         }
     ];
@@ -65,7 +66,7 @@ export class LibraryProgramsPage extends PageBaseComponent implements OnInit, Af
     }
 
     ngAfterViewInit(): void {
-        // this.slider.startAutoplay();
+        this.slider.startAutoplay();
     }
 
     openFilter() {
