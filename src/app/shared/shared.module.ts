@@ -15,6 +15,7 @@ import {CalendarModule} from "ion2-calendar";
 import {ModalQrcodeComponent} from './modals/modal-qrcode/modal-qrcode.component';
 import {QrCodeModule} from 'ng-qrcode';
 import {ModalConnectDevicesComponent} from './modals/modal-connect-devices/modal-connect-devices.component';
+import {ModalDayStatComponent} from './modals/modal-day-stat/modal-day-stat.component';
 
 const ANGULAR_MODULES = [
     CommonModule,
@@ -42,7 +43,8 @@ const COMPONENTS = [
 
 const MODALS = [
     ModalQrcodeComponent,
-    ModalConnectDevicesComponent
+    ModalConnectDevicesComponent,
+    ModalDayStatComponent
 ];
 
 

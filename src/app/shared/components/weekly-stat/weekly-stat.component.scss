@@ -3,6 +3,7 @@
 :host {
     width: 100%;
 }
+
 .weekly {
     display: flex;
     justify-content: space-around;
@@ -10,12 +11,12 @@
     width: 100%;
 
 
-
     .day {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
+        transition: all 0.2s;
 
         &__scale {
             height: 40px;
@@ -23,6 +24,7 @@
             margin-bottom: 6px;
             border-radius: 10px;
             background: $light-gray2;
+            transition: all 0.2s;
         }
 
         &__name {
@@ -31,16 +33,31 @@
             font-size: 16px;
             font-weight: 300;
             color: $light-gray2;
+            transition: all 0.2s;
         }
 
         &--current {
             .day__scale {
                 background: $dark-gray1
             }
+
             .day__name {
                 color: $dark-gray1
             }
 
+        }
+
+        &--selected {
+
+            .day__scale {
+                background: $blue;
+                box-shadow: 0 3px 6px 0 $light-gray1;
+            }
+
+            .day__name {
+                color: $blue;
+                font-weight: 500;
+            }
         }
     }
 }

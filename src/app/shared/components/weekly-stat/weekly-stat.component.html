@@ -1,9 +1,9 @@
 <div class="weekly">
-    <div class="day">
-        <div class="day__scale" [style.height]="'83px'"></div>
-         <div class="day__name">S</div>
+    <div class="day" *ngFor="let d of days" [ngClass]="{'day--selected': d.isSelect, 'day--current': d.isCurrent}" (click)="selectDay(d)">
+        <div class="day__scale" [style.height]="d.height + 'px'"></div>
+         <div class="day__name">{{d.day}}</div>
     </div>
-    <div class="day">
+    <!--<div class="day">
         <div class="day__scale" [style.height]="'99px'"></div>
         <span class="day__name">M</span>
     </div>
@@ -23,8 +23,8 @@
         <div class="day__scale" [style.height]="'95px'"></div>
         <span class="day__name">F</span>
     </div>
-    <div class="day day--current" >
+    <div class="day " >
         <div class="day__scale" [style.height]="'158px'"></div>
         <span class="day__name">S</span>
-    </div>
+    </div>-->
 </div>
